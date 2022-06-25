@@ -1,0 +1,11 @@
+{
+  "name": "@decent-org/lib",
+  "version": "0.1.0",
+  "description": "Decent DAO design system component library",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Decent DAO",
+  "license": "ISC"
+}
