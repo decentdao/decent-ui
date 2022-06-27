@@ -1,5 +1,5 @@
 {
-  "name": "@decent-org/lib",
+  "name": "@decent-org/decent-ui",
   "version": "0.1.0",
   "description": "Decent DAO design system component library",
   "main": "index.js",
