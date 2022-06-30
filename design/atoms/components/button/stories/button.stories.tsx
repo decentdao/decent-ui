@@ -3,7 +3,7 @@ import Button from "../src/Button";
 
 
 export default {
-  title: "atom/components/Button",
+  title: "atoms/components/Button",
   component: Button,
   args: {
     label: "Label",

@@ -5,6 +5,7 @@ import font from './font'
 import radius from './radius'
 import spacing from './spacing'
 import text from './text'
+import typography from './typography'
 
 export default {
   borders,
@@ -14,4 +15,5 @@ export default {
   radius,
   font,
   text,
+  typography
 };
