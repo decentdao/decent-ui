@@ -1,6 +1,6 @@
 import { Meta, Story } from "@storybook/react";
-import { FontSizeStory } from "./FontSizeStory";
-import { WeightsDisplay } from "./WeightsDisplay";
+import { FontSizeStory } from "./text/FontSizeStory";
+import { WeightsDisplay } from "./text/WeightsDisplay";
 
 const storyConfig: Meta = {
   title: "atoms/Theme",
