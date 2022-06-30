@@ -1,9 +1,8 @@
-import { Page } from "../../Page";
 import { Box, Text, Heading } from '@chakra-ui/react'
 
-export function TextDisplay() {
+export function WeightsDisplay() {
   return (
-    <Page>
+    <Box>
       <Box display="flex" flexDirection="column" alignItems="center" fontWeight={400} fontFamily="IMB Plex Sans">
         <Heading size="sm" alignSelf="start" fontWeight="inherit">MONO NORMAL</Heading>
         <Text>ABCDEFGHIKLMNOPQRSTUVWXYZ</Text>
@@ -52,6 +51,6 @@ export function TextDisplay() {
         <Text>abcdefghijklmnopqrstuvwxyz</Text>
         <Text>1234567890</Text>
       </Box>
-    </Page>
+    </Box>
   )
 }

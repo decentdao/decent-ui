@@ -1,8 +1,13 @@
-import { TextDisplay } from "./Text";
+import { Meta, Story } from "@storybook/react";
+import { FontSizeStory } from "./FontSizeStory";
+import { WeightsDisplay } from "./WeightsDisplay";
 
-export default {
+const storyConfig: Meta = {
   title: "atoms/Theme",
-  component: TextDisplay,
-};
+}
+export default storyConfig
 
-export const FontWeights = <TextDisplay />;
+
+export const FontWeights: Story = WeightsDisplay
+
+export const FontSizes: Story = FontSizeStory
