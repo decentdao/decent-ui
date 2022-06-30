@@ -23,13 +23,12 @@
   },
   "include": [
     "@types",
-    "packages",
+    "design/",
     "scripts",
     "tooling"
   ],
   "exclude": [
     "**/node_modules",
-    "**/template*"
   ],
   "ts-node": {
     "compilerOptions": {
