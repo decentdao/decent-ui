@@ -11,5 +11,6 @@ module.exports = {
     'storybook-addon-designs',
     'storybook-dark-mode'
   ],
-  "framework": "@storybook/react"
+  "framework": "@storybook/react",
+  staticDirs: ['../design/atoms/assets']
 }
