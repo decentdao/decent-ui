@@ -6,10 +6,10 @@ export const FONT_WEIGHT = {
 }
 
 const FONT_FAMILY = {
-  MONO: 'IBM Plex Mono',
+  MONO: 'IBM Plex Mono, monospace',
   SANS: 'IBM Plex Sans',
 }
-const text = {
+const textStyles = {
   'text-6xl-sans': {
     fontFamily: FONT_FAMILY.SANS,
     fontSize: '3em',
@@ -143,4 +143,4 @@ const text = {
   }
 }
 
-export default text
+export default textStyles

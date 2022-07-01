@@ -1,11 +1,9 @@
 import borders from './borders'
-import breakpoints from './breakpoints'
 import colors from './colors'
-import text from './text'
+import textStyles from './textStyles'
 
 export default {
   borders,
-  breakpoints,
   colors,
-  text
+  textStyles
 };
