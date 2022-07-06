@@ -1,4 +1,4 @@
-import { Page } from "../../sbComponents/Page";
+import { Page } from "./Page";
 import { Box, Text } from '@chakra-ui/react';
 
 export function Typography() {
