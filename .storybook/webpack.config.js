@@ -6,8 +6,8 @@ module.exports = async ({ config }) => {
       new CopyWebpackPlugin({
           patterns: [
               {
-                  from: path.resolve(__dirname, '../design/atoms/assets/fonts'),
-                  to: 'static/fonts',
+                  from: path.resolve(__dirname, '../design/atoms/assets'),
+                  to: 'static',
               },
           ],
       })
