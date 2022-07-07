@@ -1,18 +1,17 @@
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = async ({ config }) => {
-  config.module.rules.push({
-    test: /\.(woff|woff2|eot|ttf|svg)$/,
-    use: [
-      {
-        loader: 'file-loader',
-        query: {
-          name: '[name].[ext]',
-        },
-      },
-    ],
-    include: path.resolve(__dirname, '../'),
-  });
+  config.plugins.push(
+      new CopyWebpackPlugin({
+          patterns: [
+              {
+                  from: path.resolve(__dirname, '../design/atoms/assets'),
+                  to: 'static',
+              },
+          ],
+      })
+  );
 
   return config;
 };
