@@ -1,7 +1,7 @@
-const path = require('path');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-
 module.exports = {
+    core: {
+        builder: 'webpack5',
+    },
     stories: ['../design/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
     addons: [
         '@storybook/addon-links',
@@ -20,20 +20,6 @@ module.exports = {
             },
         },
     ],
-    webpackFinal: async (config, { configType }) => {
-        config.plugins.push(
-            new CopyWebpackPlugin({
-                patterns: [
-                    {
-                        from: path.resolve(__dirname, '../src/fonts'),
-                        to: 'static/fonts',
-                    },
-                ],
-            })
-        );
-
-        return config;
-    },
     framework: '@storybook/react',
     staticDirs: ['../design/atoms/assets'],
 };
