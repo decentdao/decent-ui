@@ -37,6 +37,9 @@ const colors = {
   },
   'utility': {
     'error-red': '#FF7373'
+  },
+  'call-to-action': {
+    'cta-teal': '#00E69E'
   }
 }
 
