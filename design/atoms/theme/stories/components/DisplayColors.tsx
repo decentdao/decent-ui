@@ -1,30 +1,30 @@
-import { Box, Text } from '@chakra-ui/react';
-import { StoryLayout } from '../../../../shared/StoryLayout';
-import colors from '../../foundations/colors';
+import { Box, Text } from "@chakra-ui/react"
+import { StoryLayout } from "../../../../shared/StoryLayout"
+import colors from "../../foundations/colors"
 
 export function DisplayColors() {
   return (
     <StoryLayout title="Colors">
-      {Object.entries(colors).map(
-        ([colorCategory, values], index) => {
+        {Object.entries(colors).map(([colorCategory, values], index) => {
           return (
-            <Box key={colorCategory + index} paddingBottom="4">
-              <Text fontSize="lg" marginBottom="4">{colorCategory}</Text>
-                <Box display="flex">
-                  {Object.entries(values as Object).map(([colorTitle, value]) => {
-                    return (
-                      <Box paddingStart="8">
-                        <Box width="75px" height="75px" bg={value} borderRadius="lg" />
-                        <Text display="flex" alignItems="flex-end" justifyContent="center" paddingEnd="2">{colorTitle}</Text>
+            <Box key={colorCategory + index}>
+                {Object.entries(values as Object).map(([colorTitle, value]) => {
+                  const colorName = `${colorCategory}-${colorTitle}`
+                  return (
+                    <Box display="flex" justifyContent="space-between" flexGrow={1} height="75px" marginY="12">
+                      <Box width="fit-content" display="flex" flexDirection="column" justifyContent="center">
+                        <Text fontSize="lg" marginBottom="4" textStyle="text-sm-mono">
+                          {colorName}
+                        </Text>
+                        <Text textStyle="text-sm-sans">{value}</Text>
                       </Box>
-                    )
-                  }
-                  )}
-              </Box>
+                      <Box marginLeft="24" flexGrow={1} bg={value} maxWidth="60%" borderRadius="lg" />
+                    </Box>
+                  )
+                })}
             </Box>
-          );
-        }
-      )}
+          )
+        })}
     </StoryLayout>
   )
 }
