@@ -8,7 +8,7 @@ interface IButton {
   label?: string;
 }
 
-export const Button = forwardRef(({variant, size, ...rest}: IButton & ButtonProps, ref) => {
+export const Button = forwardRef(({variant, size, label, ...rest}: IButton & ButtonProps, ref) => {
   const styles = useStyleConfig('Button', { size, variant });
-  return <ChakraButton sx={styles} ref={ref} {...rest}>Label</ChakraButton>
+  return <ChakraButton sx={styles} ref={ref} {...rest}>{label}</ChakraButton>
 })
