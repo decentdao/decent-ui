@@ -4,7 +4,7 @@ import colors from '../../foundations/colors';
 
 export function DisplayColors() {
   return (
-    <StoryLayout>
+    <StoryLayout title="Colors">
       {Object.entries(colors).map(
         ([colorCategory, values], index) => {
           return (

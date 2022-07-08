@@ -1,12 +1,15 @@
-import { Box } from '@chakra-ui/react'
+import { Box } from "@chakra-ui/react"
+import { TitleBanner } from "./TitleBanner"
 
 interface IStoryLayout {
-  children: JSX.Element | JSX.Element[];
+  title?: string
+  children: JSX.Element | JSX.Element[]
 }
-export function StoryLayout({children}: IStoryLayout) {
+export function StoryLayout({ title, children }: IStoryLayout) {
   return (
-    <Box padding="4">
-      {children}
+    <Box>
+      <TitleBanner title={title} />
+      <Box padding="24">{children}</Box>
     </Box>
   )
 }
