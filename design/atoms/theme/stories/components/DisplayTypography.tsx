@@ -1,10 +1,10 @@
-import { Page } from "./Page";
+import { StoryLayout } from "../../../../shared/StoryLayout";
 import { Box, Text } from '@chakra-ui/react';
 
-export function Typography() {
+export function DisplayTypography() {
   // @todo this should be updated when we have our version of the text component
   return (
-    <Page>
+    <StoryLayout>
       <Box>
         <Text textStyle="text-6xl-sans">text-6xl-sans</Text>
         <Text textStyle="text-5xl-sans">text-5xl-sans</Text>
@@ -26,6 +26,6 @@ export function Typography() {
         <Text textStyle="text-sm-mono">text-sm-mono</Text>
         <Text textStyle="text-xs">text-xs</Text>
       </Box>
-    </Page>
+    </StoryLayout>
   )
 }

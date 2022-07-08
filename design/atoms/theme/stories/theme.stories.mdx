@@ -1,22 +1,6 @@
 <!-- theme.stories.mdx -->
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
 import { Box, Text } from '@chakra-ui/react';
+import { DESIGN_TOKENS } from '../../../constants';
 
-import colors from '../foundations/colors';
-import { ColorsDisplay } from './Colors'
-import { Typography } from './Typography'
-
-<Meta title="atoms/Theme" />
-
-<Canvas>
-  <Story name="Color">
-    <ColorsDisplay />
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story name="Typography">
-    <Typography />
-  </Story>
-</Canvas>
-  
+<Meta title={DESIGN_TOKENS + "/About"} />

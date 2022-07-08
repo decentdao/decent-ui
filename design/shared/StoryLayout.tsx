@@ -1,9 +1,9 @@
 import { Box } from '@chakra-ui/react'
 
-interface IPage {
+interface IStoryLayout {
   children: JSX.Element | JSX.Element[];
 }
-export function Page({children}: IPage) {
+export function StoryLayout({children}: IStoryLayout) {
   return (
     <Box padding="4">
       {children}

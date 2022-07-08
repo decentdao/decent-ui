@@ -1,10 +1,10 @@
-import { Page } from "./Page";
 import { Box, Text } from '@chakra-ui/react';
-import colors from '../foundations/colors'
+import { StoryLayout } from '../../../../shared/StoryLayout';
+import colors from '../../foundations/colors';
 
-export function ColorsDisplay() {
+export function DisplayColors() {
   return (
-    <Page>
+    <StoryLayout>
       {Object.entries(colors).map(
         ([colorCategory, values], index) => {
           return (
@@ -25,6 +25,6 @@ export function ColorsDisplay() {
           );
         }
       )}
-    </Page>
+    </StoryLayout>
   )
 }
