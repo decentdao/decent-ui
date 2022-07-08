@@ -1,5 +1,5 @@
 import { Box, Text } from "@chakra-ui/react"
-import { StoryLayout } from "../../../../shared/StoryLayout"
+import { StoryLayout } from "../../../shared/StoryLayout"
 import colors from "../../foundations/colors"
 
 export function DisplayColors() {

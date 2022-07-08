@@ -1,4 +1,4 @@
-import { StoryLayout } from "../../../../shared/StoryLayout";
+import { StoryLayout } from "../../../shared/StoryLayout";
 import { Box, Text } from '@chakra-ui/react';
 
 export function DisplayTypography() {

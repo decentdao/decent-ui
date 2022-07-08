@@ -1,7 +1,7 @@
 import { extendTheme, theme as defaultTheme } from '@chakra-ui/react';
 import foundations from './foundations';
 import breakpoints from './breakpoints';
-import components from '../components';
+import components from '../atoms/components';
 
 const theme = extendTheme(
   {
