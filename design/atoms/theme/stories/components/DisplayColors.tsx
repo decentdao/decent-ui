@@ -10,6 +10,7 @@ export function DisplayColors() {
             <Box key={colorCategory + index}>
                 {Object.entries(values as Object).map(([colorTitle, value]) => {
                   const colorName = `${colorCategory}-${colorTitle}`
+                  const colorKey = `${colorCategory}.${colorTitle}`
                   return (
                     <Box display="flex" justifyContent="space-between" flexGrow={1} height="75px" marginY="12">
                       <Box width="fit-content" display="flex" flexDirection="column" justifyContent="center">
@@ -18,7 +19,7 @@ export function DisplayColors() {
                         </Text>
                         <Text textStyle="text-sm-sans">{value}</Text>
                       </Box>
-                      <Box marginLeft="24" flexGrow={1} bg={value} maxWidth="60%" borderRadius="lg" />
+                      <Box marginLeft="24" flexGrow={1} bg={colorKey} maxWidth="60%" borderRadius="lg" />
                     </Box>
                   )
                 })}
