@@ -12,7 +12,7 @@ export function DisplayColors() {
                   const colorName = `${colorCategory}-${colorTitle}`
                   const colorKey = `${colorCategory}.${colorTitle}`
                   return (
-                    <Box display="flex" justifyContent="space-between" flexGrow={1} height="75px" marginY="12">
+                    <Box key={colorName} display="flex" justifyContent="space-between" flexGrow={1} height="75px" marginY="12">
                       <Box width="fit-content" display="flex" flexDirection="column" justifyContent="center">
                         <Text fontSize="lg" marginBottom="4" textStyle="text-sm-mono">
                           {colorName}

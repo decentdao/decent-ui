@@ -1,30 +1,47 @@
-import { StoryLayout } from "../../../shared/StoryLayout";
-import { Box, Text } from '@chakra-ui/react';
+import { StoryLayout } from "../../../shared/StoryLayout"
+import { Box, Text } from "@chakra-ui/react"
+import textStyles from "../../foundations/textStyles"
 
 export function DisplayTypography() {
-  // @todo this should be updated when we have our version of the text component
+  const sans = Object.keys(textStyles).filter((key) => key.includes("-sans"))
+  const mono = Object.keys(textStyles).filter((key) => key.includes("-mono"))
   return (
     <StoryLayout title="Typography">
       <Box>
-        <Text textStyle="text-6xl-sans">text-6xl-sans</Text>
-        <Text textStyle="text-5xl-sans">text-5xl-sans</Text>
-        <Text textStyle="text-4xl-sans">text-4xl-sans</Text>
-        <Text textStyle="text-4xl-mono">text-4xl-mono</Text>
-        <Text textStyle="text-3xl-sans">text-3xl-sans</Text>
-        <Text textStyle="text-3xl-mono">text-3xl-mono</Text>
-        <Text textStyle="text-2xl-sans">text-2xl-sans</Text>
-        <Text textStyle="text-2xl-mono">text-2xl-mono</Text>
-        <Text textStyle="text-xl-sans">text-xl-sans</Text>
-        <Text textStyle="text-xl-mono">text-xl-mono</Text>
-        <Text textStyle="text-lg-sans">text-lg-sans</Text>
-        <Text textStyle="text-lg-mono">text-lg-mono</Text>
-        <Text textStyle="text-button">text-button</Text>
-        <Text textStyle="text-button-sm">text-button-sm</Text>
-        <Text textStyle="text-base">text-base</Text>
-        <Text textStyle="text-sm-sans">text-sm-sans</Text>
-        <Text textStyle="text-sm-sans-regular">text-sm-sans-regular</Text>
-        <Text textStyle="text-sm-mono">text-sm-mono</Text>
-        <Text textStyle="text-xs">text-xs</Text>
+        <Text textStyle="text-2xl-sans" textDecoration="underline">
+          SANS
+        </Text>
+        {sans.map((key) => (
+          <Box
+            key={key}
+            marginY="8"
+            paddingY="8"
+            display="flex"
+            justifyContent="space-between"
+          >
+            <Text fontSize="lg" marginBottom="4" textStyle="text-sm-mono">
+              {key}
+            </Text>
+            <Text textStyle={key}>Lorem aliqua deserunt officia ut.</Text>
+          </Box>
+        ))}
+        <Text textStyle="text-2xl-sans" textDecoration="underline">
+          MONO
+        </Text>
+        {mono.map((key) => (
+          <Box
+            key={key}
+            marginY="8"
+            paddingY="8"
+            display="flex"
+            justifyContent="space-between"
+          >
+            <Text fontSize="lg" marginBottom="4" textStyle="text-sm-mono">
+              {key}
+            </Text>
+            <Text textStyle={key}>Lorem aliqua deserunt officia ut.</Text>
+          </Box>
+        ))}
       </Box>
     </StoryLayout>
   )
