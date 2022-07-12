@@ -4,9 +4,6 @@ module.exports = {
     },
     stories: ['../design/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
     addons: [
-        '@storybook/addon-docs',
-        '@chakra-ui/storybook-addon',
-        'storybook-addon-designs',
         {
             name: '@storybook/addon-postcss',
             options: {
