@@ -4,10 +4,6 @@ module.exports = {
     },
     stories: ['../design/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
     addons: [
-        '@storybook/addon-links',
-        '@storybook/addon-actions',
-        '@storybook/addon-essentials',
-        '@storybook/addon-interactions',
         '@storybook/addon-docs',
         '@chakra-ui/storybook-addon',
         'storybook-addon-designs',
@@ -20,6 +16,9 @@ module.exports = {
             },
         },
     ],
+    features: {
+        emotionAlias: false,
+    },
     framework: '@storybook/react',
     staticDirs: ['../design/atoms/assets'],
 };

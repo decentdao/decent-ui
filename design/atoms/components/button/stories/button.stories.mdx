@@ -1,10 +1,10 @@
-import { Canvas, Story, Meta } from "@storybook/react"
 import { Button } from '../src'
 
-<Meta title="atoms/Button" />
+<Meta title="atoms/Button" component={Button} />
 
 <Canvas>
   <Story name="Button">
-    <Button />
+    <Button label="Label" />
   </Story>
 </Canvas>
+
