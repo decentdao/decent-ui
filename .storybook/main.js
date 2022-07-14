@@ -3,6 +3,11 @@ module.exports = {
         builder: 'webpack5',
     },
     stories: ['../design/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+    refs: {
+        '@chakra-ui/react': {
+            disable: true,
+        },
+    },
     addons: [
         "@storybook/addon-docs",
         "@chakra-ui/storybook-addon",
