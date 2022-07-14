@@ -4,13 +4,8 @@ module.exports = {
     },
     stories: ['../design/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
     addons: [
-        '@storybook/addon-links',
-        '@storybook/addon-essentials',
-        '@storybook/addon-interactions',
-        '@storybook/addon-docs',
-        '@chakra-ui/storybook-addon',
-        'storybook-addon-designs',
-        'storybook-dark-mode',
+        "@storybook/addon-docs",
+        "@chakra-ui/storybook-addon",
         {
             name: '@storybook/addon-postcss',
             options: {
@@ -20,6 +15,9 @@ module.exports = {
             },
         },
     ],
+    features: {
+        emotionAlias: false,
+    },
     framework: '@storybook/react',
     staticDirs: ['../design/atoms/assets'],
 };
