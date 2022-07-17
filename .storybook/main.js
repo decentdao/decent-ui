@@ -10,7 +10,6 @@ module.exports = {
     },
     addons: [
         "@storybook/addon-docs",
-        "@chakra-ui/storybook-addon",
         {
             name: '@storybook/addon-postcss',
             options: {
