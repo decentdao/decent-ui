@@ -1,33 +1,19 @@
 import { create } from '@storybook/theming';
-import logo from './assets/logo.svg';
 
+const logo = require("./assets/logo.svg") as string;
 const isLocalhost = globalThis.location?.toString().includes('localhost');
 
 export const theme = create({
-  base: 'dark',
-  brandTitle: isLocalhost ? 'Fractal Local' : 'Fractal',
-  brandImage: logo,
-  brandUrl: '/',
+    base: 'dark',
+    brandTitle: isLocalhost ? 'Fractal Local' : 'Fractal',
+    brandImage: logo,
+    brandUrl: '/',
+    brandTarget: '_self',
 
-  // UI
-  appBg: "white",
-  appContentBg: "white",
-  appBorderColor: "navy",
-  appBorderRadius: 4,
+    colorPrimary: '#07000D',
+    colorSecondary: '#AC54FF',
 
-  // Text colors
-  textColor: "navy",
-  textInverseColor: "white",
-  textMutedColor: "gray",
-
-  // Toolbar default and active colors
-  barTextColor: "gray",
-  barSelectedColor: "navy",
-  barBg: "white",
-
-  // Form colors
-  inputBg: "white",
-  inputBorder: "navy",
-  inputTextColor: "navy",
-  inputBorderRadius: 2,
+    // UI
+    appBorderRadius: 4,
+    appContentBg: "gray"
 });
