@@ -22,18 +22,14 @@
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "@storybook/theming": "^6.5.9",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^6.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "@types/mdx-js__react": "^1.5.3",
-    "css-loader": "^3.5.2",
-    "postcss-loader": "^3.0.0",
-    "sass-loader": "^7.1.0",
-    "style-loader": "^1.2.0"
+    "@types/mdx-js__react": "^1.5.3"
   },
   "dependencies": {
-    "@storybook/theming": "^6.5.9",
     "typescript": "*",
     "webpack": "^5.68.0"
   }
