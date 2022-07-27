@@ -29,14 +29,16 @@ const colors = {
   },
   neutral: {
     'light-gray': "#F5F5F5",
-    'medium-gray': "#B6B3AC"
+    'medium-gray': "#B6B3AC",
+    '600': '#A6A39D'
   },
   'sand': {
     '500': '#FFDA85',
     '600': '#E5BE63'
   },
   'utility': {
-    'error-red': '#FF7373'
+    'error-red': '#FF7373',
+    'alert-red': '#EC221E'
   }
 }
 

@@ -1,16 +1,18 @@
+const disabled = {
+  bg: 'chocolate.500',
+  color: 'neutral.600',
+  border: 'unset'
+}
+
+const loading = {}
 function primary() {
-  const disabled = {
-    bg: 'chocolate.500',
-    color: 'neutral.medium-gray',
-  }
-
-  const loading = {}
 
   return {
-    bg: 'gold.500',
-    color: 'gray.500',
+    color: 'white',
+    bg: 'black.400',
+    border: '1px solid black.200',
     _hover: {
-      bg: 'gold.300',
+      border: '2px solid black.300',
       _disabled: {
         ...disabled,
         _loading: loading
@@ -20,64 +22,30 @@ function primary() {
       ...disabled,
       _loading: loading
     },
-    _active: {},
-    _focus: {}
+    _focus: {
+      border: '2px solid black.300',
+    }
   }
 }
 
-function secondary() {
-  const disabled = {
-    color: 'neutral.medium-gray',
-    border: 'neutral.medium-gray'
-  }
-
-  const loading = {
-
-  }
+function error() {
 
   return {
-    bg: 'chocolate.500',
-    color: 'gold.500',
-    border: '1px solid gold.500',
-    _hover: {
-      border: '1px solid gold.300',
-      color: 'gold.300',
-      _disabled: {
-        ...disabled,
-        _loading: loading
-      },
-    },
-    _disabled: {
-      ...disabled,
-      _loading: loading
-    },
-    _active: {},
-    _focus: {}
-  }
-}
-
-function text() {
-  const disabled = {
-    bg: '',
-    color: '',
-  }
-
-  const loading = {
-
-  }
-
-  return {
-    bg: '',
-    color: '',
+    color: 'white',
+    bg: 'black.400',
+    border: '2px solid utility.alert-red',
     _hover: {},
-    _disabled: {},
-    _active: {},
-    _focus: {}
+    _disabled: {
+      ...disabled,
+      _loading: loading
+    },
+    _focus: {
+      border: '2px solid black.300',
+    }
   }
 }
 
 export default {
   primary,
-  secondary,
-  text
+  error
 }

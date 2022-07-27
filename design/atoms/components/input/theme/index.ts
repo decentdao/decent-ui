@@ -1,7 +1,7 @@
 import baseStyle from './input.base'
-import variants from './Input.variants'
-import sizes from './Input.sizes'
-import defaultProps from './Input.default'
+import variants from './input.variants'
+import sizes from './input.sizes'
+import defaultProps from './input.default'
 
 export default {
   baseStyle,

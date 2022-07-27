@@ -1,14 +1,14 @@
 export default {
-  lg: {
-    apply: 'textStyles.text-button',
-    height: '3.75rem',
-    width: 'auto',
-    padding: '1rem 3rem'
-  },
   base: {
-    apply: 'textStyles.text-button-sm',
+    apply: 'textStyles.text-base-mono',
     height: '2.5rem',
     width: 'auto',
-    padding: '0.375rem 1.5rem',
+    padding: '0 1rem',
+  },
+  xl: {
+    apply: 'textStyles.text-base-mono',
+    height: '4.375rem',
+    width: 'auto',
+    padding: '0 1rem',
   }
 }
