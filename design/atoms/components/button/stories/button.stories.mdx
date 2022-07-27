@@ -1,19 +1,25 @@
 import { Button } from '../src';
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
-<Meta
-    title='atoms/Button'
-    component={Button}
-    argTypes={{
-        variant: {
-            options: ['primary', 'secondary', 'text'],
-            control: { type: 'radio' },
-        },
-    }}
-/>
+<Meta title='atoms/Button' component={Button} />
+
+export const Template = (args) => (
+    <Button label='CLICK ME' variant={args.variant} />
+);
 
 <Canvas>
-    <Story name='Button'>
-        <Button label='CLICK ME' variant />
+    <Story
+        name='Button'
+        argTypes={{
+            variant: {
+                options: ['primary', 'secondary', 'text'],
+                control: { type: 'radio' },
+            },
+        }}
+        args={{
+            variant: 'primary',
+        }}
+    >
+        {Template.bind({})}
     </Story>
 </Canvas>
