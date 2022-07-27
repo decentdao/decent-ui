@@ -10,10 +10,10 @@ export const theme = create({
     brandUrl: '/',
     brandTarget: '_self',
 
-    colorPrimary: '#07000D',
-    colorSecondary: '#AC54FF',
+    colorPrimary: '#1B1A1A',
+    colorSecondary: '#FABD2E',
 
     // UI
     appBorderRadius: 4,
-    appContentBg: "gray"
+    appContentBg: '#999'
 });
