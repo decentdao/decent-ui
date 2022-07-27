@@ -113,6 +113,13 @@ const textStyles = {
     letterSpacing: '0px',
     lineHeight: '1.5em'
   },
+  'text-base-mono': {
+    fontFamily: FONT_FAMILY.MONO,
+    fontSize: '0.75em',
+    fontWeight: FONT_WEIGHT.MEDIUM,
+    letterSpacing: '0px',
+    lineHeight: '1.5em'
+  },
   'text-sm-sans': {
     fontFamily: FONT_FAMILY.SANS,
     fontSize: '0.75em',
