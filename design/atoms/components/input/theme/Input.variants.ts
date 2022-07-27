@@ -33,7 +33,7 @@ function error() {
   return {
     color: 'white',
     bg: 'black.400',
-    border: '2px solid utility.alert-red',
+    border: '2px solid alert-red.normal',
     _hover: {},
     _disabled: {
       ...disabled,
