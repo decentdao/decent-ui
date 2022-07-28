@@ -25,43 +25,35 @@ const FONT_SIZES = {
   },
   '4xl': {
     fontSize: '2em',
-    lineHeight: '3.75',
     letterSpacing: '1.2px'
   },
   '3xl': {
     fontSize: '1.875em',
-    lineHeight: '2.75em',
     letterSpacing: '0.96px'
   },
   '2xl': {
     fontSize: '1.625em',
-    lineHeight: '2.375em',
     letterSpacing: '0.28px'
   },
   'xl': {
     fontSize: '1.375em',
-    lineHeight: '2.125em',
     letterSpacing: ''
   },
   'lg': {
     fontSize: '1.25em',
     letterSpacing: '0.04em',
-    lineHeight: '1.75em'
   },
   'md': {
     fontSize: '0.75em',
     letterSpacing: '0px',
-    lineHeight: '1.5em'
   },
   'sm': {
     fontSize: '0.75em',
     letterSpacing: '0px',
-    lineHeight: '1.25em'
   },
   'xs': {
     fontSize: '0.625em',
     letterSpacing: '0px',
-    lineHeight: '1em'
   }
 }
 
@@ -73,11 +65,11 @@ class Font {
   fontWeight: number
   constructor(size: FontSize, fontFamily: string, fontWeight: number) {
     this.fontSize = FONT_SIZES[size].fontSize
-    this.lineHeight = FONT_SIZES[size].lineHeight
     this.letterSpacing = FONT_SIZES[size].letterSpacing
-
+    
     this.fontFamily = fontFamily
     this.fontWeight = fontWeight
+    this.lineHeight = '1.5'
   }
 }
 
