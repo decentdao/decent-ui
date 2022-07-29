@@ -20,11 +20,17 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/builder-webpack5": "^6.5.9",
     "@storybook/manager-webpack5": "^6.5.9",
-    "@storybook/testing-library": "^0.0.13",
     "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "@storybook/theming": "^6.5.9",
+    "@types/mdx-js__react": "^1.5.3",
     "babel-loader": "^8.2.5",
     "copy-webpack-plugin": "^6.3.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "typescript": "*",
+    "webpack": "^5.68.0"
   }
 }
