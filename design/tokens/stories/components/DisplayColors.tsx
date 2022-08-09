@@ -1,11 +1,15 @@
 import { Box, Text } from "@chakra-ui/react"
 import { StoryLayout } from "../../../shared/StoryLayout"
-import colors from "../../foundations/colors"
+// import colors from "../../foundations/colors"
+import tokenData from '../../foundations/colors/design-tokens-colors.json';
+
+const { tokens } = tokenData;
+const { color } = tokens;
 
 export function DisplayColors() {
   return (
     <StoryLayout title="Colors">
-        {Object.entries(colors).map(([colorCategory, values], index) => {
+        {Object.entries(color).map(([colorCategory, values], index) => {
           return (
             <Box key={colorCategory + index}>
                 {Object.entries(values as Object).map(([colorTitle, value]) => {
