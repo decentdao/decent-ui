@@ -2,14 +2,6 @@
     "tokens": {
         "color": {
             "Neutral": {
-                "White": {
-                    "value": "#ffffff",
-                    "type": "color"
-                },
-                "Black": {
-                    "value": "#000000",
-                    "type": "color"
-                },
                 "neutral-50": {
                     "value": "#f8f7f7",
                     "type": "color"
