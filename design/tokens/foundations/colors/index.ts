@@ -7,7 +7,6 @@ const primaries = { ...Primary }
 const secondaries = { ...Secondary }
 const neutrals = { ...Neutral }
 const utilities = { ...Utility }
-// const gradients = { ...gradient }
 
 const colors = {
     ...primaries,
