@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/react';
+import { Heading, Box, Text } from '@chakra-ui/react';
 import { StoryLayout } from '../../../shared/StoryLayout';
 import colors from '../../foundations/colors';
 
@@ -6,12 +6,11 @@ export function DisplayColors() {
     return (
         <StoryLayout title='Colors'>
             {Object.entries(colors).map(([colorCategory, values], index) => {
-                console.log('FOOP COLORS ARE: ', colors);
                 return (
                     <Box key={colorCategory + index}>
-                        <h2 style={{ fontSize: 48, textTransform: 'uppercase' }}>
+                        <Heading as='h2' mb={4} fontSize='32px' textTransform={'capitalize'} fontWeight={'bold'}>
                             {colorCategory}
-                        </h2>
+                        </Heading>
                         {Object.entries(values as Object).map(
                             ([colorTitle, hexValue]) => {
                                 return (
