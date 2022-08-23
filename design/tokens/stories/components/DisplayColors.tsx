@@ -9,7 +9,9 @@ export function DisplayColors() {
                 console.log('FOOP COLORS ARE: ', colors);
                 return (
                     <Box key={colorCategory + index}>
-                        <h2>{colorCategory}</h2>
+                        <h2 style={{ fontSize: 48, textTransform: 'uppercase' }}>
+                            {colorCategory}
+                        </h2>
                         {Object.entries(values as Object).map(
                             ([colorTitle, hexValue]) => {
                                 return (
