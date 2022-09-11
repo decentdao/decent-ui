@@ -1,12 +1,15 @@
-import { Meta, Story } from '@storybook/addon-docs';
+import { Meta, Story, Canvas } from '@storybook/addon-docs';
 import { Box, Text } from '@chakra-ui/react';
 import { DisplayTypography } from './components/DisplayTypography';
-// import { DisplayFontWeights } from './components/DisplayFontWeights';
-// import { DisplayFonts } from './components/DisplayFonts';
+import { DisplayFontWeights } from './components/DisplayFontWeights';
 import { DESIGN_TOKENS } from '../../constants';
 
 <Meta title={`${DESIGN_TOKENS}/Typography`} />
 
-<Story name="Typography">
+<Story name="Text Styles">
   <DisplayTypography />
+</Story>
+
+<Story name="Font Weights">
+  <DisplayFontWeights />
 </Story>

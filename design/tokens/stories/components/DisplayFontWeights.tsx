@@ -1,6 +1,12 @@
 import { StoryLayout } from "../../../shared/StoryLayout"
 import { Box, Text } from "@chakra-ui/react"
-import { FONT_WEIGHT } from "../../foundations/fontStyles"
+
+export const FONT_WEIGHT = {
+    BOLD: 700,
+    SEMI: 600,
+    MEDIUM: 500,
+    NORMAL: 400,
+};
 
 export function DisplayFontWeights() {
   // @todo this should be updated when we have our version of the text component
