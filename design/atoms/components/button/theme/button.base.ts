@@ -7,6 +7,7 @@ export default {
   boxShadow: 'none',
   display: 'flex',
   justifyContent: 'center',
+  gap: '4px',
   _disabled: {
     cursor: 'default'
   },
