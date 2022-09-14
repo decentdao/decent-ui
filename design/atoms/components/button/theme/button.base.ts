@@ -2,7 +2,6 @@
 
 export default {
   alignItems: 'center',
-  borderColor: 'transparent',
   borderRadius: '4px',
   boxShadow: 'none',
   display: 'flex',

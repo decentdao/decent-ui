@@ -1,16 +1,17 @@
 function primary() {
   const disabled = {
-    bg: 'chocolate.500',
-    color: 'neutral.medium-gray',
+    bg: 'gold.500-disabled',
   }
 
-  const loading = {}
+  const loading = {
+    // @todo add loading state
+  }
 
   return {
     bg: 'gold.500',
-    color: 'gray.500',
+    color: 'black.500',
     _hover: {
-      bg: 'gold.300',
+      bg: 'gold.500-hover',
       _disabled: {
         ...disabled,
         _loading: loading
@@ -20,28 +21,29 @@ function primary() {
       ...disabled,
       _loading: loading
     },
-    _active: {},
+    _active: {
+      bg: 'gold.500-active',
+    },
     _focus: {}
   }
 }
 
 function secondary() {
   const disabled = {
-    color: 'neutral.medium-gray',
-    border: 'neutral.medium-gray'
+    color: 'gold.500-disabled',
+    bg: 'chocolate.600'
   }
 
   const loading = {
-
+    // @todo add loading state
   }
 
   return {
     bg: 'chocolate.500',
     color: 'gold.500',
-    border: '1px solid gold.500',
     _hover: {
-      border: '1px solid gold.300',
-      color: 'gold.300',
+      bg: 'chocolate.600',
+      color: 'gold.500-hover',
       _disabled: {
         ...disabled,
         _loading: loading
@@ -51,15 +53,19 @@ function secondary() {
       ...disabled,
       _loading: loading
     },
-    _active: {},
+    _active: {
+      bg: 'chocolate.700',
+      color: 'gold.500-active',
+    },
     _focus: {}
   }
 }
 
-function text() {
+function tertiary() {
   const disabled = {
-    bg: '',
-    color: '',
+    bg: 'transparent',
+    borderColor: 'gold.500-disabled',
+    color: 'gold.500-disabled',
   }
 
   const loading = {
@@ -67,11 +73,28 @@ function text() {
   }
 
   return {
-    bg: '',
-    color: '',
-    _hover: {},
-    _disabled: {},
-    _active: {},
+    bg: 'chocolate.800',
+    color: 'gold.500',
+    border: '1px solid',
+    borderColor: 'gold.500',
+    _hover: {
+      borderColor: 'gold.500-hover',
+      bg: 'chocolate.700',
+      color: 'gold.500-hover',
+      _disabled: {
+        ...disabled,
+        _loading: loading
+      },
+    },
+    _disabled: {
+      ...disabled,
+      _loading: loading
+    },
+    _active: {
+      borderColor: 'gold.500-active',
+      bg: 'chocolate.800',
+      color: 'gold.500-active',
+    },
     _focus: {}
   }
 }
@@ -79,5 +102,5 @@ function text() {
 export default {
   primary,
   secondary,
-  text
+  tertiary
 }
