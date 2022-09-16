@@ -25,7 +25,8 @@
     "@types",
     "design/",
     "scripts",
-    "tooling"
+    "tooling",
+    "custom.d.ts"
   ],
   "exclude": [
     "**/node_modules",

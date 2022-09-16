@@ -1,0 +1,16 @@
+import { Meta, Story } from "@storybook/addon-docs"
+import { ATOMS } from "../../../../constants"
+import { DESIGN_TOKENS } from '../../../../constants';
+import { DisplayIconography } from './components/DisplayIconography';
+
+<Meta
+    title={`${DESIGN_TOKENS}/Iconography`}
+    component={DisplayIconography}
+    parameters={{
+        viewMode: 'docs',
+    }}
+/>
+
+<Story name="Iconography">
+  <DisplayIconography />
+</Story>
