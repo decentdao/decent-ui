@@ -5,7 +5,7 @@ export const ArrowAngleUp = createIcon({
   viewBox: "0 0 24 24",
   path: (
     <svg>
-      <g clip-path="url(#a)">
+      <g clipPath="url(#a)">
         <path
           d="m15.326 9.853-7.151 7.151L7 15.83l7.15-7.152H7.848V7.017h9.14v9.14h-1.662V9.852Z"
           fill="currentColor"
