@@ -55,7 +55,7 @@ function secondary() {
     },
     _active: {
       bg: 'chocolate.700',
-      color: 'gold.500-active',
+      color: 'gold.500-active'
     },
     _focus: {}
   }
@@ -69,7 +69,7 @@ function tertiary() {
   }
 
   const loading = {
-
+    // @todo add loading state
   }
 
   return {
