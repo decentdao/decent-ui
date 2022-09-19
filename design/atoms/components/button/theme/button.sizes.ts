@@ -1,14 +1,20 @@
 export default {
   lg: {
-    apply: 'textStyles.text-button',
-    height: '3.75rem',
-    width: 'auto',
+    apply: 'textStyles.text-md-mono-semibold',
+    height: '3.5rem',
+    minWidth: '9.625rem',
     padding: '1rem 3rem'
   },
   base: {
-    apply: 'textStyles.text-button-sm',
-    height: '2.5rem',
-    width: 'auto',
+    apply: 'textStyles.text-sm-mono-semibold',
+    height: '2.25rem',
+    minWidth: '6.625rem',
     padding: '0.375rem 1.5rem',
+  },
+  sm: {
+    apply: 'textStyles.text-xs-mono-semibold',
+    minWidth: '4.75rem',
+    height: '1.875rem',
+    padding: '0.375rem 1rem'
   }
 }

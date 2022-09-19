@@ -1,25 +1,55 @@
-import { Button } from '../src';
-import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Button } from "../src"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
 
-<Meta title='atoms/Button' component={Button} />
+import * as icons from "../../icons/src"
 
-export const Template = (args) => (
-    <Button label='CLICK ME' variant={args.variant} />
-);
+<Meta title="atoms/Button" component={Button} />
+
+export const Template = (args) => <Button {...args} />
 
 <Canvas>
-    <Story
-        name='Button'
-        argTypes={{
-            variant: {
-                options: ['primary', 'secondary', 'text'],
-                control: { type: 'radio' },
-            },
-        }}
-        args={{
-            variant: 'primary',
-        }}
-    >
-        {Template.bind({})}
-    </Story>
+  <Story
+    name="Button"
+    argTypes={{
+      // hides ref property from controls, causes an error to occur
+      as: {
+        table: {
+          disable: true,
+        },
+      },
+      leftIcon: {
+        options: ["None", ...Object.keys(icons)],
+        mapping: Object.entries(icons).reduce(
+          (prev, [iconName, Icon]) => ({ ...prev, [iconName]: <Icon /> }),
+          { None: undefined }
+        ),
+        control: {
+          labels: Object.keys(icons).reduce((prev, cur) => ({ ...prev, [cur]: cur }), {
+            None: "None",
+          }),
+          type: "select",
+        },
+      },
+      rightIcon: {
+        options: ["None", ...Object.keys(icons)],
+        mapping: Object.entries(icons).reduce(
+          (prev, [iconName, Icon]) => ({ ...prev, [iconName]: <Icon /> }),
+          { None: undefined }
+        ),
+        control: {
+          labels: Object.keys(icons).reduce((prev, cur) => ({ ...prev, [cur]: cur }), {
+            None: "None",
+          }),
+          type: "select",
+        },
+      },
+    }}
+    args={{
+      variant: "primary",
+      label: "Button",
+      size: "base",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>
