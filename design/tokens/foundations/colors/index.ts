@@ -1,13 +1,13 @@
 import { parseColors } from '../../../helpers';
-import tokenData from '../../color-tokens.json'
+import tokenData from '../../design-tokens-export.json'
 
-const { Colors } = tokenData;
-const { Primary, Secondary, Neutral, Utility } = Colors;
+const { color } = tokenData;
+const { primary, secondary, neutral, utility } = color;
 
-const primaries = parseColors({...Primary})
-const secondaries = parseColors({ ...Secondary })
-const neutrals = parseColors({ ...Neutral })
-const utilities = parseColors({ ...Utility })
+const primaries = parseColors({...primary})
+const secondaries = parseColors({ ...secondary })
+const neutrals = parseColors({ ...neutral })
+const utilities = parseColors({ ...utility })
 
 const colors = {
     ...primaries,
