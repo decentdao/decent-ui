@@ -5,7 +5,9 @@ interface IInput {
   variant?: string
 }
 
-export const Input = forwardRef(({ variant, size, ...rest }: IInput & InputProps, ref) => {
+const Input = forwardRef(({ variant, size, ...rest }: IInput & InputProps, ref) => {
   const styles = useStyleConfig("Input", { variant, size })
   return <ChakraInput sx={styles} ref={ref} {...rest}></ChakraInput>
 })
+
+export default Input

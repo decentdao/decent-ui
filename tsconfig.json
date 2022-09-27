@@ -6,8 +6,9 @@
       "dom",
       "esnext"
     ],
-    "declaration": true,
+    "outDir": "dist",
     "sourceMap": true,
+    "declaration": true,
     "moduleResolution": "node",
     "skipLibCheck": true,
     "strict": true,
@@ -19,24 +20,14 @@
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
     "incremental": true,
-    "declarationMap": true
   },
   "include": [
     "@types",
-    "design/",
-    "scripts",
+    "design/index.ts",
     "tooling",
-    "custom.d.ts"
   ],
   "exclude": [
-    "**/node_modules",
-  ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS",
-      "resolveJsonModule": true,
-      "noImplicitAny": false
-    },
-    "swc": true
-  }
+    "custom.d.ts",
+    "node_modules",
+  ]
 }
