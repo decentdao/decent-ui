@@ -12,7 +12,9 @@ interface IButton {
   rightIcon?: ReactElement
 }
 
-export const Button = forwardRef(({variant, size, label, ...rest}: IButton, ref) => {
+const Button = forwardRef(({variant, size, label, ...rest}: IButton, ref) => {
   const styles = useStyleConfig('Button', { size, variant });
   return <ChakraButton  sx={styles} ref={ref} {...rest}>{label}</ChakraButton>
 })
+
+export default Button
