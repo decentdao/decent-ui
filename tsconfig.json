@@ -27,7 +27,6 @@
     "tooling",
   ],
   "exclude": [
-    "custom.d.ts",
-    "node_modules",
+    "custom.d.ts"
   ]
 }
