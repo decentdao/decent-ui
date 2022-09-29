@@ -43,6 +43,12 @@ export const Template = (args) => <Button {...args} />
           type: "select",
         },
       },
+      isDisabled: {
+        control: {
+          type: 'boolean',
+          default: false
+        },
+      },
     }}
     args={{
       variant: "primary",
