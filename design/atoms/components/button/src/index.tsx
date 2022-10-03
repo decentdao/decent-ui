@@ -9,11 +9,11 @@ import {
 import { ReactElement } from "react"
 
 interface IButton {
-  variant?: "primary" | "secondary" | "tertiary"
-  size?: "base" | "lg" | "sm"
-  label?: string
-  leftIcon?: ReactElement
-  rightIcon?: ReactElement
+  variant?: "primary" | "secondary" | "tertiary";
+  size?: "base" | "lg" | "sm";
+  label?: string;
+  leftIcon?: ReactElement;
+  rightIcon?: ReactElement;
 }
 
 export const Button = forwardRef<IButton, ComponentWithAs<"button", ButtonProps>>(
