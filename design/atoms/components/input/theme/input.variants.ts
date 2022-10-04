@@ -38,30 +38,6 @@ function primary() {
   }
 }
 
-function error() {
-
-  return {
-    color: 'white',
-    bg: 'input.background',
-    border: '1px solid',
-    borderColor: 'alert-red.normal',
-    fontWeight: '500',
-    _hover: {},
-    _placeholder: {
-      color: 'grayscale.600'
-    },
-    _disabled: {
-      ...disabled,
-      _loading: loading
-    },
-    _focus: {
-      border: '1px solid',
-      outlineStyle: 'none'
-    }
-  }
-}
-
 export default {
-  primary,
-  error
+  primary
 }
