@@ -4,6 +4,4 @@ export default {
   _disabled: {
     cursor: 'default'
   },
-  _hover: {},
-  _focus: {}
 }

@@ -1,11 +1,28 @@
-import Input from '../src'
-import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Input from "../src"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
 
 <Meta title="atoms/Input" component={Input} />
 
+export const Template = (args) => <Input {...args} />
+
 <Canvas>
-  <Story name="Input">
-    <Input placeholder="Placeholder" />
+  <Story
+    name="Input"
+    argTypes={{
+      size: {
+        options: ["base", "xl"],
+        control: {
+          type: "radio",
+        },
+      },
+    }}
+    args={{
+      placeholder: "placeholder",
+      size: "base",
+      isDisabled: false,
+      isErrored: false,
+    }}
+  >
+    {Template.bind({})}
   </Story>
 </Canvas>
-

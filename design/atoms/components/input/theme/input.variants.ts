@@ -1,18 +1,30 @@
 const disabled = {
-  bg: 'chocolate.500',
-  color: 'neutral.600',
-  border: 'unset'
+  border: 'none',
+  color: 'grayscale.800',
+  _placeholder: {
+    color: 'grayscale.800'
+  }
 }
-
 const loading = {}
+
 function primary() {
 
   return {
     color: 'white',
-    bg: 'black.400',
-    border: '1px solid black.200',
+    bg: 'input.background',
+    border: '1px solid',
+    borderColor: 'black.200',
+    fontWeight: '500',
+    _invalid: {
+      border: '1px solid',
+      borderColor: 'alert-red.normal'
+    },
+    _placeholder: {
+      color: 'grayscale.600'
+    },
     _hover: {
-      border: '2px solid black.300',
+      border: '1px solid',
+      borderColor: 'black.300',
       _disabled: {
         ...disabled,
         _loading: loading
@@ -23,29 +35,13 @@ function primary() {
       _loading: loading
     },
     _focus: {
-      border: '2px solid black.300',
-    }
-  }
-}
-
-function error() {
-
-  return {
-    color: 'white',
-    bg: 'black.400',
-    border: '2px solid alert-red.normal',
-    _hover: {},
-    _disabled: {
-      ...disabled,
-      _loading: loading
-    },
-    _focus: {
-      border: '2px solid black.300',
+      border: '1px solid',
+      borderColor: 'black.300',
+      outlineStyle: 'none'
     }
   }
 }
 
 export default {
-  primary,
-  error
+  primary
 }

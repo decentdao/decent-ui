@@ -1,0 +1,28 @@
+import InputLabelWrapper from "../src"
+import Input from "../../input/src"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+
+<Meta title="atoms/InputLabelWrapper" component={InputLabelWrapper} />
+
+export const Template = (args) => {
+  return (
+    <InputLabelWrapper {...args}>
+      <Input isDisabled={args.isDisabled} isErrored={args.isErrored} placeholder="Placeholder" />
+    </InputLabelWrapper>
+  )
+}
+
+<Canvas>
+  <Story
+    name="InputLabelWrapper"
+    args={{
+      isErrored: false,
+      isDisabled: false,
+      subLabel: "",
+      label: "Label",
+      htmlFor: "form-label",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
