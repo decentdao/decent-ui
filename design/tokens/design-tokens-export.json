@@ -149,7 +149,7 @@
             }
         },
         "utility": {
-            "alert red": {
+            "alert-red": {
                 "light": {
                     "description": "",
                     "type": "color",
@@ -923,27 +923,29 @@
             }
         },
         "ui": {
-            "input background": {
-                "description": "",
-                "type": "color",
-                "value": "#2c2c2cff",
-                "blendMode": "normal",
-                "extensions": {
-                    "org.lukasoppermann.figmaDesignTokens": {
-                        "styleId": "S:783e2ebb0374cfdbf0a7d1a6beff1075cc2c47e0,",
-                        "exportKey": "color"
+            "input": {
+                "background": {
+                    "description": "",
+                    "type": "color",
+                    "value": "#2c2c2cff",
+                    "blendMode": "normal",
+                    "extensions": {
+                        "org.lukasoppermann.figmaDesignTokens": {
+                            "styleId": "S:783e2ebb0374cfdbf0a7d1a6beff1075cc2c47e0,",
+                            "exportKey": "color"
+                        }
                     }
-                }
-            },
-            "input stroke": {
-                "description": "",
-                "type": "color",
-                "value": "#484848ff",
-                "blendMode": "normal",
-                "extensions": {
-                    "org.lukasoppermann.figmaDesignTokens": {
-                        "styleId": "S:fe97436d81b1d72ce8d44aa52d8a5e669f337226,",
-                        "exportKey": "color"
+                },
+                "stroke": {
+                    "description": "",
+                    "type": "color",
+                    "value": "#484848ff",
+                    "blendMode": "normal",
+                    "extensions": {
+                        "org.lukasoppermann.figmaDesignTokens": {
+                            "styleId": "S:fe97436d81b1d72ce8d44aa52d8a5e669f337226,",
+                            "exportKey": "color"
+                        }
                     }
                 }
             }
