@@ -8,6 +8,7 @@ import {
 } from "@chakra-ui/react"
 import LeftInputElement from "./components/LeftInputElement"
 import RightInputElement from "./components/RightInputElement"
+
 import { RestrictCharTypes } from "./types"
 import { useCallback } from "react"
 interface IInput {
@@ -17,7 +18,7 @@ interface IInput {
   leftElement?: JSX.Element
   rightElement?: JSX.Element | string
   rightElementAction?: () => void
-  decimals?: number,
+  decimals?: number
   restrictChars?: RestrictCharTypes
 }
 
@@ -101,6 +102,7 @@ const Input = forwardRef<IInput, ComponentWithAs<"input", InputProps>>(
         <ChakraInput
           sx={{ ...styles, paddingRight, paddingLeft }}
           position="relative"
+          isInvalid={isErrored}
           isDisabled={isDisabled}
           ref={ref}
           onKeyDown={handleKeyDown}
