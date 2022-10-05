@@ -3,7 +3,7 @@ export default {
     body: {
       background: 'radial-gradient(57.89% 57.89% at 27.05% 0%, rgba(250, 189, 46, 0.24) 0%, rgba(250, 189, 46, 0) 100%)',
       backgroundRepeat: 'no-repeat',
-      color: 'whiteAlpha.900',
+      color: 'white',
       height: '100%',
     },
     html: {
