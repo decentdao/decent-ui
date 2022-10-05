@@ -1,23 +1,13 @@
 import {
-  As,
   Button as ChakraButton,
-  ButtonProps,
   ComponentWithAs,
   forwardRef,
   useStyleConfig,
 } from "@chakra-ui/react"
-import { ReactElement } from "react"
+import { IButton } from "./types"
 
-interface IButton {
-  variant?: "primary" | "secondary" | "tertiary";
-  size?: "base" | "lg" | "sm";
-  label?: string;
-  leftIcon?: ReactElement;
-  rightIcon?: ReactElement;
-}
-
-export const Button = forwardRef<IButton, ComponentWithAs<"button", ButtonProps>>(
-  ({ variant, size, label, ...rest }, ref) => {
+export const Button = forwardRef<IButton, ComponentWithAs<"button">>(
+  ({ variant = 'primary', size = 'base', label, ...rest }, ref) => {
     const styles = useStyleConfig("Button", { size, variant })
     return (
       <ChakraButton sx={styles} ref={ref} {...rest}>
