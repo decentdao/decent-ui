@@ -12,7 +12,6 @@ import RightInputElement from "./components/RightInputElement"
 import { RestrictCharTypes } from "./types"
 import { useCallback } from "react"
 interface IInput {
-  variant: "primary"
   size?: "base" | "xl"
   isErrored?: boolean
   leftElement?: JSX.Element
@@ -29,7 +28,6 @@ const Input = forwardRef<IInput, ComponentWithAs<"input", InputProps>>(
       isErrored,
       leftElement,
       rightElement,
-      variant,
       value,
       isDisabled,
       rightElementAction,
@@ -39,7 +37,7 @@ const Input = forwardRef<IInput, ComponentWithAs<"input", InputProps>>(
     },
     ref
   ) => {
-    const styles = useStyleConfig("Input", { size, variant })
+    const styles = useStyleConfig("Input", { size })
     const hasLeftElement = !!leftElement
     const hasRightElement = !!rightElement
     const paddingLeft = hasLeftElement ? "2.25rem" : styles.paddingLeft
