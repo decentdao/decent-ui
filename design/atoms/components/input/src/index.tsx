@@ -1,6 +1,5 @@
 import {
   Input as ChakraInput,
-  InputProps,
   forwardRef,
   useStyleConfig,
   ComponentWithAs,
@@ -9,35 +8,27 @@ import {
 import LeftInputElement from "./components/LeftInputElement"
 import RightInputElement from "./components/RightInputElement"
 
-import { RestrictCharTypes } from "./types"
+import { IInput, RestrictCharTypes } from "./types"
 import { useCallback } from "react"
-interface IInput {
-  size?: "base" | "xl"
-  isErrored?: boolean
-  leftElement?: JSX.Element
-  rightElement?: JSX.Element | string
-  rightElementAction?: () => void
-  decimals?: number
-  restrictChars?: RestrictCharTypes
-}
 
-const Input = forwardRef<IInput, ComponentWithAs<"input", InputProps>>(
+const Input = forwardRef<IInput, ComponentWithAs<"input">>(
   (
     {
-      size,
-      isErrored,
+      size = "base",
+      isInvalid,
       leftElement,
       rightElement,
-      value,
       isDisabled,
       rightElementAction,
       decimals,
       restrictChar,
+      value,
       ...rest
     },
     ref
   ) => {
     const styles = useStyleConfig("Input", { size })
+
     const hasLeftElement = !!leftElement
     const hasRightElement = !!rightElement
     const paddingLeft = hasLeftElement ? "2.25rem" : styles.paddingLeft
@@ -100,7 +91,7 @@ const Input = forwardRef<IInput, ComponentWithAs<"input", InputProps>>(
         <ChakraInput
           sx={{ ...styles, paddingRight, paddingLeft }}
           position="relative"
-          isInvalid={isErrored}
+          isInvalid={isInvalid}
           isDisabled={isDisabled}
           ref={ref}
           onKeyDown={handleKeyDown}
