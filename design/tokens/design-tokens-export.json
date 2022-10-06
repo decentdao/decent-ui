@@ -98,27 +98,27 @@
         },
         "Primary": {
             "Gold": {
-                "gold-50": {
+                "50": {
                     "value": "#fff8ea",
                     "type": "color"
                 },
-                "gold-100": {
+                "100": {
                     "value": "#fdebbe",
                     "type": "color"
                 },
-                "gold-200": {
+                "200": {
                     "value": "#fde19f",
                     "type": "color"
                 },
-                "gold-300": {
+                "300": {
                     "value": "#fcd373",
                     "type": "color"
                 },
-                "gold-400": {
+                "400": {
                     "value": "#fbca58",
                     "type": "color"
                 },
-                "gold-500": {
+                "500": {
                     "value": "#fabd2e",
                     "type": "color"
                 },
@@ -134,61 +134,61 @@
                     "value": "#726d62",
                     "type": "color"
                 },
-                "gold-600": {
+                "600": {
                     "value": "#e4ac2a",
                     "type": "color"
                 },
-                "gold-700": {
+                "700": {
                     "value": "#b28621",
                     "type": "color"
                 },
-                "gold-800": {
+                "800": {
                     "value": "#8a6819",
                     "type": "color"
                 },
-                "gold-900": {
+                "900": {
                     "value": "#694f13",
                     "type": "color"
                 }
             },
             "Black": {
-                "black-50": {
+                "50": {
                     "value": "#e9e9e9",
                     "type": "color"
                 },
-                "black-100": {
+                "100": {
                     "value": "#bababa",
                     "type": "color"
                 },
-                "black-200": {
+                "200": {
                     "value": "#999999",
                     "type": "color"
                 },
-                "black-300": {
+                "300": {
                     "value": "#6a6a6a",
                     "type": "color"
                 },
-                "black-400": {
+                "400": {
                     "value": "#4d4d4d",
                     "type": "color"
                 },
-                "black-500": {
+                "500": {
                     "value": "#212121",
                     "type": "color"
                 },
-                "black-600": {
+                "600": {
                     "value": "#1e1e1e",
                     "type": "color"
                 },
-                "black-700": {
+                "700": {
                     "value": "#171717",
                     "type": "color"
                 },
-                "black-800": {
+                "800": {
                     "value": "#121212",
                     "type": "color"
                 },
-                "black-900": {
+                "900": {
                     "value": "#0e0e0e",
                     "type": "color"
                 },
@@ -200,144 +200,146 @@
         },
         "Secondary": {
             "Chocolate": {
-                "chocolate-50": {
+                "50": {
                     "value": "#ebebea",
                     "type": "color"
                 },
-                "chocolate-100": {
+                "100": {
                     "value": "#c1c0bf",
                     "type": "color"
                 },
-                "chocolate-200": {
+                "200": {
                     "value": "#a3a29f",
                     "type": "color"
                 },
-                "chocolate-300": {
+                "300": {
                     "value": "#787774",
                     "type": "color"
                 },
-                "chocolate-400": {
+                "400": {
                     "value": "#5e5d59",
                     "type": "color"
                 },
-                "chocolate-500": {
+                "500": {
                     "value": "#36342f",
                     "type": "color"
                 },
-                "chocolate-600": {
+                "600": {
                     "value": "#312f2b",
                     "type": "color"
                 },
-                "chocolate-700": {
+                "700": {
                     "value": "#262521",
                     "type": "color"
                 },
-                "chocolate-800": {
+                "800": {
                     "value": "#1e1d1a",
                     "type": "color"
                 },
-                "chocolate-900": {
+                "900": {
                     "value": "#171614",
                     "type": "color"
                 }
             },
             "Drab": {
-                "drab-50": {
+                "50": {
                     "value": "#f1efeb",
                     "type": "color"
                 },
-                "drab-100": {
+                "100": {
                     "value": "#d4cfc1",
                     "type": "color"
                 },
-                "drab-200": {
+                "200": {
                     "value": "#bfb7a3",
                     "type": "color"
                 },
-                "drab-300": {
+                "300": {
                     "value": "#a2967a",
                     "type": "color"
                 },
-                "drab-400": {
+                "400": {
                     "value": "#908260",
                     "type": "color"
                 },
-                "drab-500": {
+                "500": {
                     "value": "#746338",
                     "type": "color"
                 },
-                "drab-600": {
+                "600": {
                     "value": "#6a5a33",
                     "type": "color"
                 },
-                "drab-700": {
+                "700": {
                     "value": "#524628",
                     "type": "color"
                 },
-                "drab-800": {
+                "800": {
                     "value": "#40361f",
                     "type": "color"
                 },
-                "drab-900": {
+                "900": {
                     "value": "#312a18",
                     "type": "color"
                 }
             },
             "Sand": {
-                "sand-50": {
+                "50": {
                     "value": "#fffbf3",
                     "type": "color"
                 },
-                "sand-100": {
+                "100": {
                     "value": "#fff4d9",
                     "type": "color"
                 },
-                "sand-200": {
+                "200": {
                     "value": "#ffeec7",
                     "type": "color"
                 },
-                "sand-300": {
+                "300": {
                     "value": "#ffe6ad",
                     "type": "color"
                 },
-                "sand-400": {
+                "400": {
                     "value": "#ffe19d",
                     "type": "color"
                 },
-                "sand-500": {
+                "500": {
                     "value": "#ffda85",
                     "type": "color"
                 },
-                "sand-600": {
+                "600": {
                     "value": "#e8c679",
                     "type": "color"
                 },
-                "sand-700": {
+                "700": {
                     "value": "#b59b5e",
                     "type": "color"
                 },
-                "sand-800": {
+                "800": {
                     "value": "#8c7849",
                     "type": "color"
                 },
-                "sand-900": {
+                "900": {
                     "value": "#6b5c38",
                     "type": "color"
                 }
             }
         },
         "Gradients": {
-            "background": {
-                "value": "linear-gradient(180deg, #272520 0%, #1b1a18 100%)",
-                "type": "color"
-            },
-            "cards": {
-                "value": "linear-gradient(180deg, #403824 0%, #272520 100%)",
-                "type": "color"
-            },
-            "glow": {
-                "value": "linear-gradient(180deg, #fabd2e 0%, #ffd36e 100%)",
-                "type": "color"
+            "Gradients": {
+                "background": {
+                    "value": "linear-gradient(180deg, #272520 0%, #1b1a18 100%)",
+                    "type": "color"
+                },
+                "cards": {
+                    "value": "linear-gradient(180deg, #403824 0%, #272520 100%)",
+                    "type": "color"
+                },
+                "glow": {
+                    "value": "linear-gradient(180deg, #fabd2e 0%, #ffd36e 100%)",
+                    "type": "color"
+                }
             }
         },
         "UI": {

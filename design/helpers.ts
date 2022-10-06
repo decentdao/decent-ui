@@ -25,11 +25,10 @@ export function parseColors(colorFigmaTokens: any) {
 
       // if selector exists create key using number and selector (500-active)
       if (selector) {
-        return { ...prev, [`${colorNumber}-${selector.trim()}`]: cur[1].value }
+        return { ...prev, [`${colorNumber.toLowerCase()}-${selector.toLowerCase().trim()}`]: cur[1].value }
       }
-
       // returns previous object combined with new color key and value
-      return { ...prev, [colorNumber]: cur[1].value }
+      return { ...prev, [colorNumber.toLowerCase()]: cur[1].value }
     }, {})
     return { [colorCatogoryNames[index].toLowerCase()]: colorObj }
   }).reduce((prev, cur) => {

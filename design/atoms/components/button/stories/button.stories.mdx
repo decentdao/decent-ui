@@ -46,7 +46,7 @@ export const Template = (args) => <Button {...args} />
       children: {
         description: '`string` `ReactElement`',
       },
-      disabled: {
+      isDisabled: {
         description: 'Changes the state of button to `disabled`',
         control: "boolean",
       },
@@ -55,7 +55,7 @@ export const Template = (args) => <Button {...args} />
       variant: "primary",
       children: "Button",
       size: "base",
-      disabled: false,
+      isDisabled: false,
     }}
   >
     {Template.bind({})}
