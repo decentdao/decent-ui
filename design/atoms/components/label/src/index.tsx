@@ -1,23 +1,17 @@
 import { Box, Flex, FormLabel, Text } from "@chakra-ui/react"
 import { SupportQuestion } from "../../icons/src"
+import { Tooltip } from "@chakra-ui/react"
 import React from "react"
+import { ILabelWrapper } from "./types"
 
-interface IInputLabelWrapper {
-  children: JSX.Element
-  isDisabled?: boolean
-  isErrored?: boolean
-  subLabel?: string
-  label?: string
-  htmlFor?: string
-}
-
-const InputLabelWrapper = ({
+const LabelWrapper = ({
   label,
   subLabel,
   isDisabled,
-  isErrored,
+  errorMessage,
+  tooltipContent,
   children,
-}: IInputLabelWrapper) => {
+}: ILabelWrapper) => {
   if (!label && !subLabel) {
     return children
   }
@@ -26,7 +20,7 @@ const InputLabelWrapper = ({
 
   const subLabelColor = isDisabled
     ? "grayscale.800"
-    : isErrored
+    : !!errorMessage
     ? "alert-red.normal"
     : "grayscale.500"
 
@@ -35,15 +29,19 @@ const InputLabelWrapper = ({
       <FormLabel>
         <Flex gap="4" alignItems="center" color={labelColor} mb="8" textStyle={labelTextStyle}>
           <Text>{label}</Text>
-          <SupportQuestion />
+          {!!tooltipContent && (
+            <Tooltip hasArrow label={tooltipContent} closeDelay={500}>
+              <SupportQuestion />
+            </Tooltip>
+          )}
         </Flex>
         {children}
         <Text color={subLabelColor} textStyle="text-sm-sans-regular" mt="8">
-          {subLabel}
+          {errorMessage || subLabel}
         </Text>
       </FormLabel>
     </Box>
   )
 }
 
-export default InputLabelWrapper
+export default LabelWrapper

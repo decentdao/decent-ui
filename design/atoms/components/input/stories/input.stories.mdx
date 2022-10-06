@@ -19,6 +19,10 @@ export const Template = (args) => <Input {...args} />
       placeholder: {
         description: "Displayed text when input value is blank",
       },
+      isDisabled: {
+        type: "boolean",
+        description: "If true will display an disabled state",
+      },
       isInvalid: {
         type: 'boolean',
         description: "If true will display an error state",
