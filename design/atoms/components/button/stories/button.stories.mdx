@@ -44,13 +44,17 @@ export const Template = (args) => <Button {...args} />
           type: "select",
         },
       },
+      children: {
+        description: '`string` `ReactElement`',
+      },
       disabled: {
+        description: 'Changes the state of button to `disabled`',
         control: "boolean",
       },
     }}
     args={{
       variant: "primary",
-      label: "Button",
+      children: "Button",
       size: "base",
       disabled: false,
     }}

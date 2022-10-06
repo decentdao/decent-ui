@@ -7,11 +7,11 @@ import {
 import { IButton } from "./types"
 
 export const Button = forwardRef<IButton, ComponentWithAs<"button">>(
-  ({ variant = 'primary', size = 'base', label, ...rest }, ref) => {
+  ({ variant = "primary", size = "base", children, ...rest }, ref) => {
     const styles = useStyleConfig("Button", { size, variant })
     return (
       <ChakraButton sx={styles} ref={ref} {...rest}>
-        {label}
+        {children}
       </ChakraButton>
     )
   }
