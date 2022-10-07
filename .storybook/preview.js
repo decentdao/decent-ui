@@ -14,11 +14,11 @@ export const parameters = {
     options: {
         storySort: {
             method: 'alphabetical',
-            order: ['Design Language', 'Design Tokens'],
+            order: ['Design Language', 'Design Tokens', 'Atoms', 'Organisms', 'Templates', ['Overview']],
         },
     },
     chakra: {
-        theme: theme
+        theme: theme,
     },
     docs: {
         theme: docsTheme,
