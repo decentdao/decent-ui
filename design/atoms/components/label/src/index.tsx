@@ -27,7 +27,7 @@ const LabelWrapper = ({
   return (
     <Box position="relative" h="fit-content" w="fit-content">
       <FormLabel>
-        <Flex gap="4" alignItems="center" color={labelColor} mb="8" textStyle={labelTextStyle}>
+        <Flex gap="4" alignItems="center" color={labelColor} mb="2" textStyle={labelTextStyle}>
           <Text>{label}</Text>
           {!!tooltipContent && (
             <Tooltip hasArrow label={tooltipContent} closeDelay={500}>
@@ -36,7 +36,7 @@ const LabelWrapper = ({
           )}
         </Flex>
         {children}
-        <Text color={subLabelColor} textStyle="text-sm-sans-regular" mt="8">
+        <Text color={subLabelColor} textStyle="text-sm-sans-regular" mt="2">
           {errorMessage || subLabel}
         </Text>
       </FormLabel>

@@ -1,7 +1,7 @@
+import React from "react"
 import { Box, Text } from "@chakra-ui/react"
 import { StoryLayout } from "../../../shared/StoryLayout"
 import colors from "../../foundations/colors"
-
 export function DisplayColors() {
   return (
     <StoryLayout title="Colors">
@@ -9,7 +9,7 @@ export function DisplayColors() {
         return (
           <Box key={colorCategory + index}>
             {Object.entries(values as Object).map(([colorTitle, value]) => {
-              const colorName = `${colorCategory}-${colorTitle}`
+              const colorName = `${colorCategory}.${colorTitle}`
               const colorKey = `${colorCategory}.${colorTitle}`
               return (
                 <Box

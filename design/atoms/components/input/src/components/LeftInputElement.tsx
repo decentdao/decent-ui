@@ -12,7 +12,7 @@ const LeftInputElement = ({leftElement, isDisabled, size}: ILeftInputElement) =>
   }
   const color = isDisabled ? 'grayscale.800' : 'gold.500'
   return (
-    <Box pos="absolute" zIndex={1} top="7" left="12" lineHeight="24px" color={color}>
+    <Box pos="absolute" zIndex={1} top="2" left="4" lineHeight="24px" color={color}>
       {leftElement}
     </Box>
   )

@@ -14,8 +14,8 @@ export function DisplayTypography() {
         </Text>
         {sans.map((key) => {
           return (
-            <Box key={key} marginY="8" paddingY="8" display="flex" justifyContent="space-between">
-              <Text fontSize="lg" marginBottom="4" textStyle="text-sm-mono">
+            <Box key={key} marginY="4" paddingY="4" display="flex" justifyContent="space-between">
+              <Text fontSize="lg" marginBottom="2" textStyle="text-sm-mono">
                 {key}
               </Text>
               <Text textStyle={key}>Lorem aliqua deserunt officia ut.</Text>
@@ -26,8 +26,8 @@ export function DisplayTypography() {
           MONO
         </Text>
         {mono.map((key) => (
-          <Box key={key} marginY="8" paddingY="8" display="flex" justifyContent="space-between">
-            <Text fontSize="lg" marginBottom="4" textStyle="text-sm-mono">
+          <Box key={key} marginY="4" paddingY="4" display="flex" justifyContent="space-between">
+            <Text fontSize="lg" marginBottom="2" textStyle="text-sm-mono">
               {key}
             </Text>
             <Text textStyle={key}>Lorem aliqua deserunt officia ut.</Text>

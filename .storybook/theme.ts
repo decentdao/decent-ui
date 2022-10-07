@@ -21,3 +21,11 @@ export const theme = create({
     appBorderRadius: 4,
     appContentBg: '#999'
 });
+
+export const docsTheme = create({
+    "base": "dark",
+    "appContentBg": "linear-gradient(180deg, #272520 0%, #1B1A18 100%)",
+    "fontBase": "\"Nunito Sans\", -apple-system, \".SFNSText-Regular\", \"San Francisco\", BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+    "fontCode": "ui-monospace, Menlo, Monaco, \"Roboto Mono\", \"Oxygen Mono\", \"Ubuntu Monospace\", \"Source Code Pro\", \"Droid Sans Mono\", \"Courier New\", monospace",
+    "textColor": "#FFFFFF",
+})
