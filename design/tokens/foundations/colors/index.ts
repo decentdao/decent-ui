@@ -4,7 +4,7 @@ import tokenData from '../../design-tokens-export.json'
 const { color } = tokenData;
 const { Primary, Secondary, Neutral, Utility, UI } = color;
 
-const primaries = parseColors({...Primary})
+const primaries = parseColors({ ...Primary })
 const secondaries = parseColors({ ...Secondary })
 const neutrals = parseColors({ ...Neutral })
 const utilities = parseColors({ ...Utility })
