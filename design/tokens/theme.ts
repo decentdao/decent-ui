@@ -6,29 +6,16 @@ import styles from './styles';
 
 const theme = extendTheme(
   {
-    components,
     styles,
+    breakpoints,
     ...foundations,
   },
   {
-    config: defaultTheme.config,
-    direction: defaultTheme.direction,
-    transition: defaultTheme.transition,
-    breakpoints,
-    zIndices: defaultTheme.zIndices,
-    components: {},
-    styles: {},
-    borders: {},
+    ...defaultTheme,
+    components: components,
+    breakpoints: {},
     colors: {},
-    radii: {},
-    shadows: {},
-    sizes: {},
-    space: defaultTheme.space,
-    fonts: {},
-    fontSizes: defaultTheme.fontSizes,
     fontWeights: {},
-    letterSpacings: {},
-    lineHeights: {},
   }
 );
 export default theme;

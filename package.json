@@ -1,6 +1,6 @@
 {
   "name": "@decent-org/fractal-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Decent DAO design system component library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -69,6 +69,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@chakra-ui/storybook-addon": "^4.0.12"
+    "@chakra-ui/storybook-addon": "^4.0.12",
+    "react-toastify": "^9.0.8"
   }
 }

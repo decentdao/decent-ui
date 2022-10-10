@@ -5,7 +5,6 @@ export default {
     width: 'auto',
     paddingLeft: '1rem',
     padingRight: '1rem',
-    
   },
   xl: {
     apply: 'textStyles.text-base-mono',
