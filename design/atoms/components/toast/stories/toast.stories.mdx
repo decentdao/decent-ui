@@ -1,0 +1,115 @@
+import { ToastContainer, toast as reactToast } from "react-toastify"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import Button from "../../button/src"
+import "react-toastify/dist/ReactToastify.css"
+
+<Meta title="atoms/Toast" />
+
+export const Template = (args) => {
+  function handleClick() {
+    reactToast("Toast Content!", {
+      ...args
+    })
+  }
+  return (
+    <>
+      <Button onClick={handleClick}>Show Toast</Button>
+      <ToastContainer />
+    </>
+  )
+}
+
+<Canvas>
+  <Story
+    name="Toast"
+    argTypes={{
+      position: {
+        description: "",
+        options: [
+          "top-center",
+          "top-right",
+          "top-left",
+          "bottom-center",
+          "bottom-right",
+          "bottom-left",
+        ],
+        control: {
+          type: "radio",
+        },
+      },
+      autoClose: {
+        description: "",
+        mapping: {
+          false: false,
+          "500": 500,
+          "1000": 1000,
+          "2000": 2000,
+          "5000": 5000,
+        },
+        options: ["false", "500", "1000", "2000", "5000"],
+        control: {
+          labels: ["false", "500", "1000", "2000", "5000"],
+          type: "radio",
+        },
+      },
+      hideProgressBar: {
+        description: "",
+        control: {
+          type: "boolean",
+        },
+      },
+      progress: {
+        description: "",
+        mapping: {
+          undefined: undefined,
+          "100%": '100%',
+          "75%": '75%',
+          "50%": '50%',
+          "25%": '25%',
+        },
+        options: ["undefined", "100%", "75%", "50%", "25%"],
+        control: {
+          labels: ["undefined", "100%", "75%", "50%", "25%"],
+          type: "radio",
+        },
+      },
+      closeOnClick: {
+        description: "",
+        control: {
+          type: "boolean",
+        },
+      },
+      pauseOnHover: {
+        description: "",
+        control: {
+          type: "boolean",
+        },
+      },
+      draggable: {
+        description: "",
+        control: {
+          type: "boolean",
+        },
+      },
+      closeButton: {
+        description: "",
+        control: {
+          type: "boolean",
+        },
+      },
+    }}
+    args={{
+      position: "bottom-center",
+      hideProgressBar: false,
+      progress: "undefined",
+      closeButton: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      autoClose: "false",
+      toastId: "toast-test",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

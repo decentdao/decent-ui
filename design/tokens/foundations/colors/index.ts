@@ -2,18 +2,20 @@ import { parseColors } from '../../../helpers';
 import tokenData from '../../design-tokens-export.json'
 
 const { color } = tokenData;
-const { primary, secondary, neutral, utility } = color;
+const { Primary, Secondary, Neutral, Utility, UI } = color;
 
-const primaries = parseColors({...primary})
-const secondaries = parseColors({ ...secondary })
-const neutrals = parseColors({ ...neutral })
-const utilities = parseColors({ ...utility })
+const primaries = parseColors({ ...Primary })
+const secondaries = parseColors({ ...Secondary })
+const neutrals = parseColors({ ...Neutral })
+const utilities = parseColors({ ...Utility })
+const uiColors = parseColors({ ...UI })
 
 const colors = {
     ...primaries,
     ...secondaries,
     ...neutrals,
-    ...utilities,
+    ...uiColors,
+    ...utilities
 }
 
 export type Colors = typeof colors;

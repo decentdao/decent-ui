@@ -1,0 +1,23 @@
+import { Tooltip } from "@chakra-ui/react"
+import { SupportQuestion } from "../../icons/src/SupportQuestion"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+
+<Meta title="atoms/Tooltip" component={Tooltip} />
+
+export const Template = (args) => {
+  return (
+    <Tooltip {...args}>
+      <SupportQuestion color="white" />
+    </Tooltip>
+  )
+}
+
+<Canvas>
+  <Story name="Tooltip" args={{
+    hasArrow: true,
+    label: 'Tooltip Content',
+    closeDelay: 500
+  }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>

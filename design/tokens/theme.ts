@@ -2,31 +2,20 @@ import { extendTheme, theme as defaultTheme } from '@chakra-ui/react';
 import foundations from './foundations';
 import breakpoints from './breakpoints';
 import components from '../atoms/components/theme';
+import styles from './styles';
 
 const theme = extendTheme(
   {
-    components,
+    styles,
+    breakpoints,
     ...foundations,
   },
   {
-    config: defaultTheme.config,
-    direction: defaultTheme.direction,
-    transition: defaultTheme.transition,
-    breakpoints,
-    zIndices: defaultTheme.zIndices,
-    components: {},
-    styles: {},
-    borders: {},
+    ...defaultTheme,
+    components: components,
+    breakpoints: {},
     colors: {},
-    radii: {},
-    shadows: {},
-    sizes: {},
-    space: {},
-    fonts: {},
-    fontSizes: {},
     fontWeights: {},
-    letterSpacings: {},
-    lineHeights: {},
   }
 );
 export default theme;
