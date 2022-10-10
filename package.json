@@ -69,6 +69,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@chakra-ui/storybook-addon": "^4.0.12"
+    "@chakra-ui/storybook-addon": "^4.0.12",
+    "react-toastify": "^9.0.8"
   }
 }
