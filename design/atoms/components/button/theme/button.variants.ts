@@ -1,3 +1,4 @@
+import { theme as defaultTheme } from '@chakra-ui/react';
 function primary() {
   const disabled = {
     bg: 'gold.500-disabled',
@@ -99,7 +100,41 @@ function tertiary() {
   }
 }
 
+function text() {
+  const disabled = {
+    bg: 'none',
+    borderColor: 'none',
+    color: 'gold.500-disabled',
+  }
+
+  const loading = {
+    // @todo add loading state
+  }
+
+  return {
+    bg: 'none',
+    borderColor: 'none',
+    color: 'gold.500',
+    _hover: {
+      color: 'gold.500-hover',
+      _disabled: {
+        ...disabled,
+        _loading: loading
+      },
+    },
+    _disabled: {
+      ...disabled,
+      _loading: loading
+    },
+    _active: {
+      color: 'gold.500-active',
+    },
+    _focus: {}
+  }
+}
+
 export default {
+  text,
   primary,
   secondary,
   tertiary
