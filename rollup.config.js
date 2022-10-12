@@ -5,6 +5,7 @@ import { terser } from 'rollup-plugin-terser';
 import external from 'rollup-plugin-peer-deps-external';
 import json from '@rollup/plugin-json';
 import copy from 'rollup-plugin-copy'
+import svg from 'rollup-plugin-svg'
 const packageJson = require('./package.json');
 
 export default {
@@ -33,6 +34,7 @@ export default {
       targets: [
         { src: 'README.md', dest: 'dist' }
       ]
-    })
+    }),
+    svg()
   ]
 }

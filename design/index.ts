@@ -1,2 +1,16 @@
+// This file contains what will be compiled and published
+
+/**
+ * Atom components
+ */
 export * from './atoms/components';
+
+/**
+ * theme object
+ */
 export { default as theme } from './tokens/theme';
+
+/**
+ * Static files
+ */
+export { default as Favicon } from "./atoms/assets/images/logos/Favicon.svg";
