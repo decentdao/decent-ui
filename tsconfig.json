@@ -21,12 +21,8 @@
     "downlevelIteration": true,
     "incremental": true,
   },
-  "include": [
-    "@types",
-    "design/index.ts",
-    "tooling",
-  ],
-  "exclude": [
-    "custom.d.ts"
+  "files": [
+    "./globals.d.ts",
+    "./design/index.ts",
   ]
 }
