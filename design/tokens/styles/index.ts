@@ -1,10 +1,9 @@
 import scrollStyles from './scroll'
 import inputStyles from './input'
 import toastStyles from './toast'
-import web3modalStyles from './web3modal'
 
 export default {
-  global: () => ({
+  global: {
     body: {
       background: 'radial-gradient(57.89% 57.89% at 27.05% 0%, rgba(250, 189, 46, 0.24) 0%, rgba(250, 189, 46, 0) 100%)',
       backgroundRepeat: 'no-repeat',
@@ -20,7 +19,6 @@ export default {
     },
     ...scrollStyles,
     ...inputStyles,
-    ...toastStyles,
-    ...web3modalStyles
-  }),
+    ...toastStyles
+  },
 }

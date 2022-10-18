@@ -11,7 +11,7 @@ const MONO: { [key: string]: {} } = {};
 Object.entries(font.sans).flatMap((style) => {
     const sansFonts = Object.entries(style[1]).map((weight) => {
         const fontStyle = `${style[0]}-${weight[0]}`;
-        const { fontSize, fontFamily, fontWeight, letterSpacing, lineHeight } = weight[1].value;
+        const { fontSize, fontFamily, fontWeight, letterSpacing } = weight[1].value;
         return SANS[fontStyle] = {
             fontSize,
             lineHeight: "1.5",
