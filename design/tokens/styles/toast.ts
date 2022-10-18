@@ -14,7 +14,6 @@ export default {
   /** Classes for the displayed toast **/
   '.Toastify__toast': {
     backgroundColor: 'none',
-    color: 'grayscale.neutral-50',
     background: 'black.700',
     textAlign: 'center',
   },
@@ -24,6 +23,8 @@ export default {
   '.Toastify__toast-body': {
     fontFamily: 'IBM Plex Sans',
     fontWeight: 500,
+    fontSize: '1rem',
+    color: 'grayscale.white',
   },
 
   /** Used to position the icon **/
@@ -69,7 +70,7 @@ export default {
 
   /** Classes for the close button. Better use your own closeButton **/
   '.Toastify__close-button': {
-    color: 'white'
+    color: 'grayscale.white'
   },
   '.Toastify__close-button--default': {
   },
