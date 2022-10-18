@@ -23,6 +23,8 @@
   },
   "files": [
     "./globals.d.ts",
-    "./design/index.ts",
+  ],
+  "include": [
+    "./design"
   ]
 }
