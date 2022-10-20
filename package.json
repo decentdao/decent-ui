@@ -20,7 +20,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
-    "compile": "rimraf dist && rollup -c",
+    "copy-fonts": "cp -r ./design/atoms/assets/fonts ./dist/fonts",
+    "compile": "rimraf dist && rollup -c && npm run copy-fonts",
     "build-storybook": "build-storybook"
   },
   "author": "Decent DAO",
