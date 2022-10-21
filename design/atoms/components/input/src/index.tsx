@@ -81,7 +81,7 @@ const Input = forwardRef<IInput, ComponentWithAs<"input">>(
     )
 
     return (
-      <Box position="relative" h="fit-content" w="fit-content">
+      <Box position="relative">
         <LeftInputElement leftElement={leftElement} isDisabled={isDisabled} />
         <RightInputElement
           rightElement={rightElement}
