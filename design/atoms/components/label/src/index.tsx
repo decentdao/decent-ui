@@ -25,7 +25,7 @@ const LabelWrapper = ({
     : "grayscale.500"
 
   return (
-    <Box position="relative" h="fit-content" w="fit-content">
+    <Box position="relative">
       <FormLabel>
         <Flex gap="4" alignItems="center" color={labelColor} mb="2" textStyle={labelTextStyle}>
           <Text>{label}</Text>
