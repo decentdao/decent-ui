@@ -9,3 +9,7 @@ export * from './atoms/components';
  * theme object
  */
 export { default as theme } from './tokens/theme';
+
+export {
+  RestrictCharTypes,
+} from './atoms/components/input/src/types'
