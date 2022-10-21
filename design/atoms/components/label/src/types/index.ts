@@ -1,4 +1,4 @@
-export interface ILabelWrapper {
+export declare interface ILabelWrapper {
   label?: string;
   subLabel?: string;
   isDisabled?: boolean;

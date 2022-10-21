@@ -5,7 +5,7 @@ export enum RestrictCharTypes {
   FLOAT_NUMBERS,
 }
 
-export interface IInput extends InputProps {
+export declare interface IInput extends InputProps {
   size: 'base' | 'xl';
   leftElement?: JSX.Element;
   rightElement?: JSX.Element | string;
