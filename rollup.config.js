@@ -27,7 +27,7 @@ export default {
     external(),
     resolve(),
     commonjs(),
-    typescript({ tsconfig: './tsconfig.json' }),
+    typescript({ tsconfig: './tsconfig.build.json', outputToFilesystem: false }),
     terser(),
     json({ resolveJsonModule: true }),
     copy({
