@@ -12,7 +12,7 @@ const theme = extendTheme(
   },
   {
     ...defaultTheme,
-    components: components,
+    components: { ...defaultTheme.components, ...components },
     breakpoints: {},
     colors: {},
     fontWeights: {},
