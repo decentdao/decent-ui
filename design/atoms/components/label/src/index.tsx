@@ -12,9 +12,6 @@ const LabelWrapper = ({
   tooltipContent,
   children,
 }: ILabelWrapper) => {
-  if (!label || !subLabel) {
-    return children
-  }
   const labelColor = isDisabled ? "grayscale.800" : "grayscale.100"
   const labelTextStyle = isDisabled ? "text-base-sans-regular" : "text-base-sans-bold"
 
