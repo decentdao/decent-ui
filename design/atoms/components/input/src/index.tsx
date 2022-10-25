@@ -14,7 +14,7 @@ import { useCallback } from "react"
 const Input = forwardRef<IInput, ComponentWithAs<"input">>(
   (
     {
-      size = "base",
+      size,
       isInvalid,
       leftElement,
       rightElement,
@@ -37,7 +37,7 @@ const Input = forwardRef<IInput, ComponentWithAs<"input">>(
 
     const hasLeftElement = !!leftElement
     const hasRightElement = !!rightElement
-    const paddingLeft = hasLeftElement ? "2.25rem" : styles.paddingLeft
+    const paddingLeft = hasLeftElement ? "3.25rem" : styles.paddingLeft
     const paddingRight = hasRightElement ? "3.25rem" : styles.paddingRight
 
     const wholeNumbersOnly = (

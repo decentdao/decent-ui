@@ -6,14 +6,16 @@ interface ILeftInputElement {
   size?: 'base' | 'xl'
 }
 
-const LeftInputElement = ({leftElement, isDisabled, size}: ILeftInputElement) => {
-  if(!leftElement) {
+const LeftInputElement = ({ leftElement, isDisabled, size }: ILeftInputElement) => {
+  if (!leftElement) {
     return null
   }
   const color = isDisabled ? 'grayscale.800' : 'gold.500'
   return (
-    <Box pos="absolute" zIndex={1} top="2" left="4" lineHeight="24px" color={color}>
-      {leftElement}
+    <Box pos="absolute" zIndex={1} display="flex" alignItems="center" lineHeight="24px" justifyContent="center" h="full" mx="1rem" color={color}>
+      <Box flexGrow={1} w="max-content">
+        {leftElement}
+      </Box>
     </Box>
   )
 }

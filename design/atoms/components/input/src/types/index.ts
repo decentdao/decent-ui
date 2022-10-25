@@ -6,7 +6,7 @@ export enum RestrictCharTypes {
 }
 
 export declare interface IInput extends InputProps {
-  size?: 'base' | 'xl';
+  size?: 'base';
   leftElement?: JSX.Element;
   rightElement?: JSX.Element | string;
   rightElementAction?: () => void;
