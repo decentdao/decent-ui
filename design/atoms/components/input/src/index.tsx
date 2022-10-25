@@ -10,6 +10,7 @@ import RightInputElement from "./components/RightInputElement"
 
 import { IInput, RestrictCharTypes } from "./types"
 import { useCallback } from "react"
+import { AddPlus } from "../../icons/src"
 
 const Input = forwardRef<IInput, ComponentWithAs<"input">>(
   (
@@ -23,6 +24,12 @@ const Input = forwardRef<IInput, ComponentWithAs<"input">>(
       decimals,
       restrictChar,
       value,
+      width = "max-content",
+      minW,
+      minWidth,
+      w,
+      maxW,
+      maxWidth,
       ...rest
     },
     ref
@@ -81,7 +88,7 @@ const Input = forwardRef<IInput, ComponentWithAs<"input">>(
     )
 
     return (
-      <Box position="relative">
+      <Box position="relative" w={w} width={width} minW={minW} maxW={maxW} maxWidth={maxWidth} minWidth={minWidth}>
         <LeftInputElement leftElement={leftElement} isDisabled={isDisabled} />
         <RightInputElement
           rightElement={rightElement}
@@ -90,12 +97,12 @@ const Input = forwardRef<IInput, ComponentWithAs<"input">>(
         />
         <ChakraInput
           sx={{ ...styles, paddingRight, paddingLeft }}
-          position="relative"
           isInvalid={isInvalid}
           isDisabled={isDisabled}
           ref={ref}
           onKeyDown={handleKeyDown}
           value={value}
+          width="full"
           {...rest}
         />
       </Box>
