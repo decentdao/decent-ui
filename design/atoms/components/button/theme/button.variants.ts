@@ -74,7 +74,7 @@ function tertiary() {
   }
 
   return {
-    bg: 'chocolate.800',
+    bg: 'transparent',
     color: 'gold.500',
     border: '1px solid',
     borderColor: 'gold.500',
