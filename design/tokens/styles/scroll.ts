@@ -1,25 +1,17 @@
 export default {
-  '.scroll-container': {
-    visibility: 'hidden',
-    paddingRight: '12px',
-    transition: 'visibility .5s ease-in-out',
-  },
-  '.scroll-container::-webkit-scrollbar': {
+  'menu-scroll::-webkit-scrollbar': {
     background: 'transparent',
-    width: '8px',
-    height: '8px',
+    width: '0.5rem',
+    height: '0.5rem',
   },
-  '.scroll-container::-webkit-scrollbar-thumb': {
+  'menu-scroll::-webkit-scrollbar-thumb': {
     border: 'none',
     boxShadow: 'none',
-    background: 'blackAlpha.50',
-    borderRadius: '8px',
-    minHeight: '40px',
+    background: 'grayscale.500',
+    borderRadius: '0.5rem',
+    minHeight: '2.5rem',
   },
-  '.scroll-container::-webkit-scrollbar-thumb:hover': {
-    backgroundColor: 'blackAlpha.800',
-  },
-  '.scroll-container > div,.scroll-container:hover,.scroll-container:focus': {
-    visibility: 'visible',
+  'menu-scroll::-webkit-scrollbar-thumb:hover': {
+    backgroundColor: 'grayscale.300',
   },
 }
