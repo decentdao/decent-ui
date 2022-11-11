@@ -16,9 +16,3 @@ export { default as theme } from './tokens/theme';
 export {
   RestrictCharTypes,
 } from './atoms/components/input/src/types'
-
-/**
- * Static Images
- */
-export { default as tokenDefault } from './atoms/assets/images/token-default.svg'
-export { default as nftPlaceholder } from './atoms/assets/images/nft-placeholder.svg'
