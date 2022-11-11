@@ -23,7 +23,7 @@ const LabelWrapper = ({
 
   return (
     <Box position="relative">
-      <FormLabel>
+      <FormLabel m="0px">
         <Flex gap="4" alignItems="center" color={labelColor} mb="2" textStyle={labelTextStyle}>
           <Text>{label}</Text>
           {!!tooltipContent && (

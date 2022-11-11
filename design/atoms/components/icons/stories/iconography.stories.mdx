@@ -1,16 +1,29 @@
-import { Meta, Story } from "@storybook/addon-docs"
+import { Meta, Story, Canvas } from "@storybook/addon-docs"
+import { ActiveOne } from "../src/ActiveOne"
 import { ATOMS } from "../../../../constants"
-import { DESIGN_TOKENS } from '../../../../constants';
-import { DisplayIconography } from './components/DisplayIconography';
+import { DESIGN_TOKENS } from "../../../../constants"
+import { DisplayIconography } from "./components/DisplayIconography"
 
 <Meta
-    title={`${DESIGN_TOKENS}/Iconography`}
-    component={DisplayIconography}
-    parameters={{
-        viewMode: 'docs',
-    }}
+  title={`atoms/Icons`}
+  component={DisplayIconography}
+  parameters={{
+    viewMode: "docs",
+  }}
 />
 
-<Story name="Iconography">
+## Usage
+All Chakra-UI properties will be available, such as `boxSize` and `color`. as well as any spacing options.
+
+<Canvas>
+  <Story name="Usage">
+    <ActiveOne boxSize="1.5rem" color="gold.500" />
+  </Story>
+</Canvas>
+
+## Icons
+Use the name shown for the icon to import from `@decent-org/fractal-ui`
+
+<Story name="Icons">
   <DisplayIconography />
 </Story>

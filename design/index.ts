@@ -1,7 +1,7 @@
 // This file contains what will be compiled and published
 
 /**
- * Atom components
+ * atom components
  */
 export * from './atoms/components';
 
@@ -10,6 +10,9 @@ export * from './atoms/components';
  */
 export { default as theme } from './tokens/theme';
 
+/**
+ * types
+ */
 export {
   RestrictCharTypes,
 } from './atoms/components/input/src/types'

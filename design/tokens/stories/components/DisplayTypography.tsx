@@ -4,7 +4,7 @@ import textStyles from "../../foundations/textStyles"
 
 export function DisplayTypography() {
   const sans = Object.entries(textStyles).filter(([key]) => key.includes("-sans"))
-  const mono = Object.entries(textStyles).filter(([key]) => key.includes("-mono"))
+  const mono = Object.entries(textStyles).filter(([key]) => key.includes("-mono") || key.includes("-button"))
   return (
     <StoryLayout title="Typography">
       <Box>
@@ -21,9 +21,9 @@ export function DisplayTypography() {
                 <Text textStyle={textStyleKey}>Lorem aliqua deserunt officia ut.</Text>
               </Flex>
               <Flex direction="column" alignItems="center" border="1px solid" borderColor="black.100" bg="chocolate.900">
-                {Object.entries(fontValues).map(([fontProperty, value]: any) => {
+                {Object.entries(fontValues).map(([fontProperty, value]: any, i) => {
                   return (
-                    <Flex py="2" px="4" justifyContent="space-between" w="full">
+                    <Flex key={i} py="2" px="4" justifyContent="space-between" w="full">
                       <Text textStyle="text-base-mono-semibold" color="grayscale.400">{fontProperty}:</Text>
                       <Text textStyle="text-base-mono-semibold">{value}</Text>
                     </Flex>
@@ -45,9 +45,9 @@ export function DisplayTypography() {
               <Text textStyle={textStyleKey}>Lorem aliqua deserunt officia ut.</Text>
             </Flex>
             <Flex direction="column" alignItems="center" border="1px solid" borderColor="black.100" bg="chocolate.900">
-              {Object.entries(fontValues).map(([fontProperty, value]: any) => {
+              {Object.entries(fontValues).map(([fontProperty, value]: any, i) => {
                 return (
-                  <Flex py="2" px="4" justifyContent="space-between" w="full">
+                  <Flex key={i} py="2" px="4" justifyContent="space-between" w="full">
                     <Text textStyle="text-base-mono-semibold" color="grayscale.400">{fontProperty}:</Text>
                     <Text textStyle="text-base-mono-semibold">{value}</Text>
                   </Flex>
