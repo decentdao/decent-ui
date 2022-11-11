@@ -6,7 +6,7 @@ export default {
     padding: '1rem 3rem'
   },
   base: {
-    apply: 'textStyles.text-md-mono-semibold',
+    apply: 'textStyles.text-button-md-semibold',
     height: '2.25rem',
     minWidth: '6.625rem',
     padding: '0.375rem 1.5rem',
