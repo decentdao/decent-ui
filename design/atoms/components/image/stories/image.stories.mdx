@@ -1,0 +1,38 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { Image } from "@chakra-ui/react"
+
+import tokenDefault from "../../../assets/images/token-default.svg"
+import nftPlaceholder from "../../../assets/images/nft-placeholder.svg"
+
+<Meta title="atoms/Images" />
+
+export const Template = (args) => <Image src={args.src} boxSize={args.boxSize} />
+
+Token default
+Used in place of token logo when unable to retrieve.
+<Canvas>
+  <Story
+    name="ImageOne"
+    args={{
+      src: tokenDefault,
+      boxSize: "1rem",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+NFT Placeholder
+
+This is used in place of a NFT tokenURi that is unavailable. Current viewing sizes are 24px x 24px (1.5rem).
+<Canvas>
+  <Story
+    name="ImageTwo"
+    args={{
+      src: nftPlaceholder,
+      boxSize: "1.5rem"
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
