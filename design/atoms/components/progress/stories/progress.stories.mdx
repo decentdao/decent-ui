@@ -1,0 +1,28 @@
+import { CircularProgress, Progress } from "@chakra-ui/react";
+import { Canvas, Meta, Story } from "@storybook/addon-docs";
+
+<Meta title="atoms/Progress" component={Progress} />
+
+export const Template = (args) => <Progress {...args} />
+export const CircularProgressTemplate = (args) => <CircularProgress {...args} />
+
+<Canvas>
+    <Story 
+        name="Progress"
+        args={{
+            value: 50,
+            size: "lg",
+        }}
+    >
+        {Template.bind({})}
+    </Story>
+    <Story 
+        name="CircularProgress"
+        args={{
+            value: 50,
+            size: "lg",
+        }}
+    >
+        {CircularProgressTemplate.bind({})}
+    </Story>
+</Canvas>
