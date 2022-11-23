@@ -9,10 +9,11 @@ const theme = extendTheme(
     styles,
     breakpoints,
     ...foundations,
+    components
   },
   {
     ...defaultTheme,
-    components: { ...defaultTheme.components, ...components },
+    components: {},
     breakpoints: {},
     colors: {},
     fontWeights: {},
