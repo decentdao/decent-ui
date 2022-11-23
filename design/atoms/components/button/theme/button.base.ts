@@ -1,6 +1,7 @@
 // Global Base button
+import { defineStyle } from '@chakra-ui/react'
 
-export default {
+const baseStyle = defineStyle({
   alignItems: 'center',
   borderRadius: '4px',
   boxShadow: 'none',
@@ -12,4 +13,6 @@ export default {
   },
   _hover: {},
   _focus: {}
-}
+})
+
+export default baseStyle
