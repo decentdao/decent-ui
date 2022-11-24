@@ -1,4 +1,4 @@
-import Button from "../src"
+import { Button } from "@chakra-ui/react"
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
 
 import { buttonArgTypes } from "./controls"
@@ -51,7 +51,9 @@ export const Template = (args) => <Button {...args} />
 
 <ul>
   <li>Used for the second most important action on the page. </li>
-  <li>These are also solid color buttons however the secondary buttons use a muted color palette.</li>
+  <li>
+    These are also solid color buttons however the secondary buttons use a muted color palette.
+  </li>
 </ul>
 
 <Canvas>
@@ -71,7 +73,10 @@ export const Template = (args) => <Button {...args} />
 #### Tertiary
 
 <ul>
-  <li>Tertiary buttons are outlined versions of the Primary buttons and should be used for in page actions like filtering. </li>
+  <li>
+    Tertiary buttons are outlined versions of the Primary buttons and should be used for in page
+    actions like filtering.{" "}
+  </li>
 </ul>
 
 <Canvas>
@@ -91,12 +96,13 @@ export const Template = (args) => <Button {...args} />
 #### Icon Link
 
 <ul>
-  <li>Use icon-only variants in dense environments or when space is limited and only used to execute common tasks such as copying an address and are usually paired with text links </li>
+  <li>
+    Use icon-only variants in dense environments or when space is limited and only used to execute
+    common tasks such as copying an address and are usually paired with text links{" "}
+  </li>
 </ul>
 
-
 comming soon...in the meantime use `IconButton`
-
 
 #### Text Link
 
