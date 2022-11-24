@@ -1,8 +1,7 @@
 import { inputAnatomy } from '@chakra-ui/anatomy'
 import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
-
-import baseStyle from './input.base'
 import sizes from './input.sizes'
+import baseStyle from './input.base'
 
 const { defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(inputAnatomy.keys)
@@ -14,5 +13,6 @@ const Input = defineMultiStyleConfig({
     size: 'base',
   },
 })
+
 
 export default Input

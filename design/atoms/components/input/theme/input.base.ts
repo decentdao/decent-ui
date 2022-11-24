@@ -22,13 +22,12 @@ const baseStyle = definePartsStyle({
     bg: 'input.background',
     border: '1px solid',
     borderColor: 'black.200',
-    fontWeight: '500',
     _invalid: {
       border: '1px solid',
       borderColor: 'alert-red.normal'
     },
     _placeholder: {
-      color: 'grayscale.600'
+      color: 'grayscale.600',
     },
     _hover: {
       border: '1px solid',
