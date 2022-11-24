@@ -10,11 +10,12 @@ const NumberInput = forwardRef<{}, ChakraComponent<'input'>>(
     {
       placeholder,
       ...rest
-    }
+    },
+    ref
   ) => {
 
     return (
-      <ChakraNumberInput  {...rest} >
+      <ChakraNumberInput ref={ref}  {...rest} >
         <NumberInputField placeholder={placeholder} />
       </ChakraNumberInput>
     )
