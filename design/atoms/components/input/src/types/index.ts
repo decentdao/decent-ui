@@ -1,15 +1,10 @@
 import { InputProps } from "@chakra-ui/react"
-
-export enum RestrictCharTypes {
-  WHOLE_NUMBERS_ONLY,
-  FLOAT_NUMBERS,
-}
+import { ReactNode } from "react";
 
 export declare interface IInput extends InputProps {
   size?: 'base';
-  leftElement?: JSX.Element;
-  rightElement?: JSX.Element | string;
-  rightElementAction?: () => void;
+  leftAddon?: ReactNode;
+  rightAddon?: ReactNode;
+  rightAddonAction?: () => void;
   decimals?: number;
-  restrictChars?: RestrictCharTypes;
 }
