@@ -6,5 +6,4 @@ export declare interface IInput extends InputProps {
   leftAddon?: ReactNode;
   rightAddon?: ReactNode;
   rightAddonAction?: () => void;
-  decimals?: number;
 }

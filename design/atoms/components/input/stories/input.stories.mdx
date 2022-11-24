@@ -1,31 +1,18 @@
-import Input from "../src"
+import TextInput from "../src"
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
 
 import { argTypes } from "./argTypes"
 
-<Meta title="atoms/Input" component={Input} />
+<Meta title="atoms/Input" component={TextInput} />
 
-export const Template = (args) => <Input {...args} />
+export const Template = (args) => <TextInput {...args} />
 
 <Canvas>
   <Story
-    name="Base"
+    name="TextInput"
     argTypes={argTypes}
     args={{
       placeholder: "placeholder",
-    }}
-  >
-    {Template.bind({})}
-  </Story>
-</Canvas>
-
-<Canvas>
-  <Story
-    name="XL"
-    argTypes={argTypes}
-    args={{
-      size: "xl",
-      placeholder: "100.10111",
     }}
   >
     {Template.bind({})}
