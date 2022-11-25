@@ -1,17 +1,17 @@
-import TextInput from "../src"
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
-
+import { Input } from '@chakra-ui/react'
 import { argTypes } from "./argTypes"
 
-<Meta title="atoms/Input" component={TextInput} />
+<Meta title="atoms/Input" component={Input} />
 
-export const Template = (args) => <TextInput {...args} />
+export const Template = (args) => <Input {...args} />
 
 <Canvas>
   <Story
-    name="TextInput"
+    name="Input"
     argTypes={argTypes}
     args={{
+      w: "full",
       placeholder: "placeholder",
     }}
   >
