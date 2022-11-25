@@ -1,5 +1,6 @@
 import theme from '../design/tokens/theme';
 import { docsTheme } from './theme';
+
 export const parameters = {
     actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
