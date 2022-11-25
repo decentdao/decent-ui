@@ -1,6 +1,7 @@
-import LabelWrapper from "../src"
-import Input from "../../input/src"
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { Input } from "@chakra-ui/react"
+
+import LabelWrapper from "../src"
 
 <Meta title="atoms/LabelWrapper" component={LabelWrapper} />
 
@@ -25,7 +26,8 @@ export const Template = (args) => {
       },
       tooltipContent: {
         type: "string",
-        description: "`string` or `JSX.Element`. Content shown inside of tooltip when hovering icon. If left `undefined` the icon will not show"
+        description:
+          "`string` or `JSX.Element`. Content shown inside of tooltip when hovering icon. If left `undefined` the icon will not show",
       },
       errorMessage: {
         type: "string",

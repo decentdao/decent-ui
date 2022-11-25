@@ -1,7 +1,6 @@
 import { Box, Flex, FormLabel, Text } from "@chakra-ui/react"
 import { SupportQuestion } from "../../icons/src"
 import { Tooltip } from "@chakra-ui/react"
-import React from "react"
 import { ILabelWrapper } from "./types"
 
 const LabelWrapper = ({
@@ -41,4 +40,5 @@ const LabelWrapper = ({
   )
 }
 
+LabelWrapper.displayName = "LabelWrapper"
 export default LabelWrapper
