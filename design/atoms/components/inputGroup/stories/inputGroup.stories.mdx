@@ -1,0 +1,24 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { Input } from "@chakra-ui/react"
+
+import InputGroup from "../src"
+
+<Meta title="atoms/Input" component={InputGroup} />
+
+export const Template = (args) => (
+  <InputGroup>
+    <Input {...args} />
+  </InputGroup>
+)
+
+<Canvas>
+  <Story
+    name="InputGroup"
+    argTypes={{}}
+    args={{
+      placeholder: "12345...",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
