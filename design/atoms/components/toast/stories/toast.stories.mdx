@@ -1,6 +1,6 @@
 import { ToastContainer, toast as reactToast } from "react-toastify"
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
-import Button from "@chakra-ui/react"
+import { Button } from "@chakra-ui/react"
 import "react-toastify/dist/ReactToastify.css"
 
 <Meta title="atoms/Toast" />
@@ -8,7 +8,7 @@ import "react-toastify/dist/ReactToastify.css"
 export const Template = (args) => {
   function handleClick() {
     reactToast("Toast Content!", {
-      ...args
+      ...args,
     })
   }
   return (
@@ -62,10 +62,10 @@ export const Template = (args) => {
         description: "",
         mapping: {
           undefined: undefined,
-          "100%": '100%',
-          "75%": '75%',
-          "50%": '50%',
-          "25%": '25%',
+          "100%": "100%",
+          "75%": "75%",
+          "50%": "50%",
+          "25%": "25%",
         },
         options: ["undefined", "100%", "75%", "50%", "25%"],
         control: {
