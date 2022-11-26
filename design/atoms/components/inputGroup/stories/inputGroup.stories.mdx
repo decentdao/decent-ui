@@ -1,22 +1,27 @@
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
-import { Input } from "@chakra-ui/react"
-
-import InputGroup from "../src"
+import { useState } from "react"
+import { Input, InputGroup } from "@chakra-ui/react"
 
 <Meta title="atoms/Input" component={InputGroup} />
 
-export const Template = (args) => (
-  <InputGroup>
-    <Input {...args} />
-  </InputGroup>
-)
+export const Template = (args) => {
+  const [value, setValue] = useState("")
+  const changeHandler = (value) => {
+    setValue(value)
+  }
+  return (
+    <InputGroup>
+      <Input value={value} onChange={(e) => changeHandler(e.target.value)} />
+    </InputGroup>
+  )
+}
 
 <Canvas>
   <Story
     name="InputGroup"
     argTypes={{}}
     args={{
-      placeholder: "12345...",
+      placeholder: "Placeholder",
     }}
   >
     {Template.bind({})}

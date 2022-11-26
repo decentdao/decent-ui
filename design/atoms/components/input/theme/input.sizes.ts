@@ -6,8 +6,8 @@ const { definePartsStyle } =
 
 const base = defineStyle({
   apply: 'text-base-mono-semibold',
-  height: '2.5rem',
   px: '1rem',
+  height: '2.5rem',
   _placeholder: {
     textStyle: 'text-base-mono-medium'
   },

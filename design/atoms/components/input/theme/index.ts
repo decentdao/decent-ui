@@ -11,6 +11,7 @@ const Input = defineMultiStyleConfig({
   sizes,
   defaultProps: {
     size: 'base',
+    variant: 'base'
   },
 })
 
