@@ -73,6 +73,5 @@ const sizes = {
   xlAddonRight: definePartsStyle({ field: xlAddonRight, addon: xlAddonRight }),
   xlWithAddons: definePartsStyle({ field: xlWithAddons, addon: xlWithAddons }),
 }
-console.log("🚀 ~ file: input.sizes.ts ~ line 76 ~ sizes", sizes)
 
 export default sizes
