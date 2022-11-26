@@ -1,36 +1,91 @@
 export const argTypes = {
+  precision: {
+    description: "The number of decimal points used to round the value",
+    table: {
+      defaultValue: {
+        summary: undefined
+      },
+      type: {
+        summary: 'number'
+      }
+    },
+    control: 'number'
+  },
+  value: {
+    description: "Input component's value",
+    type: {
+      required: false
+    },
+    table: {
+      defaultValue: {
+        summary: undefined
+      },
+      type: {
+        summary: 'string'
+      }
+    },
+    control: false
+  },
+  onChange: {
+    description: "Input component's change event handler",
+    table: {
+      defaultValue: {
+        summary: undefined
+      },
+    },
+  },
   size: {
-    description: "`'base'` `'xl'`",
+    type: {
+      required: false
+    },
+    table: {
+      defaultValue: {
+        summary: 'base'
+      },
+      type: {
+        summary: 'base | xl'
+      }
+    },
+    description: "controls the size of the import",
     options: ["base", "xl"],
     control: {
       type: "radio",
     },
   },
   placeholder: {
-    description: "Displayed text when input value is blank",
+    description: "Displayed text when input value is `undefined`",
+    table: {
+      defaultValue: {
+        summary: undefined
+      },
+      type: {
+        summary: 'string'
+      }
+    },
+    control: "text"
   },
-  isDisabled: {
-    type: "boolean",
+  disabled: {
     description: "If true will display an disabled state",
+    table: {
+      defaultValue: {
+        summary: undefined
+      },
+      type: {
+        summary: 'boolean'
+      }
+    },
+    control: "boolean",
   },
   isInvalid: {
-    type: 'boolean',
     description: "If true will display an error state",
+    table: {
+      defaultValue: {
+        summary: undefined
+      },
+      type: {
+        summary: 'boolean'
+      }
+    },
+    control: 'boolean',
   },
-  decimals: {
-    type: 'number',
-    description: "Prevents character entry beyond given decimal amount",
-  },
-  leftElement: {
-    description: "Displays given element to left of text area",
-  },
-  rightElement: {
-    description: "Displays given element to right of text area",
-  },
-  rightElementAction: {
-    description: "Function called when right element is clicked. RightElement required",
-  },
-  restrictChars: {
-    description: "Restricts characters. use `ENUM`` RestrictCharTypes",
-  }
 }
