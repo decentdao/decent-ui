@@ -1,8 +1,8 @@
-import { inputAnatomy } from '@chakra-ui/anatomy'
+import { numberInputAnatomy } from '@chakra-ui/anatomy'
 import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
 
 const { definePartsStyle } =
-  createMultiStyleConfigHelpers(inputAnatomy.keys)
+  createMultiStyleConfigHelpers(numberInputAnatomy.keys)
 
 const disabled = {
   cursor: 'default',
@@ -16,6 +16,9 @@ const disabled = {
 const loading = {}
 
 const baseStyle = definePartsStyle({
+  root: {},
+  stepperGroup: {},
+  stepper: {},
   field: {
     borderRadius: '4px',
     color: 'white',

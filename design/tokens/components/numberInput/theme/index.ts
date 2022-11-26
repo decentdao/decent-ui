@@ -1,10 +1,10 @@
-import { inputAnatomy } from '@chakra-ui/anatomy'
+import { numberInputAnatomy } from '@chakra-ui/anatomy'
 import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
 import sizes from './numberInput.sizes'
 import baseStyle from './numberInput.base'
 
 const { defineMultiStyleConfig } =
-  createMultiStyleConfigHelpers(inputAnatomy.keys)
+  createMultiStyleConfigHelpers(numberInputAnatomy.keys)
 
 const NumberInput = defineMultiStyleConfig({
   baseStyle,

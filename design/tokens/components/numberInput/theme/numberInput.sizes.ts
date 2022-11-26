@@ -1,8 +1,8 @@
-import { inputAnatomy } from '@chakra-ui/anatomy'
+import { numberInputAnatomy } from '@chakra-ui/anatomy'
 import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
 
 const { definePartsStyle } =
-  createMultiStyleConfigHelpers(inputAnatomy.keys)
+  createMultiStyleConfigHelpers(numberInputAnatomy.keys)
 
 const base = defineStyle({
   apply: 'text-base-mono-semibold',
@@ -23,8 +23,8 @@ const xl = defineStyle({
 })
 
 const sizes = {
-  base: definePartsStyle({ field: base, addon: base }),
-  xl: definePartsStyle({ field: xl, addon: xl }),
+  base: definePartsStyle({ field: base, stepper: base, addon: base }),
+  xl: definePartsStyle({ field: xl, stepper: xl, addon: xl }),
 }
 
 export default sizes
