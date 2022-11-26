@@ -1,0 +1,30 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { useState } from "react"
+import { Input, InputProps } from "@chakra-ui/react"
+import { argTypes } from "./settings/argTypes"
+
+<Meta title="atoms/Input" component={Input} />
+
+export const Template = (args) => {
+  const [value, setValue] = useState("")
+  const changeHandler = (value) => {
+    setValue(value)
+  }
+  return <Input {...args} value={value} onChange={(e) => changeHandler(e.target.value)} />
+}
+
+# Standard Text Inputs
+
+Used for standard forms. Medium is default. Small and large sizes also available.
+
+<Canvas>
+  <Story 
+    name="Input" 
+    argTypes={argTypes}
+    args={{
+      placeholder: "Placeholder"
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
