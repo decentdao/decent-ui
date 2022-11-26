@@ -1,6 +1,7 @@
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
 import { useState } from "react"
-import { Input, InputGroup } from "@chakra-ui/react"
+import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react"
+import { DecentD } from '../../icons/src'
 
 <Meta title="atoms/Input" component={InputGroup} />
 
@@ -10,7 +11,8 @@ export const Template = (args) => {
     setValue(value)
   }
   return (
-    <InputGroup>
+    <InputGroup size="baseWithAddon">
+      <InputLeftElement children={<DecentD color="" />} />
       <Input
         placeholder={args.placeholder}
         value={value}
