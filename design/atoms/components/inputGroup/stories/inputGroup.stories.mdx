@@ -11,7 +11,11 @@ export const Template = (args) => {
   }
   return (
     <InputGroup>
-      <Input value={value} onChange={(e) => changeHandler(e.target.value)} />
+      <Input
+        placeholder={args.placeholder}
+        value={value}
+        onChange={(e) => changeHandler(e.target.value)}
+      />
     </InputGroup>
   )
 }
