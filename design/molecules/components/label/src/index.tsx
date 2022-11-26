@@ -1,5 +1,5 @@
 import { Box, Flex, FormLabel, Text } from "@chakra-ui/react"
-import { SupportQuestion } from "../../icons/src"
+import { SupportQuestion } from "../../../../atoms/components/icons/src"
 import { Tooltip } from "@chakra-ui/react"
 import { ILabelWrapper } from "./types"
 

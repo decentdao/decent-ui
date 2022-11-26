@@ -15,7 +15,7 @@ export const parameters = {
     options: {
         storySort: {
             method: 'alphabetical',
-            order: ['Design Language', 'Design Tokens', 'Atoms', 'Organisms', 'Templates', ['Overview']],
+            order: ['Design Language', ['Overview'], 'Design Tokens', ['Overview'], 'Atoms', ['Overview'], 'Molecules', ['Overview'], 'Organisms', ['Overview'], 'Templates', ['Overview']],
         },
     },
     chakra: {
