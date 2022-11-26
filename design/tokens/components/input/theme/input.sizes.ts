@@ -4,6 +4,10 @@ import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
 const { definePartsStyle } =
   createMultiStyleConfigHelpers(inputAnatomy.keys)
 
+const paddingBase = { px: '1rem'}
+const paddingAddonLeft = { pl: '2rem', pr: '1rem'}
+const paddingAddonRight = { pl: '1rem', pr: '4rem'}
+
 const baseStyle = {
   apply: 'text-base-mono-semibold',
   height: '2.5rem',
@@ -13,18 +17,27 @@ const baseStyle = {
 }
 const base = defineStyle({
   ...baseStyle,
-  px: '1rem'
+  ...paddingBase
 })
 
-const baseWithAddon = defineStyle({
+const baseAddonLeft = defineStyle({
   ...baseStyle,
-  px: '2rem'
+  ...paddingAddonLeft
+})
+const baseAddonRight = defineStyle({
+  ...baseStyle,
+  ...paddingAddonRight,
+})
+
+const baseWithAddons = defineStyle({
+  ...baseStyle,
+  ...paddingAddonRight,
+  ...paddingAddonLeft
 })
 
 const xlStyle = {
   apply: 'text-xl-mono-semibold',
   h: '4.375rem',
-  px: '1rem',
   _placeholder: {
     textStyle: 'text-xl-mono-medium'
   },
@@ -32,19 +45,34 @@ const xlStyle = {
 
 const xl = defineStyle({
   ...xlStyle,
-  px: '1rem',
+  ...paddingBase
 })
 
-const xlWithAddon = defineStyle({
+const xlAddonLeft = defineStyle({
   ...xlStyle,
-  px: '2rem',
+  ...paddingAddonLeft
+})
+const xlAddonRight = defineStyle({
+  ...xlStyle,
+  ...paddingAddonRight
+})
+
+const xlWithAddons = defineStyle({
+  ...xlStyle,
+  ...paddingAddonRight,
+  ...paddingAddonLeft
 })
 
 const sizes = {
   base: definePartsStyle({ field: base, addon: base }),
-  baseWithAddon: definePartsStyle({ field: baseWithAddon, addon: baseWithAddon }),
+  baseAddonLeft: definePartsStyle({ field: baseAddonLeft, addon: baseAddonLeft }),
+  baseAddonRight: definePartsStyle({ field: baseAddonRight, addon: baseAddonRight }),
+  baseWithAddons: definePartsStyle({ field: baseWithAddons, addon: baseWithAddons }),
   xl: definePartsStyle({ field: xl, addon: xl }),
-  xlWithAddon: definePartsStyle({ field: xlWithAddon, addon: xlWithAddon }),
+  xlAddonLeft: definePartsStyle({ field: xlAddonLeft, addon: xlAddonLeft }),
+  xlAddonRight: definePartsStyle({ field: xlAddonRight, addon: xlAddonRight }),
+  xlWithAddons: definePartsStyle({ field: xlWithAddons, addon: xlWithAddons }),
 }
+console.log("🚀 ~ file: input.sizes.ts ~ line 76 ~ sizes", sizes)
 
 export default sizes

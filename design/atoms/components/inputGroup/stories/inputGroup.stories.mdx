@@ -1,17 +1,24 @@
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
 import { useState } from "react"
-import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react"
-import { DecentD } from '../../icons/src'
+import {
+  Input,
+  InputGroup,
+  InputLeftElement,
+  InputRightElement,
+  Button,
+  Stack,
+} from "@chakra-ui/react"
+import { DecentD } from "../../icons/src"
 
 <Meta title="atoms/Input" component={InputGroup} />
 
-export const Template = (args) => {
+export const LeftTemplate = (args) => {
   const [value, setValue] = useState("")
   const changeHandler = (value) => {
     setValue(value)
   }
   return (
-    <InputGroup size="baseWithAddon">
+    <InputGroup size="baseAddonLeft">
       <InputLeftElement children={<DecentD color="" />} />
       <Input
         placeholder={args.placeholder}
@@ -22,14 +29,47 @@ export const Template = (args) => {
   )
 }
 
+export const RightTemplate = (args) => {
+  const [value, setValue] = useState("")
+  const changeHandler = (value) => {
+    setValue(value)
+  }
+  return (
+    <InputGroup size="baseAddonRight">
+      <Input
+        placeholder={args.placeholder}
+        value={value}
+        onChange={(e) => changeHandler(e.target.value)}
+      />
+      <InputRightElement>
+        <Button size="sm" variant="text" mr="8" onClick={() => {}}>
+          clear
+        </Button>
+      </InputRightElement>
+    </InputGroup>
+  )
+}
+
 <Canvas>
   <Story
-    name="InputGroup"
+    name="InputGroup - Left"
     argTypes={{}}
     args={{
       placeholder: "Placeholder",
     }}
   >
-    {Template.bind({})}
+    {LeftTemplate.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="InputGroup - Right"
+    argTypes={{}}
+    args={{
+      placeholder: "Placeholder",
+    }}
+  >
+    {RightTemplate.bind({})}
   </Story>
 </Canvas>
