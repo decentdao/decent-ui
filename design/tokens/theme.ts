@@ -9,11 +9,12 @@ const theme = extendTheme(
     styles,
     breakpoints,
     ...foundations,
-    components,
   },
   {
+    // @note by applying default theme we can override themed objects so that Chakra-UI defaults aren't extended but replaced
     ...defaultTheme,
-    components: {},
+    // @note this allows for unthemed defaults to be merged with custom themed components
+    components: { ...defaultTheme.components, ...components },
     breakpoints: {},
     colors: {},
     fontWeights: {},
