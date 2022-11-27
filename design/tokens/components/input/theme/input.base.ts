@@ -22,6 +22,9 @@ const baseStyle = definePartsStyle({
     bg: 'input.background',
     border: '1px solid',
     borderColor: 'black.200',
+    transitionDuration: "normal",
+    transitionProperty: "common",
+    width: "100%",
     _invalid: {
       border: '1px solid',
       borderColor: 'alert-red.normal'
