@@ -8,7 +8,7 @@ import LabelWrapper from "../src"
 export const Template = (args) => {
   return (
     <LabelWrapper {...args}>
-      <Input isDisabled={args.isDisabled} isInvalid={args.isErrored} placeholder="Placeholder" />
+      <Input isDisabled={args.isDisabled} isInvalid={args.errorMessage} placeholder="Placeholder" />
     </LabelWrapper>
   )
 }
@@ -40,10 +40,6 @@ import { LabelWrapper } from '@decent-org/fractal-ui'
       isDisabled: {
         type: "boolean",
         description: "If true will display an disabled state",
-      },
-      isInvalid: {
-        type: "boolean",
-        description: "If true will display an error state",
       },
       htmlFor: {
         type: "string",

@@ -1,1 +1,1 @@
-export { default as LabelWrapper } from './label/src'
+export { default as LabelWrapper } from './labelWrapper/src'
