@@ -4,6 +4,7 @@
  * atom components
  */
 export * from './atoms/components';
+export * from './molecules/components';
 
 /**
  * theme object
