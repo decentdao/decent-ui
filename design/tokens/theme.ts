@@ -1,7 +1,7 @@
 import { extendTheme, theme as defaultTheme } from '@chakra-ui/react';
 import foundations from './foundations';
 import breakpoints from './breakpoints';
-import components from '../atoms/components/theme';
+import components from './components';
 import styles from './styles';
 
 const theme = extendTheme(
@@ -11,7 +11,9 @@ const theme = extendTheme(
     ...foundations,
   },
   {
+    // @note by applying default theme we can override themed objects so that Chakra-UI defaults aren't extended but replaced
     ...defaultTheme,
+    // @note this allows for unthemed defaults to be merged with custom themed components
     components: { ...defaultTheme.components, ...components },
     breakpoints: {},
     colors: {},
@@ -19,4 +21,5 @@ const theme = extendTheme(
     fonts: {}
   }
 );
+
 export default theme;

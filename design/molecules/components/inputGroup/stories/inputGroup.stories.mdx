@@ -1,0 +1,83 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { useState } from "react"
+import {
+  Input,
+  InputGroup,
+  InputLeftElement,
+  InputRightElement,
+  Button,
+  Stack,
+} from "@chakra-ui/react"
+import { DecentD } from "../../../../atoms/components/icons/src"
+
+<Meta title="Molecules/Inputs" component={InputGroup} />
+
+export const LeftTemplate = (args) => {
+  const [value, setValue] = useState("")
+  const changeHandler = (value) => {
+    setValue(value)
+  }
+  return (
+    <InputGroup size="baseAddonLeft">
+      <InputLeftElement children={<DecentD color="" />} />
+      <Input
+        placeholder={args.placeholder}
+        value={value}
+        onChange={(e) => changeHandler(e.target.value)}
+      />
+    </InputGroup>
+  )
+}
+
+export const RightTemplate = (args) => {
+  const [value, setValue] = useState("")
+  const changeHandler = (value) => {
+    setValue(value)
+  }
+  return (
+    <InputGroup size="baseAddonRight">
+      <Input
+        placeholder={args.placeholder}
+        value={value}
+        onChange={(e) => changeHandler(e.target.value)}
+      />
+      <InputRightElement>
+        <Button size="sm" variant="text" mr="8" onClick={() => {}}>
+          clear
+        </Button>
+      </InputRightElement>
+    </InputGroup>
+  )
+}
+
+```ts
+import { InputGroup, InputLeftElement } from '@chakra-ui/react'
+```
+
+<Canvas>
+  <Story
+    name="InputGroup - Left"
+    argTypes={{}}
+    args={{
+      placeholder: "Placeholder",
+    }}
+  >
+    {LeftTemplate.bind({})}
+  </Story>
+</Canvas>
+
+```ts
+import { InputGroup, InputRightElement } from '@chakra-ui/react'
+```
+
+<Canvas>
+  <Story
+    name="InputGroup - Right"
+    argTypes={{}}
+    args={{
+      placeholder: "Placeholder",
+    }}
+  >
+    {RightTemplate.bind({})}
+  </Story>
+</Canvas>

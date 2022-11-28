@@ -1,3 +1,6 @@
+const { propNames } = require("@chakra-ui/styled-system")
+const excludedPropNames = propNames.concat(["as", "apply", "sx", "__css"])
+
 module.exports = {
     core: {
         builder: 'webpack5',
@@ -20,16 +23,21 @@ module.exports = {
             },
         },
     ],
-    features: {
-        emotionAlias: false,
-    },
     typescript: {
         check: false,
         checkOptions: {},
         reactDocgen: 'react-docgen-typescript',
         reactDocgenTypescriptOptions: {
+            propFilter: (prop) => {
+                const isStyledSystemProp = excludedPropNames.includes(prop.name);
+                const isHTMLElementProp = prop.parent?.fileName.includes('node_modules') ?? false;
+                return !(isStyledSystemProp || isHTMLElementProp);
+            },
+            compilerOptions: {
+                allowSyntheticDefaultImports: false,
+                esModuleInterop: false,
+            },
             shouldExtractLiteralValuesFromEnum: true,
-            propFilter: (prop) => (prop.parent ? !/node_modules/.test(prop.parent.fileName) : true),
         }
     },
     staticDirs: ['../design/atoms/assets/'],

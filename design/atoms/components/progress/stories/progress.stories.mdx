@@ -1,33 +1,17 @@
-import { CircularProgress, Progress } from "@chakra-ui/react";
-import { Canvas, Meta, Story } from "@storybook/addon-docs";
+import { Progress } from "@chakra-ui/react"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
 
-<Meta title="atoms/Progress" component={Progress} />
+<Meta title="Atoms/ProgressBars" component={Progress} />
 
 export const Template = (args) => <Progress {...args} />
-export const CircularProgressTemplate = (args) => <CircularProgress {...args} />
 
 <Canvas>
-    <Story 
-        name="Progress"
-        args={{
-            value: 50,
-            size: "lg",
-        }}
-    >
-        {Template.bind({})}
-    </Story>
-</Canvas>
-
-<Canvas>
-    <Story 
-        name="CircularProgress"
-        args={{
-            value: 50,
-            size: "lg",
-            color: "drab.900",
-            trackColor: "drab.700",
-        }}
-    >
-        {CircularProgressTemplate.bind({})}
-    </Story>
+  <Story
+    name="Bar"
+    args={{
+      value: 50,
+    }}
+  >
+    {Template.bind({})}
+  </Story>
 </Canvas>

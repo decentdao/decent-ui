@@ -1,58 +1,125 @@
-import Button from "../src"
+import { Button } from "@chakra-ui/react"
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
 
-import * as icons from "../../icons/src"
+import { buttonArgTypes } from "./controls"
 
-<Meta title="atoms/Button" component={Button} />
+<Meta title="Atoms/Buttons" component={Button} />
 
 export const Template = (args) => <Button {...args} />
 
+## Usage & Guidelines
+
+```ts
+import { Button } from '@chakra-ui/react'
+```
+
+<ul>
+  <li>Buttons should indicate an action.</li>
+  <li>Button labels should always be Title Case.</li>
+  <li>They should be discoverable, easy to identify, and specific.</li>
+  <li>
+    Icons can be used alone or added to the left or right of the label. If used, the icon should
+    signify what the Button does.
+  </li>
+  <li>Use icon-only variants in dense environments or when space is limited.</li>
+  <li>
+    When deciding which Button to use, consider the level of priority of the action, as well as how
+    much visual emphasis the Button should have in the context of the page it will live on.
+  </li>
+</ul>
+
+## Types of Buttons
+
+#### Primary
+
+<ul>
+  <li>Used for the most important action on the page.</li>
+  <li>Solid color buttons based on the primary brand color. </li>
+</ul>
+
 <Canvas>
   <Story
-    name="Button"
-    argTypes={{
-      // hides ref property from controls, causes an error to occur
-      as: {
-        table: {
-          disable: true,
-        },
-      },
-      leftIcon: {
-        options: ["None", ...Object.keys(icons)],
-        mapping: Object.entries(icons).reduce(
-          (prev, [iconName, Icon]) => ({ ...prev, [iconName]: <Icon /> }),
-          { None: undefined }
-        ),
-        control: {
-          labels: Object.keys(icons).reduce((prev, cur) => ({ ...prev, [cur]: cur }), {
-            None: "None",
-          }),
-          type: "select",
-        },
-      },
-      rightIcon: {
-        options: ["None", ...Object.keys(icons)],
-        mapping: Object.entries(icons).reduce(
-          (prev, [iconName, Icon]) => ({ ...prev, [iconName]: <Icon /> }),
-          { None: undefined }
-        ),
-        control: {
-          labels: Object.keys(icons).reduce((prev, cur) => ({ ...prev, [cur]: cur }), {
-            None: "None",
-          }),
-          type: "select",
-        },
-      },
-      children: {
-        description: '`string` `ReactElement`',
-      },
-      isDisabled: {
-        description: 'Changes the state of button to `disabled`',
-        control: "boolean",
-      },
-    }}
+    name="PrimaryButton"
+    argTypes={buttonArgTypes}
     args={{
       variant: "primary",
+      children: "Button",
+      size: "base",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Secondary
+
+<ul>
+  <li>Used for the second most important action on the page. </li>
+  <li>
+    These are also solid color buttons however the secondary buttons use a muted color palette.
+  </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="SecondaryButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "secondary",
+      children: "Button",
+      size: "base",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Tertiary
+
+<ul>
+  <li>
+    Tertiary buttons are outlined versions of the Primary buttons and should be used for in page
+    actions like filtering.{" "}
+  </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="TertiaryButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "tertiary",
+      children: "Button",
+      size: "base",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Icon Link
+
+<ul>
+  <li>
+    Use icon-only variants in dense environments or when space is limited and only used to execute
+    common tasks such as copying an address and are usually paired with text links{" "}
+  </li>
+</ul>
+
+comming soon...in the meantime use `IconButton`
+
+#### Text Link
+
+<ul>
+  <li>Text links are used for non-essentials tasks like opening content in a new page or tab.</li>
+</ul>
+
+<Canvas>
+  <Story
+    name="TextButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "text",
       children: "Button",
       size: "base",
     }}

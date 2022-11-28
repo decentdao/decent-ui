@@ -10,11 +10,11 @@ export function DisplayColors() {
             <Box p="1rem">
               <Text color="chocolate.200" borderBottom="1px" pb="1rem" mb="1rem" textStyle="text-3xl-mono-semibold">{colorCategory.toUpperCase()}</Text>
               <Flex flexWrap="wrap" gap="2rem" justifyContent="space-between">
-                {Object.entries(values as Object).map(([colorTitle, value]) => {
+                {Object.entries(values as Object).map(([colorTitle, value], i) => {
                   const colorName = `${colorCategory}.${colorTitle}`
                   const colorKey = `${colorCategory}.${colorTitle}`
                   return (
-                    <Flex gap="1rem" w="22.75rem">
+                    <Flex key={i} gap="1rem" w="22.75rem">
                       <Box boxSize="5rem" bg={colorKey} borderRadius="0.75rem" />
                       <Flex flexDirection="column" alignItems="">
                         <Text textStyle="text-xl-mono-semibold">{colorName}</Text>

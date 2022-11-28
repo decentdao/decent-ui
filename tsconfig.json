@@ -24,6 +24,10 @@
   "files": [
     "./globals.d.ts",
   ],
+  "exclude": [
+    "./storybook",
+    "node_modules"
+  ],
   "include": [
     "./design"
   ]
