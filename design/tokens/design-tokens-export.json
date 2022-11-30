@@ -2025,6 +2025,31 @@
             }
           }
         }
+      },
+      "text-md-sans": {
+        "regular": {
+          "description": "Used for form helper text and validation text (error, success). Also used for labels in the side by side form pattern.",
+          "type": "custom-fontStyle",
+          "value": {
+            "fontSize": 14,
+            "textDecoration": "none",
+            "fontFamily": "IBM Plex Sans",
+            "fontWeight": 400,
+            "fontStyle": "normal",
+            "fontStretch": "normal",
+            "letterSpacing": 0,
+            "lineHeight": 24,
+            "paragraphIndent": 0,
+            "paragraphSpacing": 0,
+            "textCase": "none"
+          },
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:6f2a157a80e1a7a2dc39aaecd62354796f9dd51f,",
+              "exportKey": "font"
+            }
+          }
+        }
       }
     },
     "mono": {
@@ -4801,6 +4826,55 @@
           "lineHeight": {
             "type": "dimension",
             "value": 68
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        }
+      },
+      "text-md-sans": {
+        "regular": {
+          "description": "Used for form helper text and validation text (error, success)\n\nAlso used for labels in the side by side form pattern",
+          "fontSize": {
+            "type": "dimension",
+            "value": 14
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "IBM Plex Sans"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 400
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
           },
           "paragraphIndent": {
             "type": "dimension",
