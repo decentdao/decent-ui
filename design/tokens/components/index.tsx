@@ -1,3 +1,4 @@
+import Alert from './alert/theme';
 import Button from './button/theme';
 import Input from './input/theme';
 import Textarea from './textarea/theme';
@@ -6,6 +7,7 @@ import Progress from './progress/theme';
 import Tooltip from './tooltip/theme';
 
 export default {
+  Alert,
   Button,
   Input,
   Textarea,

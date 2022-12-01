@@ -1,0 +1,51 @@
+import { Alert, AlertTitle, AlertDescription, Button, Flex, Box } from "@chakra-ui/react"
+import { Alert as AlertIcon, SupportQuestion } from "../../icons/src"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+
+<Meta title="Atoms/Alert" component={Alert} />
+
+export const freezeTemplate = (args) => (
+  <Alert status="error">
+    <Flex justifyContent="space-between" alignItems="center" w="full">
+      <Flex alignItems="center">
+        <AlertIcon boxSize="1.5rem" />
+        <AlertTitle>Freeze initiated</AlertTitle>
+        <AlertDescription>
+          <SupportQuestion mr="0.5rem" /> 4 days remaining
+        </AlertDescription>
+      </Flex>
+      <Button variant="text">View</Button>
+    </Flex>
+  </Alert>
+)
+export const createProposalTemplate = (args) => (
+  <Alert status="error">
+    <SupportQuestion boxSize="1.5rem" />
+    <AlertTitle>Transactions execute in the order they are added.</AlertTitle>
+  </Alert>
+)
+
+export const frozenTemplate = (args) => (
+  <Alert status="error">
+    <AlertIcon boxSize="1.5rem" />
+    <AlertTitle>ChildDAO Frozen</AlertTitle>
+  </Alert>
+)
+
+<Canvas>
+  <Story name="Freeze" args={{}}>
+    {freezeTemplate.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Create Proposal" args={{}}>
+    {createProposalTemplate.bind({})}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story name="Frozen" args={{}}>
+    {frozenTemplate.bind({})}
+  </Story>
+</Canvas>
