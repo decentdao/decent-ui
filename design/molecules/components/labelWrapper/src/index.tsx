@@ -30,7 +30,7 @@ const LabelWrapper = ({
           )}
         </Flex>
         {children}
-        <Box textStyle="text-sm-sans-regular" color={subLabelColor} mt="2">
+        <Box textStyle="text-md-sans-regular" color={subLabelColor} mt="2">
           <Text color="alert-red.normal">
             {errorMessage}
           </Text>
