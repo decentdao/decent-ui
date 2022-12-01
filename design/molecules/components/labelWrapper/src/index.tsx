@@ -16,8 +16,6 @@ const LabelWrapper = ({
 
   const subLabelColor = isDisabled
     ? "grayscale.800"
-    : !!errorMessage
-    ? "alert-red.normal"
     : "grayscale.500"
 
   return (
@@ -32,9 +30,12 @@ const LabelWrapper = ({
           )}
         </Flex>
         {children}
-        <Text color={subLabelColor} textStyle="text-sm-sans-regular" mt="2">
-          {errorMessage || subLabel}
-        </Text>
+        <Box textStyle="text-sm-sans-regular" color={subLabelColor} mt="2">
+          <Text color="alert-red.normal">
+            {errorMessage}
+          </Text>
+          {!!subLabel && subLabel}
+        </Box>
       </FormLabel>
     </Box>
   )
