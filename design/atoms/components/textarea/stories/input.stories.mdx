@@ -1,0 +1,34 @@
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { useState } from "react"
+import { Textarea, TextareaProps } from "@chakra-ui/react"
+import { argTypes } from "./settings/argTypes"
+
+<Meta title="Atoms/Textarea" component={Textarea} />
+
+export const Template = (args) => {
+  const [value, setValue] = useState("")
+  const changeHandler = (value) => {
+    setValue(value)
+  }
+  return <Textarea {...args} value={value} onChange={(e) => changeHandler(e.target.value)} />
+}
+
+# Standard  Textareas
+
+Used for standard forms. Small and large sizes also available.
+
+```ts
+import { Textarea } from '@chakra-ui/react'
+```
+
+<Canvas>
+  <Story 
+    name="Textarea" 
+    argTypes={argTypes}
+    args={{
+      placeholder: "Placeholder"
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
