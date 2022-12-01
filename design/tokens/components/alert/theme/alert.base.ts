@@ -15,6 +15,7 @@ const baseStyle = definePartsStyle({
     border: "3px solid",
     borderColor: "blue.500",
     whiteSpace: "nowrap",
+    borderRadius: "8px",
     pl: "1rem"
   },
   description: {
