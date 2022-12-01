@@ -1,16 +1,4 @@
 export const argTypes = {
-  precision: {
-    description: "The number of decimal points used to round the value",
-    table: {
-      defaultValue: {
-        summary: undefined
-      },
-      type: {
-        summary: 'number'
-      }
-    },
-    control: 'number'
-  },
   value: {
     description: "Input component's value",
     type: {
@@ -43,11 +31,20 @@ export const argTypes = {
         summary: 'base'
       },
       type: {
-        summary: 'base | xl'
+        summary: 'base | baseAddonLeft | baseAddonRight | baseWithAddons | xl | xlAddonRight | xlAddonRight | xlWithAddons'
       }
     },
     description: "controls the size of the import",
-    options: ["base", "xl"],
+    options: [
+      "base", 
+      "xl", 
+      "baseAddonLeft",
+      "baseAddonRight",
+      "baseWithAddons",
+      "xlAddonLeft",
+      "xlAddonRight",
+      "xlWithAddons"
+    ],
     control: {
       type: "radio",
     },

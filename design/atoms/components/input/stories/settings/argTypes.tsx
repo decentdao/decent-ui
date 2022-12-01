@@ -31,11 +31,20 @@ export const argTypes = {
         summary: 'base'
       },
       type: {
-        summary: 'base | xl'
+        summary: 'base | baseAddonLeft | baseAddonRight | baseWithAddons | xl | xlAddonRight | xlAddonRight | xlWithAddons'
       }
     },
     description: "controls the size of the import",
-    options: ["base", "xl"],
+    options: [
+      "base", 
+      "xl", 
+      "baseAddonLeft",
+      "baseAddonRight",
+      "baseWithAddons",
+      "xlAddonLeft",
+      "xlAddonRight",
+      "xlWithAddons"
+    ],
     control: {
       type: "radio",
     },

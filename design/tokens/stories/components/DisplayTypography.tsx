@@ -1,10 +1,13 @@
 import { StoryLayout } from "../../../shared/StoryLayout"
 import { Box, Flex, Text } from "@chakra-ui/react"
-import textStyles from "../../foundations/textStyles"
+import {
+  sansTypography,
+  monoTypography
+} from "../../foundations/textStyles"
 
 export function DisplayTypography() {
-  const sans = Object.entries(textStyles).filter(([key]) => key.includes("-sans"))
-  const mono = Object.entries(textStyles).filter(([key]) => key.includes("-mono") || key.includes("-button"))
+  const sans = Object.entries(sansTypography)
+  const mono = Object.entries(monoTypography)
   return (
     <StoryLayout title="Typography">
       <Box>
