@@ -9,8 +9,9 @@ const base = defineStyle({
   h: '4.5rem',
 })
 
+
 const sizes = {
-  base: definePartsStyle({ title: base, description: base }),
+  base: definePartsStyle({ title: base, description: base}),
 }
 
 export default sizes

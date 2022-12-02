@@ -1,5 +1,5 @@
-import { Alert, AlertTitle, AlertDescription, Button, Flex, Box } from "@chakra-ui/react"
-import { Alert as AlertIcon, SupportQuestion } from "../../icons/src"
+import { Alert, AlertIcon, AlertTitle, AlertDescription, Button, Flex, Box } from "@chakra-ui/react"
+import { Alert as AlertDecent, SupportQuestion } from "../../icons/src"
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
 
 <Meta title="Atoms/Alert" component={Alert} />
@@ -8,7 +8,9 @@ export const freezeTemplate = (args) => (
   <Alert status="error">
     <Flex justifyContent="space-between" alignItems="center" w="full">
       <Flex alignItems="center">
-        <AlertIcon boxSize="1.5rem" />
+        <AlertIcon>
+          <AlertDecent />
+        </AlertIcon>
         <AlertTitle>Freeze initiated</AlertTitle>
         <AlertDescription>
           <SupportQuestion mr="0.5rem" /> 4 days remaining
@@ -20,14 +22,18 @@ export const freezeTemplate = (args) => (
 )
 export const createProposalTemplate = (args) => (
   <Alert status="error">
-    <SupportQuestion boxSize="1.5rem" />
+    <AlertIcon>
+      <SupportQuestion />
+    </AlertIcon>
     <AlertTitle>Transactions execute in the order they are added.</AlertTitle>
   </Alert>
 )
 
 export const frozenTemplate = (args) => (
   <Alert status="error">
-    <AlertIcon boxSize="1.5rem" />
+    <AlertIcon boxSize="1.5rem" >
+      <AlertDecent />
+    </AlertIcon>
     <AlertTitle>ChildDAO Frozen</AlertTitle>
   </Alert>
 )

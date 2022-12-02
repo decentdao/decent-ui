@@ -23,6 +23,11 @@ const baseStyle = definePartsStyle({
     alignItems: "center",
     textStyle: "text-base-sans-regular"
   },
+  icon: {
+    "& > svg": {
+      boxSize: "1.5rem"
+    }
+  },
   spinner: {},
 })
 
