@@ -122,18 +122,6 @@
             }
           }
         },
-        "white": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:3e99db27264921eff53dd855510ad589b7a02ddc,",
-              "exportKey": "color"
-            }
-          }
-        },
         "black": {
           "description": "",
           "type": "color",
@@ -143,6 +131,22 @@
             "org.lukasoppermann.figmaDesignTokens": {
               "styleId": "S:15ccf7cceb39808a19ecbb56468b7e7f0cd2a622,",
               "exportKey": "color"
+            }
+          }
+        },
+        "neutral": {
+          "grayscale": {
+            "white": {
+              "description": "",
+              "type": "color",
+              "value": "#ffffffff",
+              "blendMode": "normal",
+              "extensions": {
+                "org.lukasoppermann.figmaDesignTokens": {
+                  "styleId": "S:3e99db27264921eff53dd855510ad589b7a02ddc,",
+                  "exportKey": "color"
+                }
+              }
             }
           }
         }
@@ -318,6 +322,42 @@
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
               "styleId": "S:d94923e62dc1b4360d0a261b129235b09e66c488,",
+              "exportKey": "color"
+            }
+          }
+        },
+        "400-hover": {
+          "description": "Freeze components hover",
+          "type": "color",
+          "value": "#388edeff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:3948bef4e73a0fdf7da0a3ec56cb057630720e91,",
+              "exportKey": "color"
+            }
+          }
+        },
+        "400-disabled": {
+          "description": "",
+          "type": "color",
+          "value": "#626672ff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:adfcd4c252d5cc2f17f81170c0763c865b0e5a8d,",
+              "exportKey": "color"
+            }
+          }
+        },
+        "400-active": {
+          "description": "",
+          "type": "color",
+          "value": "#369af8ff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:8942c8b32a69645d6861ecec89af69c205869bb6,",
               "exportKey": "color"
             }
           }
@@ -1120,6 +1160,26 @@
               "exportKey": "gradient"
             }
           }
+        }
+      }
+    }
+  },
+  "grid": {
+    "12-columns-next-to-sidebar": {
+      "description": null,
+      "type": "custom-grid",
+      "value": {
+        "pattern": "columns",
+        "sectionSize": 92,
+        "gutterSize": 16,
+        "alignment": "max",
+        "count": 12,
+        "offset": 46
+      },
+      "extensions": {
+        "org.lukasoppermann.figmaDesignTokens": {
+          "styleId": "S:141a977b13438acad5c794234cf28adce397939c,",
+          "exportKey": "grid"
         }
       }
     }
@@ -2028,7 +2088,7 @@
       },
       "text-md-sans": {
         "regular": {
-          "description": "Used for form helper text and validation text (error, success). Also used for labels in the side by side form pattern.",
+          "description": "Used for form helper text and validation text (error, success)\n\nAlso used for labels in the side by side form pattern",
           "type": "custom-fontStyle",
           "value": {
             "fontSize": 14,
@@ -2974,6 +3034,46 @@
               "styleId": "S:a2d7e353bdb032be61ad8821ca3fd581db6b1fdc,",
               "exportKey": "font"
             }
+          }
+        }
+      }
+    }
+  },
+  "effect": {
+    "elevation": {
+      "medium": {
+        "description": null,
+        "type": "custom-shadow",
+        "value": {
+          "shadowType": "dropShadow",
+          "radius": 4,
+          "color": "#00000040",
+          "offsetX": 0,
+          "offsetY": 4,
+          "spread": 0
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:580fe43d5e34ba29b6e660eba6783b9b68e8eb1f,",
+            "exportKey": "effect"
+          }
+        }
+      },
+      "menu-glow": {
+        "description": null,
+        "type": "custom-shadow",
+        "value": {
+          "shadowType": "dropShadow",
+          "radius": 48,
+          "color": "#fabd2e7a",
+          "offsetX": 0,
+          "offsetY": 0,
+          "spread": 0
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:a7c046eab98c4082c60e2cf24a5ba2be6d573cb3,",
+            "exportKey": "effect"
           }
         }
       }
