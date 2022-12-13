@@ -122,18 +122,6 @@
             }
           }
         },
-        "white": {
-          "description": "",
-          "type": "color",
-          "value": "#ffffffff",
-          "blendMode": "normal",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:3e99db27264921eff53dd855510ad589b7a02ddc,",
-              "exportKey": "color"
-            }
-          }
-        },
         "black": {
           "description": "",
           "type": "color",
@@ -142,6 +130,18 @@
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
               "styleId": "S:15ccf7cceb39808a19ecbb56468b7e7f0cd2a622,",
+              "exportKey": "color"
+            }
+          }
+        },
+        "white": {
+          "description": "",
+          "type": "color",
+          "value": "#ffffffff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:3e99db27264921eff53dd855510ad589b7a02ddc,",
               "exportKey": "color"
             }
           }
@@ -273,7 +273,7 @@
       },
       "green": {
         "500": {
-          "description": "",
+          "description": "Utility green for assets received.",
           "type": "color",
           "value": "#60b55eff",
           "blendMode": "normal",
@@ -318,6 +318,42 @@
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
               "styleId": "S:d94923e62dc1b4360d0a261b129235b09e66c488,",
+              "exportKey": "color"
+            }
+          }
+        },
+        "400-hover": {
+          "description": "Freeze components hover",
+          "type": "color",
+          "value": "#388edeff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:3948bef4e73a0fdf7da0a3ec56cb057630720e91,",
+              "exportKey": "color"
+            }
+          }
+        },
+        "400-disabled": {
+          "description": "Freeze components disabled",
+          "type": "color",
+          "value": "#626672ff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:adfcd4c252d5cc2f17f81170c0763c865b0e5a8d,",
+              "exportKey": "color"
+            }
+          }
+        },
+        "400-active": {
+          "description": "Freeze component active ",
+          "type": "color",
+          "value": "#369af8ff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:8942c8b32a69645d6861ecec89af69c205869bb6,",
               "exportKey": "color"
             }
           }
@@ -989,7 +1025,7 @@
     "ui": {
       "input": {
         "background": {
-          "description": "",
+          "description": "Background color for UI inputs like text fields.",
           "type": "color",
           "value": "#2c2c2cff",
           "blendMode": "normal",
@@ -1001,7 +1037,7 @@
           }
         },
         "stroke": {
-          "description": "",
+          "description": "Subtle stroke for UI inputs like text fields.",
           "type": "color",
           "value": "#484848ff",
           "blendMode": "normal",
@@ -1050,7 +1086,7 @@
           }
         },
         "gradient-default": {
-          "description": "",
+          "description": "Primary background for all pages.",
           "type": "custom-gradient",
           "value": {
             "gradientType": "linear",
@@ -1120,6 +1156,26 @@
               "exportKey": "gradient"
             }
           }
+        }
+      }
+    }
+  },
+  "grid": {
+    "12-columns-next-to-sidebar": {
+      "description": null,
+      "type": "custom-grid",
+      "value": {
+        "pattern": "columns",
+        "sectionSize": 92,
+        "gutterSize": 16,
+        "alignment": "max",
+        "count": 12,
+        "offset": 46
+      },
+      "extensions": {
+        "org.lukasoppermann.figmaDesignTokens": {
+          "styleId": "S:141a977b13438acad5c794234cf28adce397939c,",
+          "exportKey": "grid"
         }
       }
     }
@@ -2028,7 +2084,7 @@
       },
       "text-md-sans": {
         "regular": {
-          "description": "Used for form helper text and validation text (error, success). Also used for labels in the side by side form pattern.",
+          "description": "Helper text",
           "type": "custom-fontStyle",
           "value": {
             "fontSize": 14,
@@ -2045,7 +2101,30 @@
           },
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:6f2a157a80e1a7a2dc39aaecd62354796f9dd51f,",
+              "styleId": "S:6b07f55cb806470331bfb9ddfbe2632c86e57b2a,",
+              "exportKey": "font"
+            }
+          }
+        },
+        "semibold": {
+          "description": "Side by side Form Labels",
+          "type": "custom-fontStyle",
+          "value": {
+            "fontSize": 14,
+            "textDecoration": "none",
+            "fontFamily": "IBM Plex Sans",
+            "fontWeight": 600,
+            "fontStyle": "normal",
+            "fontStretch": "normal",
+            "letterSpacing": 0,
+            "lineHeight": 24,
+            "paragraphIndent": 0,
+            "paragraphSpacing": 0,
+            "textCase": "none"
+          },
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:28771757da77866bbd01af3e697be0d746ca3386,",
               "exportKey": "font"
             }
           }
@@ -2974,6 +3053,52 @@
               "styleId": "S:a2d7e353bdb032be61ad8821ca3fd581db6b1fdc,",
               "exportKey": "font"
             }
+          }
+        }
+      },
+      "text-md-mono": {
+        "semibold": {
+          "type": "custom-fontStyle",
+          "value": {
+            "fontSize": 14,
+            "textDecoration": "none",
+            "fontFamily": "IBM Plex Mono",
+            "fontWeight": 600,
+            "fontStyle": "normal",
+            "fontStretch": "normal",
+            "letterSpacing": -0.36,
+            "lineHeight": 24,
+            "paragraphIndent": 0,
+            "paragraphSpacing": 0,
+            "textCase": "none"
+          },
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:03779efd5d1a3b7cd76b5fa26b5fdec558bb92a6,",
+              "exportKey": "font"
+            }
+          }
+        }
+      }
+    }
+  },
+  "effect": {
+    "elevation": {
+      "menu-glow": {
+        "description": "Place this glowing gold wizard's aura behind open menu's like Wallet and Filter.",
+        "type": "custom-shadow",
+        "value": {
+          "shadowType": "dropShadow",
+          "radius": 48,
+          "color": "#fabd2e7a",
+          "offsetX": 0,
+          "offsetY": 0,
+          "spread": 0
+        },
+        "extensions": {
+          "org.lukasoppermann.figmaDesignTokens": {
+            "styleId": "S:a7c046eab98c4082c60e2cf24a5ba2be6d573cb3,",
+            "exportKey": "effect"
           }
         }
       }
@@ -4843,7 +4968,7 @@
       },
       "text-md-sans": {
         "regular": {
-          "description": "Used for form helper text and validation text (error, success)\n\nAlso used for labels in the side by side form pattern",
+          "description": "Helper text",
           "fontSize": {
             "type": "dimension",
             "value": 14
@@ -4859,6 +4984,53 @@
           "fontWeight": {
             "type": "number",
             "value": 400
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        },
+        "semibold": {
+          "description": "Side by side Form Labels",
+          "fontSize": {
+            "type": "dimension",
+            "value": 14
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "IBM Plex Sans"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 600
           },
           "fontStyle": {
             "type": "string",
@@ -6781,6 +6953,54 @@
           "letterSpacing": {
             "type": "dimension",
             "value": 0.64
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        }
+      },
+      "text-md-mono": {
+        "semibold": {
+          "fontSize": {
+            "type": "dimension",
+            "value": 14
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "IBM Plex Mono"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 600
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": -0.36
           },
           "lineHeight": {
             "type": "dimension",
