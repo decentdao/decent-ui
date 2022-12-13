@@ -134,19 +134,15 @@
             }
           }
         },
-        "neutral": {
-          "grayscale": {
-            "white": {
-              "description": "",
-              "type": "color",
-              "value": "#ffffffff",
-              "blendMode": "normal",
-              "extensions": {
-                "org.lukasoppermann.figmaDesignTokens": {
-                  "styleId": "S:3e99db27264921eff53dd855510ad589b7a02ddc,",
-                  "exportKey": "color"
-                }
-              }
+        "white": {
+          "description": "",
+          "type": "color",
+          "value": "#ffffffff",
+          "blendMode": "normal",
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:3e99db27264921eff53dd855510ad589b7a02ddc,",
+              "exportKey": "color"
             }
           }
         }
@@ -277,7 +273,7 @@
       },
       "green": {
         "500": {
-          "description": "",
+          "description": "Utility green for assets received.",
           "type": "color",
           "value": "#60b55eff",
           "blendMode": "normal",
@@ -339,7 +335,7 @@
           }
         },
         "400-disabled": {
-          "description": "",
+          "description": "Freeze components disabled",
           "type": "color",
           "value": "#626672ff",
           "blendMode": "normal",
@@ -351,7 +347,7 @@
           }
         },
         "400-active": {
-          "description": "",
+          "description": "Freeze component active ",
           "type": "color",
           "value": "#369af8ff",
           "blendMode": "normal",
@@ -1029,7 +1025,7 @@
     "ui": {
       "input": {
         "background": {
-          "description": "",
+          "description": "Background color for UI inputs like text fields.",
           "type": "color",
           "value": "#2c2c2cff",
           "blendMode": "normal",
@@ -1041,7 +1037,7 @@
           }
         },
         "stroke": {
-          "description": "",
+          "description": "Subtle stroke for UI inputs like text fields.",
           "type": "color",
           "value": "#484848ff",
           "blendMode": "normal",
@@ -1090,7 +1086,7 @@
           }
         },
         "gradient-default": {
-          "description": "",
+          "description": "Primary background for all pages.",
           "type": "custom-gradient",
           "value": {
             "gradientType": "linear",
@@ -2088,7 +2084,7 @@
       },
       "text-md-sans": {
         "regular": {
-          "description": "Used for form helper text and validation text (error, success)\n\nAlso used for labels in the side by side form pattern",
+          "description": "Helper text",
           "type": "custom-fontStyle",
           "value": {
             "fontSize": 14,
@@ -2105,7 +2101,30 @@
           },
           "extensions": {
             "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:6f2a157a80e1a7a2dc39aaecd62354796f9dd51f,",
+              "styleId": "S:6b07f55cb806470331bfb9ddfbe2632c86e57b2a,",
+              "exportKey": "font"
+            }
+          }
+        },
+        "semibold": {
+          "description": "Side by side Form Labels",
+          "type": "custom-fontStyle",
+          "value": {
+            "fontSize": 14,
+            "textDecoration": "none",
+            "fontFamily": "IBM Plex Sans",
+            "fontWeight": 600,
+            "fontStyle": "normal",
+            "fontStretch": "normal",
+            "letterSpacing": 0,
+            "lineHeight": 24,
+            "paragraphIndent": 0,
+            "paragraphSpacing": 0,
+            "textCase": "none"
+          },
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:28771757da77866bbd01af3e697be0d746ca3386,",
               "exportKey": "font"
             }
           }
@@ -3036,31 +3055,37 @@
             }
           }
         }
+      },
+      "text-md-mono": {
+        "semibold": {
+          "type": "custom-fontStyle",
+          "value": {
+            "fontSize": 14,
+            "textDecoration": "none",
+            "fontFamily": "IBM Plex Mono",
+            "fontWeight": 600,
+            "fontStyle": "normal",
+            "fontStretch": "normal",
+            "letterSpacing": -0.36,
+            "lineHeight": 24,
+            "paragraphIndent": 0,
+            "paragraphSpacing": 0,
+            "textCase": "none"
+          },
+          "extensions": {
+            "org.lukasoppermann.figmaDesignTokens": {
+              "styleId": "S:03779efd5d1a3b7cd76b5fa26b5fdec558bb92a6,",
+              "exportKey": "font"
+            }
+          }
+        }
       }
     }
   },
   "effect": {
     "elevation": {
-      "medium": {
-        "description": null,
-        "type": "custom-shadow",
-        "value": {
-          "shadowType": "dropShadow",
-          "radius": 4,
-          "color": "#00000040",
-          "offsetX": 0,
-          "offsetY": 4,
-          "spread": 0
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:580fe43d5e34ba29b6e660eba6783b9b68e8eb1f,",
-            "exportKey": "effect"
-          }
-        }
-      },
       "menu-glow": {
-        "description": null,
+        "description": "Place this glowing gold wizard's aura behind open menu's like Wallet and Filter.",
         "type": "custom-shadow",
         "value": {
           "shadowType": "dropShadow",
@@ -4943,7 +4968,7 @@
       },
       "text-md-sans": {
         "regular": {
-          "description": "Used for form helper text and validation text (error, success)\n\nAlso used for labels in the side by side form pattern",
+          "description": "Helper text",
           "fontSize": {
             "type": "dimension",
             "value": 14
@@ -4959,6 +4984,53 @@
           "fontWeight": {
             "type": "number",
             "value": 400
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        },
+        "semibold": {
+          "description": "Side by side Form Labels",
+          "fontSize": {
+            "type": "dimension",
+            "value": 14
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "IBM Plex Sans"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 600
           },
           "fontStyle": {
             "type": "string",
@@ -6881,6 +6953,54 @@
           "letterSpacing": {
             "type": "dimension",
             "value": 0.64
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        }
+      },
+      "text-md-mono": {
+        "semibold": {
+          "fontSize": {
+            "type": "dimension",
+            "value": 14
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "IBM Plex Mono"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 600
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": -0.36
           },
           "lineHeight": {
             "type": "dimension",
