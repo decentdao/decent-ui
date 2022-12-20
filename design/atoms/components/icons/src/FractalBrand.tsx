@@ -10,8 +10,8 @@ export const FractalBrand = createIcon({
       </g>
       <path d="M42.8453 23.8215V26.9002H28.7046V32.8062H40.2913V35.7591H28.7046V44.1783H25.1538V35.7591H28.7046V32.8062H25.1538V23.8215H42.8453Z" fill="#36342F" />
       <defs>
-        <filter id="filter0_d_204_1439" x="-6" y="-6" width="80" height="80" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <filter id="filter0_d_204_1439" x="-6" y="-6" width="80" height="80" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
           <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_204_1439" />
           <feOffset />
