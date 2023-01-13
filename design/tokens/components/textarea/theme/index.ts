@@ -6,7 +6,7 @@ const Textarea = defineStyleConfig({
   variants: { base: baseStyle },
   sizes,
   defaultProps: {
-    size: 'xl',
+    size: 'base',
     variant: 'base'
   },
 })
