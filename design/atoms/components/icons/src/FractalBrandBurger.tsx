@@ -2,7 +2,7 @@ import { createIcon } from "@chakra-ui/react"
 
 export const FractalBrandBurger = createIcon({
   displayName: "FractalBrandBurger",
-  viewBox: "0 0 74 74",
+  viewBox: "0 0 24 24",
   path: (
     <svg>
       <circle cx="18.8734" cy="5.12739" r="2.12727" fill="#FABD2E" />
