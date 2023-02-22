@@ -21,7 +21,7 @@ const baseStyle = definePartsStyle({
     color: 'white',
     bg: 'input.background',
     border: '1px solid',
-    borderColor: 'black.200',
+    borderColor: 'black.400',
     transitionDuration: "normal",
     transitionProperty: "common",
     width: "100%",
