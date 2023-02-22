@@ -1,7 +1,7 @@
 import { createIcon } from "@chakra-ui/react"
 
-export const ProgressBarDelimited = createIcon({
-  displayName: "ProgressBarDelimited",
+export const ProgressBarDelimiter = createIcon({
+  displayName: "ProgressBarDelimiter",
   viewBox: "0 0 6 45",
   path: (
     <path
