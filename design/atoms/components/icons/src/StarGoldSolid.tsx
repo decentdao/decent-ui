@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react"
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react"
 
-export const StarGoldSolid = createIcon({
+export const StarGoldSolid: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "StarGoldSolid",
   viewBox: "0 0 24 24",
   path: (

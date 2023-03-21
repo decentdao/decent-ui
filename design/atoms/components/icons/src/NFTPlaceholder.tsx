@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react"
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react"
 
-export const NFTPlaceholder = createIcon({
+export const NFTPlaceholder: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "NFTPlaceholder",
   viewBox: "0 0 48 48",
   path: (
