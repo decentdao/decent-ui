@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react";
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react";
 
-export const ActiveOne = createIcon({
+export const ActiveOne: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "ActiveOne",
   viewBox: "0 0 24 24",
   path: (

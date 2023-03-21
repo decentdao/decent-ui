@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react"
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react"
 
-export const SquareSolidArrowUp = createIcon({
+export const SquareSolidArrowUp: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "SquareSolidArrowUp",
   viewBox: "0 0 24 24",
   path: (

@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react"
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react"
 
-export const CloseSolid = createIcon({
+export const CloseSolid: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "CloseSolid",
   viewBox: "0 0 24 24",
   path: (

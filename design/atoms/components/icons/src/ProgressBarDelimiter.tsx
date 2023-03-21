@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react"
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react"
 
-export const ProgressBarDelimiter = createIcon({
+export const ProgressBarDelimiter: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "ProgressBarDelimiter",
   viewBox: "0 0 6 45",
   path: (

@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react"
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react"
 
-export const FractalBrandBurger = createIcon({
+export const FractalBrandBurger: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "FractalBrandBurger",
   viewBox: "0 0 24 24",
   path: (

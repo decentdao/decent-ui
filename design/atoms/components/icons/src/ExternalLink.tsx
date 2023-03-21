@@ -1,6 +1,6 @@
-import { createIcon } from "@chakra-ui/react"
+import { ComponentWithAs, createIcon, IconProps } from "@chakra-ui/react"
 
-export const ExternalLink = createIcon({
+export const ExternalLink: ComponentWithAs<"svg", IconProps> = createIcon({
   displayName: "ExternalLink",
   viewBox: "0 0 14 14",
   path: (
