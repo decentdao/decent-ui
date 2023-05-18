@@ -32,6 +32,14 @@ const baseStyle = definePartsStyle({
     _placeholder: {
       color: 'grayscale.600',
     },
+    _active: {
+      border: '1px solid',
+      borderColor: 'black.300',
+      _disabled: {
+        ...disabled,
+        _loading: loading
+      },
+    },
     _hover: {
       border: '1px solid',
       borderColor: 'black.300',
