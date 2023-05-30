@@ -1,4 +1,4 @@
-import { parseColors, parsedColorsV1 } from '../../../helpers';
+import { parseColors } from '../../../helpers';
 import tokenData from '../../design-tokens-export.json'
 
 const { color } = tokenData;
