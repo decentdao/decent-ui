@@ -1,4 +1,6 @@
 import typography from './tokens/design-tokens--text.json'
+import colorPalette from './tokens/design-tokens--color.json'
+
 
 function addPx(str: string) {
   return str + 'px'
@@ -33,10 +35,6 @@ export function parseTypography(font: any) {
   }, {})
 }
 
-export function parseColorsV1() {
-
-}
-
 export function parsedTypographyV1() {
   let parsedStyles = {} as any;
   Object.entries(typography.font).map(([_, styles]) => {
@@ -55,4 +53,28 @@ export function parsedTypographyV1() {
     })
   })
   return parsedStyles
+}
+
+export function parseColorsV1(colorFigmaTokens: any) {
+  const colorMapping = Object.entries(colorFigmaTokens).map(([baseName, colorData]: [string, any]) => {
+    const colorsData = Object.entries(colorData).map(([colorBaseName, colorShades]: [string, any]) => {
+      const shades = Object.entries(colorShades).map(([shadeName, colorValues]: [string, any]) => {
+        // { 100: { value: '#ffffff' }
+        return { [shadeName]: colorValues.value }
+      })
+      // { grayscale: { 100: '#ffffff', 200: '#f2f2f2', .. } }
+      return { [colorBaseName]: Object.assign({}, ...shades) }
+    })
+    // { neutral: { grayscale: { 100: '#ffffff', 200: '#f2f2f2', .. } }
+    return { [baseName]: Object.assign({}, ...colorsData) }
+  })
+  return colorMapping.reduce((prev, cur) => ({ ...prev, ...cur }), {})
+}
+
+export function parsedColorsV1() {
+  const { color, gradient } = colorPalette;
+  const colors = parseColorsV1(color);
+  const gradients = parseColorsV1(gradient);
+  
+  return { ...colors, ...gradients }
 }
