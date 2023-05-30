@@ -1,4 +1,4 @@
-// @todo should update typings
+import typography from './tokens/design-tokens--text.json'
 
 function addPx(str: string) {
   return str + 'px'
@@ -31,4 +31,28 @@ export function parseTypography(font: any) {
     })
     return colorTokens;
   }, {})
+}
+
+export function parseColorsV1() {
+
+}
+
+export function parsedTypographyV1() {
+  let parsedStyles = {} as any;
+  Object.entries(typography.font).map(([_, styles]) => {
+    Object.entries(styles).map(([styleName, properties]) => {
+      const { fontSize, fontFamily, fontWeight, letterSpacing, lineHeight } = properties.value
+      parsedStyles = {
+        ...parsedStyles,
+        [styleName]: {
+          fontSize: addPx(fontSize.toString()),
+          fontFamily,
+          fontWeight,
+          letterSpacing: addPx(letterSpacing.toString()),
+          lineHeight: addPx(lineHeight.toString())
+        }
+      }
+    })
+  })
+  return parsedStyles
 }
