@@ -6,7 +6,7 @@ const { definePartsStyle } =
   
 
 const base = defineStyle({
-  height: '1.5rem'
+  height: '1rem'
 })
 
 const sizes = {
