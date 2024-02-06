@@ -4,16 +4,14 @@ import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
 const { definePartsStyle } =
     createMultiStyleConfigHelpers(progressAnatomy.keys)
 
-const baseStyles = definePartsStyle(({ value }) => ({
+const baseStyles = definePartsStyle(() => ({
     track: {
         bg: "drab.700",
-        borderRadius: "12px",
+        borderRadius: "4px",
     },
     filledTrack: {
-        borderRadius: "12px",
-        bg: "drab.900",
-        border: () => value ? "1px solid" : "",
-        borderColor: "gold.100"
+        borderRadius: "4px",
+        bg: "drab.400",
     }
 }))
 
