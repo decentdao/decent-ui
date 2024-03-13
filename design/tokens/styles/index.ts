@@ -5,12 +5,13 @@ import toastStyles from './toast'
 export default {
   global: {
     body: {
-      background: 'linear-gradient(180deg, #272520 0%, #1B1A18 100%)',
+      background: '#262521',
       backgroundRepeat: 'no-repeat',
       color: 'white',
       height: '100%',
     },
     html: {
+      background: '#262521',
       backgroundAttachment: 'fixed',
       backgroundRepeat: 'no-repeat',
       scrollBehavior: 'smooth',
