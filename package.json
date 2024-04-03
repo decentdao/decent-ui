@@ -33,10 +33,10 @@
   "devDependencies": {
     "@babel/core": "^7.21.3",
     "@chakra-ui/anatomy": "^2.1.2",
-    "@chakra-ui/react": "^2.5.2",
+    "@chakra-ui/react": "^2.8.2",
     "@chakra-ui/storybook-addon": "^4.0.17",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.0",
     "@rollup/plugin-commonjs": "^22.0.2",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^14.1.0",
