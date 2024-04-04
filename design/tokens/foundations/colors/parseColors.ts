@@ -20,12 +20,6 @@ interface ColorGroup {
   [key: string]: DesignToken | ColorGroup; // A group can contain both tokens and other groups
 }
 
-interface ColorTokenFile {
-  color: {
-    color: ColorGroup;
-  };
-}
-
 // Function to check if a value is a DesignToken
 function isDesignToken(value: DesignToken | ColorGroup): value is DesignToken {
   return (value as DesignToken).value !== undefined;
