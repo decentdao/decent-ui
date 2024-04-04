@@ -9,7 +9,8 @@ const {
 export const sansTypography: { [key: string]: { [key: string]: {} } } = parseTypography(sans)
 export const monoTypography: { [key: string]: { [key: string]: {} } } = parseTypography(mono)
 
-const typography = parseTypographyTokens()
+export const typography = parseTypographyTokens()
+
 export default {
   ...typography,
   ...sansTypography,
