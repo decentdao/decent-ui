@@ -21,7 +21,7 @@ export default {
 
   },
   '.Toastify__toast-body': {
-    fontFamily: 'IBM Plex Sans',
+    fontFamily: 'TT Firs Neue Variable',
     fontWeight: 500,
     fontSize: '1rem',
     color: 'grayscale.white',

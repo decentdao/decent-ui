@@ -14,8 +14,7 @@ export const theme = create({
     colorSecondary: '#FABD2E',
 
     // Typography
-    fontBase: 'IBM Plex Sans',
-    fontCode: 'IBM Plex Mono, monospace',
+    fontBase: 'TT Firs Neue Variable',
 
     // UI
     appBorderRadius: 4,
