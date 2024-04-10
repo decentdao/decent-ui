@@ -23,7 +23,7 @@ export const theme = create({
 
 export const docsTheme = create({
     "base": "dark",
-    "appContentBg": "#212121ff",
+    "appContentBg": "#f8f4fc29",
     "fontBase": "\"Nunito Sans\", -apple-system, \".SFNSText-Regular\", \"San Francisco\", BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Helvetica, Arial, sans-serif",
     "fontCode": "ui-monospace, Menlo, Monaco, \"Roboto Mono\", \"Oxygen Mono\", \"Ubuntu Monospace\", \"Source Code Pro\", \"Droid Sans Mono\", \"Courier New\", monospace",
     "textColor": "#FFFFFF",

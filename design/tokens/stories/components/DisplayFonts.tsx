@@ -5,7 +5,7 @@ import textStyles from '../../foundations/textStyles';
 
 
 export function DisplayFonts() {
-    const { sans, mono } = textStyles;
+    // const { sans, mono } = textStyles;
     return (
         <StoryLayout title='Typography'>
             <Box>
@@ -18,7 +18,7 @@ export function DisplayFonts() {
                 >
                     Sans
                 </Heading>
-                {Object.entries(sans).map((style, key) => (
+                {/* {Object.entries(sans).map((style, key) => (
                     <Box key={key}>
                         <Text>{style[0]}</Text>
                         {Object.entries(style[1]!).map((value, key) => (
@@ -42,7 +42,7 @@ export function DisplayFonts() {
                             <p>{value[0]}</p>
                         ))}
                     </Box>
-                ))}
+                ))} */}
             </Box>
         </StoryLayout>
     );
