@@ -1,24 +1,4 @@
 {
-  "White": {
-    "0": {
-      "$type": "color",
-      "$value": "#f8f4fc"
-    }
-  },
-  "White Alpha": {
-    "16": {
-      "$type": "color",
-      "$value": "#f8f4fc29"
-    },
-    "04": {
-      "$type": "color",
-      "$value": "#ffffff0a"
-    },
-    "08": {
-      "$type": "color",
-      "$value": "#ffffff14"
-    }
-  },
   "Black": {
     "0": {
       "$type": "color",
@@ -37,6 +17,24 @@
     "08": {
       "$type": "color",
       "$value": "#00000014"
+    }
+  },
+  "Blue": {
+    "0": {
+      "$type": "color",
+      "$value": "#3f5c97"
+    },
+    "1": {
+      "$type": "color",
+      "$value": "#afc2e9"
+    },
+    "2": {
+      "$type": "color",
+      "$value": "#dce6f9"
+    },
+    "-1": {
+      "$type": "color",
+      "$value": "#1c4087"
     }
   },
   "Celery": {
@@ -131,6 +129,44 @@
       "$value": "#2e0b39"
     }
   },
+  "Lilac": {
+    "0": {
+      "$type": "color",
+      "$value": "#dcc8f0"
+    },
+    "1": {
+      "$type": "color",
+      "$value": "#e5d9f2"
+    },
+    "2": {
+      "$type": "color",
+      "$value": "#ebe2f3"
+    },
+    "-1": {
+      "$type": "color",
+      "$value": "#cbb1e6"
+    },
+    "-2": {
+      "$type": "color",
+      "$value": "#9974be"
+    },
+    "-3": {
+      "$type": "color",
+      "$value": "#805ca3"
+    },
+    "-4": {
+      "$type": "color",
+      "$value": "#5f376c"
+    },
+    "-5": {
+      "$type": "color",
+      "$value": "#332b3b"
+    },
+    "-6": {
+      "$type": "color",
+      "$value": "#200828"
+    }
+  },
   "Neutral": {
     "1": {
       "$type": "color",
@@ -177,98 +213,64 @@
       "$value": "#f0eaf6"
     }
   },
-  "Lilac": {
+  "Red": {
     "0": {
       "$type": "color",
-      "$value": "#dcc8f0"
+      "$value": "#af3a48"
     },
     "1": {
       "$type": "color",
-      "$value": "#e5d9f2"
+      "$value": "#fa5367"
     },
-    "2": {
+    "4": {
       "$type": "color",
-      "$value": "#ebe2f3"
+      "$value": "#efd8da"
     },
     "-1": {
       "$type": "color",
-      "$value": "#cbb1e6"
+      "$value": "#69232b"
     },
     "-2": {
       "$type": "color",
-      "$value": "#9974be"
+      "$value": "#351116"
     },
     "-3": {
       "$type": "color",
-      "$value": "#805ca3"
-    },
-    "-4": {
-      "$type": "color",
-      "$value": "#5f376c"
-    },
-    "-5": {
-      "$type": "color",
-      "$value": "#332b3b"
-    },
-    "-6": {
-      "$type": "color",
-      "$value": "#200828"
+      "$value": "#1f0a0d"
     }
   },
-  "Utility": {
-    "Red": {
-      "0": {
-        "$type": "color",
-        "$value": "#af3a48"
-      },
-      "1": {
-        "$type": "color",
-        "$value": "#fa5367"
-      },
-      "4": {
-        "$type": "color",
-        "$value": "#efd8da"
-      },
-      "-1": {
-        "$type": "color",
-        "$value": "#69232b"
-      },
-      "-2": {
-        "$type": "color",
-        "$value": "#351116"
-      }
+  "White": {
+    "0": {
+      "$type": "color",
+      "$value": "#f8f4fc"
+    }
+  },
+  "White Alpha": {
+    "16": {
+      "$type": "color",
+      "$value": "#f8f4fc29"
     },
-    "Yellow": {
-      "0": {
-        "$type": "color",
-        "$value": "#ffe66d"
-      },
-      "-1": {
-        "$type": "color",
-        "$value": "#695c16"
-      },
-      "-2": {
-        "$type": "color",
-        "$value": "#443900"
-      }
+    "04": {
+      "$type": "color",
+      "$value": "#ffffff0a"
     },
-    "Blue": {
-      "0": {
-        "$type": "color",
-        "$value": "#3f5c97"
-      },
-      "1": {
-        "$type": "color",
-        "$value": "#afc2e9"
-      },
-      "2": {
-        "$type": "color",
-        "$value": "#dce6f9"
-      },
-      "-1": {
-        "$type": "color",
-        "$value": "#1c4087"
-      }
+    "08": {
+      "$type": "color",
+      "$value": "#ffffff14"
+    }
+  },
+  "Yellow": {
+    "0": {
+      "$type": "color",
+      "$value": "#ffe66d"
+    },
+    "-1": {
+      "$type": "color",
+      "$value": "#695c16"
+    },
+    "-2": {
+      "$type": "color",
+      "$value": "#443900"
     }
   }
 }
