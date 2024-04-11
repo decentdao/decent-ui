@@ -3,10 +3,6 @@
     "0": {
       "$type": "color",
       "$value": "#f8f4fc"
-    },
-    "1": {
-      "$type": "color",
-      "$value": "#faf7fd"
     }
   },
   "White Alpha": {
@@ -87,6 +83,10 @@
     "-5": {
       "$type": "color",
       "$value": "#495d32"
+    },
+    "-6": {
+      "$type": "color",
+      "$value": "#2c381e"
     }
   },
   "Cosmic Nebula": {
@@ -129,21 +129,6 @@
     "-1": {
       "$type": "color",
       "$value": "#2e0b39"
-    }
-  },
-  "Content": {
-    "Primary Dark": {
-      "$type": "color",
-      "$value": "#100414"
-    },
-    "Primary Light": {
-      "$type": "color",
-      "$value": "#f8f4fc"
-    },
-    "Secondary Dark": {
-      "$type": "color",
-      "$description": "Neutral 7",
-      "$value": "#b8afc0"
     }
   },
   "Neutral": {
@@ -211,17 +196,21 @@
     },
     "-2": {
       "$type": "color",
-      "$value": "#805ca3"
+      "$value": "#9974be"
     },
     "-3": {
       "$type": "color",
-      "$value": "#5f376c"
+      "$value": "#805ca3"
     },
     "-4": {
       "$type": "color",
-      "$value": "#332b3b"
+      "$value": "#5f376c"
     },
     "-5": {
+      "$type": "color",
+      "$value": "#332b3b"
+    },
+    "-6": {
       "$type": "color",
       "$value": "#200828"
     }
@@ -231,18 +220,54 @@
       "0": {
         "$type": "color",
         "$value": "#af3a48"
+      },
+      "1": {
+        "$type": "color",
+        "$value": "#fa5367"
+      },
+      "4": {
+        "$type": "color",
+        "$value": "#efd8da"
+      },
+      "-1": {
+        "$type": "color",
+        "$value": "#69232b"
+      },
+      "-2": {
+        "$type": "color",
+        "$value": "#351116"
       }
     },
     "Yellow": {
       "0": {
         "$type": "color",
         "$value": "#ffe66d"
+      },
+      "-1": {
+        "$type": "color",
+        "$value": "#695c16"
+      },
+      "-2": {
+        "$type": "color",
+        "$value": "#443900"
       }
     },
-    "Green": {
+    "Blue": {
       "0": {
         "$type": "color",
-        "$value": "#76b776"
+        "$value": "#3f5c97"
+      },
+      "1": {
+        "$type": "color",
+        "$value": "#afc2e9"
+      },
+      "2": {
+        "$type": "color",
+        "$value": "#dce6f9"
+      },
+      "-1": {
+        "$type": "color",
+        "$value": "#1c4087"
       }
     }
   }
