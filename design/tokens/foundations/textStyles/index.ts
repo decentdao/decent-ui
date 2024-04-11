@@ -38,7 +38,6 @@ const extractTypographyFromJson = (tokens: TypographyScheme, prefix = '') => {
 };
 
 const typography = extractTypographyFromJson(textStylesTokens as unknown as TypographyScheme);
-console.log(typography);
 
 export type Typography = typeof typography;
 export default typography;
