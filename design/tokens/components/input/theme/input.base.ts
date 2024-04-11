@@ -1,63 +1,77 @@
-import { inputAnatomy } from '@chakra-ui/anatomy'
-import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
+import { inputAnatomy } from "@chakra-ui/anatomy"
+import { createMultiStyleConfigHelpers } from "@chakra-ui/react"
 
-const { definePartsStyle } =
-  createMultiStyleConfigHelpers(inputAnatomy.keys)
+const { definePartsStyle } = createMultiStyleConfigHelpers(inputAnatomy.keys)
 
 const disabled = {
-  cursor: 'default',
-  border: 'none',
-  color: 'grayscale.800',
+  cursor: "default",
+  border: "white-alpha-08",
+  color: "neutral-1",
   _placeholder: {
-    color: 'grayscale.800'
-  }
+    color: "neutral-5",
+  },
 }
 
 const loading = {}
 
 const baseStyle = definePartsStyle({
   field: {
-    borderRadius: '4px',
-    color: 'white',
-    bg: 'input.background',
-    border: '1px solid',
-    borderColor: 'black.400',
+    borderRadius: "4px",
+    color: "white-0",
+    bg: "neutral-1",
+    border: "1px solid",
+    borderColor: "neutral-3",
     transitionDuration: "normal",
     transitionProperty: "common",
     width: "100%",
     _invalid: {
-      border: '1px solid',
-      borderColor: 'alert-red.normal'
+      borderColor: "red-0",
+      bg: "red--3",
+      color: "red-1",
+      _placeholder: {
+        color: "red-0",
+      },
     },
     _placeholder: {
-      color: 'grayscale.600',
+      color: "neutral-5",
     },
     _active: {
-      border: '1px solid',
-      borderColor: 'black.300',
+      borderColor: "neutral-4",
+      boxShadow: "0px 0px 0px 3px #534D58",
       _disabled: {
         ...disabled,
-        _loading: loading
+        _loading: loading,
       },
     },
     _hover: {
-      border: '1px solid',
-      borderColor: 'black.300',
+      borderColor: "neutral-4",
       _disabled: {
         ...disabled,
-        _loading: loading
+        _loading: loading,
       },
     },
     _disabled: {
       ...disabled,
-      _loading: loading
+      _loading: loading,
     },
     _focus: {
-      border: '1px solid',
-      borderColor: 'black.300',
-      outlineStyle: 'none'
-    }
-  }
+      outline: "none",
+      borderColor: "neutral-4",
+      boxShadow: "0px 0px 0px 3px #534D58",
+      _invalid: {
+        borderColor: "red-0",
+        bg: "red--3",
+        color: "red-1",
+        _placeholder: {
+          color: "red-0",
+        },
+      },
+      _disabled: {
+        ...disabled,
+        _loading: loading,
+      },
+    },
+  },
 })
 
 export default baseStyle
