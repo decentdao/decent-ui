@@ -4,28 +4,28 @@ import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
 const { definePartsStyle } =
   createMultiStyleConfigHelpers(alertAnatomy.keys)
 
-const baseStyle = definePartsStyle({
+const info = definePartsStyle({
   title: {
-    display: "flex",
-    alignItems: "center",
-    textStyle: "helper-text",
+
   },
   container: {
+    bg: "neutral-3",
     border: "1px solid",
-    borderRadius: "4px",
-    p: "1rem"
+    borderColor: "neutral-4",
+    color: 'lilac-0'
   },
   description: {
-    display: "flex",
-    alignItems: "center",
-    textStyle: "helper-text",
+
   },
   icon: {
-    "& > svg": {
-      boxSize: "1.5rem"
-    }
+    color: 'lilac-0'
   },
   spinner: {},
 })
 
-export default baseStyle
+
+const alertVariants = {
+  info,
+}
+
+export default alertVariants

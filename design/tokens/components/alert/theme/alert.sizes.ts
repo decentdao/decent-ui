@@ -1,17 +1,43 @@
-import { alertAnatomy } from '@chakra-ui/anatomy'
-import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
+import { alertAnatomy } from "@chakra-ui/anatomy"
+import { createMultiStyleConfigHelpers, defineStyle } from "@chakra-ui/react"
 
-const { definePartsStyle } =
-  createMultiStyleConfigHelpers(alertAnatomy.keys)
+const { definePartsStyle } = createMultiStyleConfigHelpers(alertAnatomy.keys)
 
-const base = defineStyle({
-  px: "1rem",
-  h: '4.5rem',
+const base = definePartsStyle({
+  title: {
+    px: "1rem",
+  },
+  description: {
+    px: "1rem",
+  },
+  container: {},
+  icon: {
+    "& > svg": {
+      boxSize: "1.25rem"
+    }
+  },
 })
 
+const lg = definePartsStyle({
+  title: {
+    px: "1rem",
+    h: "4.5rem",
+  },
+  description: {
+    px: "1rem",
+    h: "4.5rem",
+  },
+  container: {},
+  icon: {
+    "& > svg": {
+      boxSize: "1.5rem"
+    }
+  },
+})
 
 const sizes = {
-  base: definePartsStyle({ title: base, description: base}),
+  base,
+  lg,
 }
 
 export default sizes
