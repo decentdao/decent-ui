@@ -28,7 +28,8 @@
   "peerDependencies": {
     "@chakra-ui/react": "^2.3.4",
     "react": "^16 || ^17 || ^18",
-    "react-dom": "^16 || ^17 || ^18"
+    "react-dom": "^16 || ^17 || ^18",
+    "@phosphor-icons/react": "^2.1.4"
   },
   "devDependencies": {
     "@babel/core": "^7.21.3",
@@ -70,8 +71,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@phosphor-icons/react": "^2.1.4"
   }
 }
