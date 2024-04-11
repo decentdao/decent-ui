@@ -1,16 +1,18 @@
-import { progressAnatomy } from '@chakra-ui/anatomy'
-import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
+import { progressAnatomy } from "@chakra-ui/anatomy"
+import { createMultiStyleConfigHelpers } from "@chakra-ui/react"
 
-const { definePartsStyle } =
-  createMultiStyleConfigHelpers(progressAnatomy.keys)
-  
+const { definePartsStyle } = createMultiStyleConfigHelpers(progressAnatomy.keys)
 
-const base = defineStyle({
-  height: '1rem'
+const base = definePartsStyle({
+  track: {},
+  label: {},
+  filledTrack: {
+    height: "1.5rem",
+  },
 })
 
 const sizes = {
-  base: definePartsStyle({ label: base, track: base, filledTrack: base }),
+  base,
 }
 
 export default sizes
