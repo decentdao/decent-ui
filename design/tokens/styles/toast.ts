@@ -14,7 +14,7 @@ export default {
   /** Classes for the displayed toast **/
   '.Toastify__toast': {
     backgroundColor: 'none',
-    background: 'black.700',
+    background: 'neutral-3',
     textAlign: 'center',
   },
   '.Toastify__toast--rtl': {
@@ -22,9 +22,9 @@ export default {
   },
   '.Toastify__toast-body': {
     fontFamily: 'TT Firs Neue Variable',
-    fontWeight: 500,
+    fontWeight: 450,
     fontSize: '1rem',
-    color: 'grayscale.white',
+    color: 'lilac-0',
   },
 
   /** Used to position the icon **/
@@ -48,7 +48,7 @@ export default {
   },
 
   '.Toastify__progress-bar': {
-    background: 'gold.500'
+    background: 'lilac-0',
   },
   '.Toastify__progress-bar--rtl': {
   },
@@ -70,7 +70,7 @@ export default {
 
   /** Classes for the close button. Better use your own closeButton **/
   '.Toastify__close-button': {
-    color: 'grayscale.white'
+    color: 'lilac-0'
   },
   '.Toastify__close-button--default': {
   },

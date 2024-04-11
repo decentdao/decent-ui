@@ -5,13 +5,14 @@ import toastStyles from './toast'
 export default {
   global: {
     body: {
-      background: '#262521',
+      background: 'neutral-1',
       backgroundRepeat: 'no-repeat',
+      // @todo
       color: 'white',
       height: '100%',
     },
     html: {
-      background: '#262521',
+      background: 'neutral-1',
       backgroundAttachment: 'fixed',
       backgroundRepeat: 'no-repeat',
       scrollBehavior: 'smooth',
