@@ -1,4 +1,3 @@
 export default {
-  heading: `'IBM Plex Mono', monospace`,
-  body: `'IBM Plex Sans', sans-serif`
+  body: 'TT Firs Neue Variable, sans-serif'
 }
