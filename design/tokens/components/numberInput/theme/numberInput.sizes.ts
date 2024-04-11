@@ -9,11 +9,8 @@ const paddingAddonLeft = { pl: '2rem', pr: '1rem'}
 const paddingAddonRight = { pl: '1rem', pr: '4rem'}
 
 const baseStyle = {
-  apply: 'text-base-mono-semibold',
+  apply: 'input-text',
   height: '2.5rem',
-  _placeholder: {
-    textStyle: 'text-base-mono-medium'
-  },
 }
 const base = defineStyle({
   ...baseStyle,
@@ -36,11 +33,8 @@ const baseWithAddons = defineStyle({
 })
 
 const xlStyle = {
-  apply: 'text-xl-mono-semibold',
+  apply: 'input-text',
   h: '4.375rem',
-  _placeholder: {
-    textStyle: 'text-xl-mono-medium'
-  },
 }
 
 const xl = defineStyle({
