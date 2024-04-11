@@ -5,9 +5,9 @@ const $arrowBg = cssVar("popper-arrow-bg")
 export default {
   baseStyle: {
     borderRadius: '4px',
-    backgroundColor: 'black',
-    padding: '0.5rem 1rem',
-    color: 'grayscale.500',
-    [$arrowBg.variable]: 'black'
+    backgroundColor: 'black-0',
+    padding: '0.25rem 0.5rem',
+    color: 'white-0',
+    [$arrowBg.variable]: 'black-0'
   }
 }

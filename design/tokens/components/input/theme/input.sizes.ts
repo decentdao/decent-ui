@@ -1,28 +1,24 @@
-import { inputAnatomy } from '@chakra-ui/anatomy'
-import { createMultiStyleConfigHelpers, defineStyle } from '@chakra-ui/react'
+import { inputAnatomy } from "@chakra-ui/anatomy"
+import { createMultiStyleConfigHelpers, defineStyle } from "@chakra-ui/react"
 
-const { definePartsStyle } =
-  createMultiStyleConfigHelpers(inputAnatomy.keys)
+const { definePartsStyle } = createMultiStyleConfigHelpers(inputAnatomy.keys)
 
-const paddingBase = { px: '1rem'}
-const paddingAddonLeft = { pl: '2rem', pr: '1rem'}
-const paddingAddonRight = { pl: '1rem', pr: '4rem'}
+const paddingBase = { px: "1rem" }
+const paddingAddonLeft = { pl: "2rem", pr: "1rem" }
+const paddingAddonRight = { pl: "1rem", pr: "4rem" }
 
 const baseStyle = {
-  apply: 'text-base-mono-semibold',
-  height: '2.5rem',
-  _placeholder: {
-    textStyle: 'text-base-mono-medium'
-  },
+  apply: "input-text",
+  height: "2.5rem",
 }
 const base = defineStyle({
   ...baseStyle,
-  ...paddingBase
+  ...paddingBase,
 })
 
 const baseAddonLeft = defineStyle({
   ...baseStyle,
-  ...paddingAddonLeft
+  ...paddingAddonLeft,
 })
 const baseAddonRight = defineStyle({
   ...baseStyle,
@@ -32,35 +28,33 @@ const baseAddonRight = defineStyle({
 const baseWithAddons = defineStyle({
   ...baseStyle,
   ...paddingAddonRight,
-  ...paddingAddonLeft
+  ...paddingAddonLeft,
 })
 
+// @todo is this being used?
 const xlStyle = {
-  apply: 'text-xl-mono-semibold',
-  h: '4.375rem',
-  _placeholder: {
-    textStyle: 'text-xl-mono-medium'
-  },
+  apply: "input-text",
+  h: "4.375rem",
 }
 
 const xl = defineStyle({
   ...xlStyle,
-  ...paddingBase
+  ...paddingBase,
 })
 
 const xlAddonLeft = defineStyle({
   ...xlStyle,
-  ...paddingAddonLeft
+  ...paddingAddonLeft,
 })
 const xlAddonRight = defineStyle({
   ...xlStyle,
-  ...paddingAddonRight
+  ...paddingAddonRight,
 })
 
 const xlWithAddons = defineStyle({
   ...xlStyle,
   ...paddingAddonRight,
-  ...paddingAddonLeft
+  ...paddingAddonLeft,
 })
 
 const sizes = {
