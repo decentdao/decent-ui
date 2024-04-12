@@ -1,6 +1,7 @@
 import { Box, Flex, FormLabel, Text } from "@chakra-ui/react"
 import { Tooltip } from "@chakra-ui/react"
 import { ILabelWrapper } from "./types"
+import { Info } from "@phosphor-icons/react"
 
 const LabelWrapper = ({
   label,
@@ -17,7 +18,7 @@ const LabelWrapper = ({
           <Text>{label}</Text>
           {!!tooltipContent && (
             <Tooltip hasArrow label={tooltipContent} closeDelay={500}>
-              <div>ICON</div>
+              <Info />
             </Tooltip>
           )}
         </Flex>
