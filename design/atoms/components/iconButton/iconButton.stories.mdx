@@ -1,0 +1,91 @@
+import { IconButton, Icon } from "@chakra-ui/react"
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { MagnifyingGlass } from '@phosphor-icons/react'
+
+import { buttonArgTypes } from "./controls"
+
+<Meta title="Atoms/Icon Buttons" component={IconButton} />
+
+export const Template = (args) => <IconButton {...args} icon={<Icon as={MagnifyingGlass} />} />
+
+## Usage & Guidelines
+
+```ts
+import { IconButton, Icon } from '@chakra-ui/react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
+
+function SomeComponentWithSecondaryAction() {
+    return <IconButton icon={<Icon as={MagnifyingGlass} />}></IconButton>
+}
+```
+
+
+
+## Types of Buttons
+
+#### Primary
+
+<ul>
+  <li>Used for the most important action on the page.</li>
+  <li>Solid color buttons based on the primary brand color. </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="PrimaryIconButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "primary",
+      children: "IconButton",
+      size: "md",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Secondary
+
+<ul>
+  <li>Used for the second most important action on the page. </li>
+  <li>
+    These are also solid color buttons however the secondary buttons use a muted color palette.
+  </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="SecondaryIconButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "secondary",
+      children: "IconButton",
+      size: "md",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Tertiary
+
+<ul>
+  <li>
+    Tertiary buttons are outlined versions of the Primary buttons and should be used for in page
+    actions like filtering.{" "}
+  </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="TertiaryIconButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "tertiary",
+      children: "IconButton",
+      size: "md",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
