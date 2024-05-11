@@ -5,8 +5,8 @@ const { definePartsStyle } = createMultiStyleConfigHelpers(inputAnatomy.keys)
 
 const disabled = {
   cursor: "default",
-  border: "white-alpha-08",
-  color: "neutral-1",
+  borderColor: "white-alpha-08",
+  color: "neutral-6",
   _placeholder: {
     color: "neutral-5",
   },
