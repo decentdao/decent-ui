@@ -13,18 +13,18 @@ export const Template = (args) => { return (<Flex gap="1rem">
 <IconButton size="icon-lg" {...args} icon={<Icon width="2rem" height="2rem" as={MagnifyingGlass} />} />
 </Flex>)}
 
-## Usage & Guidelines
+## Usage
 
 ```ts
 import { IconButton, Icon } from '@chakra-ui/react'
 import { MagnifyingGlass } from '@phosphor-icons/react'
 
-function SomeComponentWithSecondaryAction() {
+function SomeComponentWithSecondaryActionHandledByIconButton() {
   return (
     <>
-      <IconButton size="icon-sm" icon={<Icon as={MagnifyingGlass} />} />
-      <IconButton size="icon-md" icon={<Icon as={MagnifyingGlass} />} />
-      <IconButton size="icon-lg" icon={<Icon as={MagnifyingGlass} />} />
+      <IconButton size="icon-sm" variant="primary" icon={<Icon width="1.25rem" height="1.25rem" as={MagnifyingGlass} />} />
+      <IconButton size="icon-md" variant="secondary" icon={<Icon width="1.5rem" height="1.5rem" as={MagnifyingGlass} />} />
+      <IconButton size="icon-lg" variant="tertiary" icon={<Icon width="2rem" height="2rem" as={MagnifyingGlass} />} />
     </>
   );
 }
