@@ -1,4 +1,5 @@
-import { IconButton, Icon } from "@chakra-ui/react"
+import { IconButton, Flex, Icon } from "@chakra-ui/react"
+import { Fragment } from 'react';
 import { Canvas, Meta, Story } from "@storybook/addon-docs"
 import { MagnifyingGlass } from '@phosphor-icons/react'
 
@@ -6,7 +7,11 @@ import { buttonArgTypes } from "./controls"
 
 <Meta title="Atoms/Icon Buttons" component={IconButton} />
 
-export const Template = (args) => <IconButton {...args} icon={<Icon as={MagnifyingGlass} />} />
+export const Template = (args) => { return (<Flex gap="1rem">
+<IconButton size="icon-sm" {...args} icon={<Icon width="1.25rem" height="1.25rem" as={MagnifyingGlass} />} />
+<IconButton size="icon-md" {...args} icon={<Icon width="1.5rem" height="1.5rem" as={MagnifyingGlass} />} />
+<IconButton size="icon-lg" {...args} icon={<Icon width="2rem" height="2rem" as={MagnifyingGlass} />} />
+</Flex>)}
 
 ## Usage & Guidelines
 
@@ -15,7 +20,13 @@ import { IconButton, Icon } from '@chakra-ui/react'
 import { MagnifyingGlass } from '@phosphor-icons/react'
 
 function SomeComponentWithSecondaryAction() {
-    return <IconButton icon={<Icon as={MagnifyingGlass} />}></IconButton>
+  return (
+    <>
+      <IconButton size="icon-sm" icon={<Icon as={MagnifyingGlass} />} />
+      <IconButton size="icon-md" icon={<Icon as={MagnifyingGlass} />} />
+      <IconButton size="icon-lg" icon={<Icon as={MagnifyingGlass} />} />
+    </>
+  );
 }
 ```
 
@@ -36,8 +47,6 @@ function SomeComponentWithSecondaryAction() {
     argTypes={buttonArgTypes}
     args={{
       variant: "primary",
-      children: "IconButton",
-      size: "md",
     }}
   >
     {Template.bind({})}
@@ -59,8 +68,6 @@ function SomeComponentWithSecondaryAction() {
     argTypes={buttonArgTypes}
     args={{
       variant: "secondary",
-      children: "IconButton",
-      size: "md",
     }}
   >
     {Template.bind({})}
@@ -82,8 +89,6 @@ function SomeComponentWithSecondaryAction() {
     argTypes={buttonArgTypes}
     args={{
       variant: "tertiary",
-      children: "IconButton",
-      size: "md",
     }}
   >
     {Template.bind({})}

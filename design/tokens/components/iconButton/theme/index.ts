@@ -9,7 +9,7 @@ const IconButton = defineStyleConfig({
   variants,
   sizes,
   defaultProps: {
-    size: 'md',
+    size: 'icon-md',
     variant: 'primary',
   },
 });
