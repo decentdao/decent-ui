@@ -1,0 +1,96 @@
+import { IconButton, Flex, Icon } from "@chakra-ui/react"
+import { Fragment } from 'react';
+import { Canvas, Meta, Story } from "@storybook/addon-docs"
+import { MagnifyingGlass } from '@phosphor-icons/react'
+
+import { buttonArgTypes } from "./controls"
+
+<Meta title="Atoms/Icon Buttons" component={IconButton} />
+
+export const Template = (args) => { return (<Flex gap="1rem">
+<IconButton size="icon-sm" {...args} icon={<Icon width="1.25rem" height="1.25rem" as={MagnifyingGlass} />} />
+<IconButton size="icon-md" {...args} icon={<Icon width="1.5rem" height="1.5rem" as={MagnifyingGlass} />} />
+<IconButton size="icon-lg" {...args} icon={<Icon width="2rem" height="2rem" as={MagnifyingGlass} />} />
+</Flex>)}
+
+## Usage
+
+```ts
+import { IconButton, Icon } from '@chakra-ui/react'
+import { MagnifyingGlass } from '@phosphor-icons/react'
+
+function SomeComponentWithSecondaryActionHandledByIconButton() {
+  return (
+    <>
+      <IconButton size="icon-sm" variant="primary" icon={<Icon width="1.25rem" height="1.25rem" as={MagnifyingGlass} />} />
+      <IconButton size="icon-md" variant="secondary" icon={<Icon width="1.5rem" height="1.5rem" as={MagnifyingGlass} />} />
+      <IconButton size="icon-lg" variant="tertiary" icon={<Icon width="2rem" height="2rem" as={MagnifyingGlass} />} />
+    </>
+  );
+}
+```
+
+
+
+## Types of Buttons
+
+#### Primary
+
+<ul>
+  <li>Used for the most important action on the page.</li>
+  <li>Solid color buttons based on the primary brand color. </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="PrimaryIconButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "primary",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Secondary
+
+<ul>
+  <li>Used for the second most important action on the page. </li>
+  <li>
+    These are also solid color buttons however the secondary buttons use a muted color palette.
+  </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="SecondaryIconButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "secondary",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+#### Tertiary
+
+<ul>
+  <li>
+    Tertiary buttons are outlined versions of the Primary buttons and should be used for in page
+    actions like filtering.{" "}
+  </li>
+</ul>
+
+<Canvas>
+  <Story
+    name="TertiaryIconButton"
+    argTypes={buttonArgTypes}
+    args={{
+      variant: "tertiary",
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

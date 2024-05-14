@@ -56,7 +56,7 @@ const tertiary = defineStyle({
   bg: "transparent",
   color: "lilac-0",
   _hover: {
-    bg: "white-alpha-04",
+    bg: "white-alpha-08",
     color: "lilac--1",
     _disabled: {
       ...tertiaryDisabled,
@@ -74,10 +74,10 @@ const tertiary = defineStyle({
   _focus: {},
 })
 
-const buttonVariants = {
+const iconButtonVariants = {
   primary,
   secondary,
   tertiary,
 }
 
-export default buttonVariants
+export default iconButtonVariants
