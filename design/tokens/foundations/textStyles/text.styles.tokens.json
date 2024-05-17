@@ -16,10 +16,16 @@
       "$type": "typography",
       "$value": {
         "fontFamily": "TT Firs Neue Variable",
-        "fontSize": "40px",
+        "fontSize": {
+          "base": "32px",
+          "md": "40px"
+        },
         "fontWeight": 400,
         "letterSpacing": "-1%",
-        "lineHeight": "44px",
+        "lineHeight": {
+          "base": "36px",
+          "md": "44px"
+        },
         "textTransform": "none",
         "textDecoration": "none"
       }
