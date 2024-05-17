@@ -4,6 +4,7 @@
 //  <Box bg='red.200' w={{ sm: 300, md: 400, base: 500}}>
 
 export default {
+  base: '0px',
   sm: '440px',
   md: '768px',
   lg: '1024px',
