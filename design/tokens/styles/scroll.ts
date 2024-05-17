@@ -1,17 +1,17 @@
 export default {
-  'menu-scroll::-webkit-scrollbar': {
+  'scroll-dark::-webkit-scrollbar': {
     background: 'transparent',
     width: '0.5rem',
     height: '0.5rem',
   },
-  'menu-scroll::-webkit-scrollbar-thumb': {
+  'scroll-dark::-webkit-scrollbar-thumb': {
     border: 'none',
     boxShadow: 'none',
-    background: 'grayscale.500',
+    background: 'neutral-4',
     borderRadius: '0.5rem',
     minHeight: '2.5rem',
   },
-  'menu-scroll::-webkit-scrollbar-thumb:hover': {
-    backgroundColor: 'grayscale.300',
+  'scroll-dark::-webkit-scrollbar-thumb:hover': {
+    backgroundColor: 'neutral-4',
   },
 }
