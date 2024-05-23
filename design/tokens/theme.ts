@@ -1,11 +1,13 @@
-import { extendTheme, theme as defaultTheme } from '@chakra-ui/react';
-import foundations from './foundations';
-import breakpoints from './breakpoints';
-import components from './components';
-import styles from './styles';
+import { extendTheme, theme as defaultTheme } from "@chakra-ui/react"
+import foundations from "./foundations"
+import breakpoints from "./breakpoints"
+import components from "./components"
+import styles from "./styles"
 
 // This removes unwanted components from the default theme
-const filteredDefaultComponents = Object.fromEntries(Object.entries(defaultTheme.components).filter(([key]) => !['Menu'].includes(key)))
+const filteredDefaultComponents = Object.fromEntries(
+  Object.entries(defaultTheme.components).filter(([key]) => !["Menu"].includes(key))
+)
 const theme = extendTheme(
   {
     styles,
@@ -20,8 +22,8 @@ const theme = extendTheme(
     breakpoints: {},
     colors: {},
     fontWeights: {},
-    fonts: {}
+    fonts: {},
   }
-);
+)
 
-export default theme;
+export default theme
