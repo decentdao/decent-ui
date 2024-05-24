@@ -45,10 +45,6 @@ const toastStyles = (props: any) => ({
       },
   },
 
-  ".Toastify__toast-container": {
-    zIndex: 100001,
-  },
-
   /** Used to define the position of the ToastContainer **/
   ".Toastify__toast-container--top-left": {},
   ".Toastify__toast-container--top-center": {},
