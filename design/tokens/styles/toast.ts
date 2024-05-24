@@ -1,11 +1,53 @@
 const toastStyles = (props: any) => ({
   /** Used to define container behavior: width, position: fixed etc... **/
-  [`@media (max-width: ${props.theme.breakpoints.sm})`]: {
-    ".Toastify__toast-container": {
-      "z-index": 100001,
+  [`@media only screen and (max-width: 480px)`]: {
+    ".Toastify__toast": {
+      marginBottom: "1rem",
+      borderRadius: "4px",
     },
+    ".Toastify__toast-container": {
+      width: "var(--toastify-toast-width)",
+      padding: "4px",
+      left: "50%",
+    },
+    ".Toastify__toast-container--top-left, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right":
+      {
+        top: "1em",
+        transform: "translateX(-50%)",
+      },
+    ".Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right":
+      {
+        bottom: "1em",
+        transform: "translateX(-50%)",
+      },
   },
-  ".Toastify__toast-container": {},
+
+  [`@media only screen and (max-width: ${props.theme.breakpoints.sm})`]: {
+    ".Toastify__toast": {
+      marginBottom: 0,
+      borderRadius: 0,
+    },
+    ".Toastify__toast-container": {
+      width: "100vw",
+      padding: 0,
+      left: 0,
+      margin: 0,
+    },
+    ".Toastify__toast-container--top-left, .Toastify__toast-container--top-center, .Toastify__toast-container--top-right":
+      {
+        top: 0,
+        transform: "translateX(0)",
+      },
+    ".Toastify__toast-container--bottom-left, .Toastify__toast-container--bottom-center, .Toastify__toast-container--bottom-right":
+      {
+        bottom: 0,
+        transform: "translateX(0)",
+      },
+  },
+
+  ".Toastify__toast-container": {
+    zIndex: 100001,
+  },
 
   /** Used to define the position of the ToastContainer **/
   ".Toastify__toast-container--top-left": {},
@@ -62,6 +104,6 @@ const toastStyles = (props: any) => ({
   ".Toastify__close-button--default": {},
   ".Toastify__close-button > svg": {},
   ".Toastify__close-button:hover, .Toastify__close-button:focus": {},
-})
+});
 
-export default toastStyles
+export default toastStyles;
