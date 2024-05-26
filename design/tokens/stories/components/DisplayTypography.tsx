@@ -32,7 +32,7 @@ export function DisplayTypography() {
                     <Text textStyle="label-large" color="grayscale.400">
                       {fontProperty}:
                     </Text>
-                    <Text>{value}</Text>
+                    <Text>{JSON.stringify(value)}</Text>
                   </Flex>
                 )
               })}
