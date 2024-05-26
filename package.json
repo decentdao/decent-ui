@@ -1,6 +1,6 @@
 {
   "name": "@decent-org/fractal-ui",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Decent DAO design system component library",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
